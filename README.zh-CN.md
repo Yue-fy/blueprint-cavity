@@ -24,6 +24,7 @@
 - [中文产品手册 PDF](docs/PRODUCT_MANUAL.zh-CN.pdf)：30 章详细介绍功能、交互、技术工具、评分、科研边界与开发过程。
 - [中文产品手册 Markdown](docs/PRODUCT_MANUAL.zh-CN.md)：便于仓库内阅读和搜索。历史实现过程中的路径可能属于原工作仓库；当前运行与评审入口以本 README 和英文评审路线为准。
 - [提交表单英文文案](submission/form-fields.en.txt)：按字段复制；[英文路演 PDF](docs/presentation/Blueprint-Cavity-Presentation.pdf) 可直接上传到 Presentation 栏。
+- [技术奖项参与说明](TECH_CHALLENGES.md)：建议勾选 Verda、Modal、Codex，包含实际使用过程、公开证据、英文提交段落和中文填写说明。
 
 ## 本地复现
 

@@ -22,6 +22,7 @@ The **[public demo](https://blueprint-takeoff-lab.bronze-crane-2444.chatgpt.site
 - **10 minutes:** use the [judge's review guide](docs/REVIEW_GUIDE.md) to inspect a replay, submit a human answer, explore Cavity and check the evidence boundaries.
 - **Full detail:** [44-page Chinese product manual](docs/PRODUCT_MANUAL.zh-CN.pdf) and [10-page Chinese walkthrough](docs/JUDGE_WALKTHROUGH.zh-CN.pdf).
 - **Submission:** [Copy-ready form fields](submission/form-fields.en.txt) and an [English presentation PDF](docs/presentation/Blueprint-Cavity-Presentation.pdf).
+- **Technology awards:** [Verda, Modal and Codex usage report](TECH_CHALLENGES.md), with public evidence and submission guidance.
 
 The film, covers, English subtitles, upload copy and manuals are available in [Release v1.0.0](https://github.com/Yue-fy/blueprint-cavity/releases/tag/v1.0.0) and the [public download hub](https://blueprint-takeoff-lab.bronze-crane-2444.chatgpt.site/submit/). The prepared film has not yet been uploaded to YouTube.
 
