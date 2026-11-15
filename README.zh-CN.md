@@ -23,6 +23,7 @@
 - [Release v1.0.0 下载](https://github.com/Yue-fy/blueprint-cavity/releases/tag/v1.0.0)：84 秒英文字幕影片与提交包，使用页面中的 **Assets** 下载。
 - [中文产品手册 PDF](docs/PRODUCT_MANUAL.zh-CN.pdf)：30 章详细介绍功能、交互、技术工具、评分、科研边界与开发过程。
 - [中文产品手册 Markdown](docs/PRODUCT_MANUAL.zh-CN.md)：便于仓库内阅读和搜索。历史实现过程中的路径可能属于原工作仓库；当前运行与评审入口以本 README 和英文评审路线为准。
+- [提交表单英文文案](submission/form-fields.en.txt)：按字段复制；[英文路演 PDF](docs/presentation/Blueprint-Cavity-Presentation.pdf) 可直接上传到 Presentation 栏。
 
 ## 本地复现
 
@@ -75,7 +76,7 @@ bash scripts/serve.sh
 
 [Cavity Lab](https://blueprint-takeoff-lab.bronze-crane-2444.chatgpt.site/hbn/) 展示保存的 hBN 纳米腔数据。旋转画面、切换模式或改变分析窗口不会启动新模拟。线宽实验让人观察同一谱线在不同窗口下得到不同 Q 估计；较高 Q 不自动代表更准确。
 
-“AI reviews AI”允许复制题目、在自己的 AI 中获取回复后粘贴检查。浏览器只核对支持格式中的数值或识别需要人工复核的判断，**不调用模型 API，不给证明正确性打分，也不验证器件设计**。评审可以直接输入测试文本，无需进行新推理。科研收敛限制和数据范围在页面与详细手册中列明。
+“AI reviews AI”允许复制题目、在自己的 AI 中获取回复后粘贴检查。浏览器以固定数学题的参考值核对支持格式中的数值，或识别需要人工复核的判断，**不调用模型 API，不给证明正确性打分，也不验证器件设计**。评审可以直接输入测试文本，无需进行新推理。科研收敛限制和数据范围在页面与详细手册中列明。
 
 ## 从哪里核对
 

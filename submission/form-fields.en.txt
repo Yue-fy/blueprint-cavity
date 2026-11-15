@@ -1,0 +1,57 @@
+PROJECT NAME (maximum 30 characters)
+Blueprint + Cavity
+
+PUNCHLINE (maximum 200 characters)
+Can AI show its work? A construction RL environment and a nanocavity research explorer make decisions visible and numerical claims checkable.
+
+DESCRIPTION (maximum 5000 characters; copy only the text between the markers)
+--- DESCRIPTION START ---
+Blueprint + Cavity makes AI answers inspectable through two parallel cases: construction measurement and nanoscale light cavities. Our goal is to expose the decisions behind an answer and provide feedback that reflects meaningful progress.
+
+**Blueprint: an environment for learning from real mistakes**
+An agent receives a construction drawing and a work order. It can inspect PDFs and images, render crops, use OCR and geometry tools, calculate quantities, and submit a value, unit, confidence, evidence regions and assumptions. The challenge is spatial judgment: choosing the correct room boundary, recovering scale and deducting openings.
+
+We built 36 Harbor-compatible tasks across 12 scenarios and three document conditions: vector PDF, clean image and synthetic scan. The offline reward combines numerical correctness (75%), supporting evidence (15%) and confidence calibration (10%). Evidence credit depends on the numerical result. A no-op earns zero; valid abstention earns at most 0.1.
+
+The historical evaluation contains 144 trials: 36 Kimi, 36 DeepSeek, 36 privileged gold-reference oracle and 36 no-op. The 72 model attempts include saved tool replays. Mean rewards are 0.8073 for Kimi and 0.3924 for DeepSeek, versus 1.0 for the oracle and 0.0 for no-op. These are rewards, not accuracy percentages. In one room-area task, DeepSeek reports 29.1 m² and Kimi 26.4 m² against a 26.9 m² reference; the replay reveals a boundary assumption behind the error. Visitors can inspect that reasoning, measure the drawing themselves and use the same scorer.
+
+**Cavity: making scientific claims understandable**
+Hexagonal boron nitride (hBN) is a layered crystal where infrared light couples to atomic vibrations. Cavity geometry changes the resulting fields and resonances. Our interactive explorer presents precomputed RCWA/COMSOL fields, modes and spectra so visitors can see the physics before assessing a numerical claim.
+
+Changing the analysis window on the same saved spectrum changes the estimated quality factor Q from 52.7 to 96.4. This demonstrates sensitivity to analysis choices, not an improved device. A companion browser-local checker compares a supported numeric answer pasted from an AI reply with a fixed mathematical reference; it does not validate a proof or cavity design. Cavity is a parallel research case, separate from the construction benchmark; it runs no new solver or live model call.
+
+**Built for inspection and reproduction**
+The password-free website includes guided interactions, a results ledger, model replays, an English-captioned film and a detailed Chinese manual. The public repository includes tasks, scoring code, documented sources and 240 deterministic verifier checks. These checks test scoring behavior; they are not additional model runs.
+
+The stack combines Python/FastAPI, a browser-based interface, Harbor/OpenCode, Verda inference and Modal execution for the recorded evaluations. Each model/task pair has one recorded formal attempt. The oracle has privileged answers; three independent repeats and model-weight training have not been performed. Shared drawing sources do not establish unseen-building generalization. A separate command prepares fresh judge runs; execution requires provider credentials and its runtime network policy remains unverified.
+--- DESCRIPTION END ---
+
+CHALLENGE PICKER
+Select AfterQuery's "Break the Agent" challenge in the Agentic AI track. Match the sponsor and challenge title shown in the actual dropdown.
+Challenge listing: https://junction2026.com/challenges/afterquery-break-the-agent
+The listing is community-maintained; the submission platform is authoritative.
+
+PROJECT DEMO
+https://blueprint-takeoff-lab.bronze-crane-2444.chatgpt.site/
+
+SOURCE CODE
+https://github.com/Yue-fy/blueprint-cavity
+
+VIDEO
+YouTube upload is still pending. Prefer the real YouTube watch URL after uploading the prepared film.
+If the form accepts a normal web video page, the existing public player is:
+https://blueprint-takeoff-lab.bronze-crane-2444.chatgpt.site/film/
+Prepared MP4:
+https://github.com/Yue-fy/blueprint-cavity/releases/download/v1.0.0/blueprint-cavity-film.mp4
+Prepared thumbnail:
+https://github.com/Yue-fy/blueprint-cavity/releases/download/v1.0.0/youtube-thumbnail.jpg
+YouTube title and credited description are in submission/youtube-title.txt and submission/youtube-description.txt.
+
+OTHER LINK
+https://github.com/Yue-fy/blueprint-cavity/releases/tag/v1.0.0
+
+PRESENTATION (upload the PDF file; maximum 20 MB)
+docs/presentation/Blueprint-Cavity-Presentation.pdf
+https://github.com/Yue-fy/blueprint-cavity/releases/download/v1.0.0/Blueprint-Cavity-Presentation.pdf
+
+Use the title, punchline and description above in their respective fields. Do not paste section labels, instructions or DESCRIPTION markers into the form.

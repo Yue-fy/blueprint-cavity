@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Blueprint + Cavity — Presentation</title>
+<style>
+@font-face{font-family:Inter;src:url('assets/Inter-var.woff') format('woff');font-weight:100 900}
+*{box-sizing:border-box}html,body{margin:0;background:#dcdce2;color:#1d1d1f;font-family:Inter,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+@page{size:13.333333in 7.5in;margin:0}
+.slide{position:relative;width:1280px;height:720px;overflow:hidden;padding:48px 64px 54px;background:#f7f7f9;break-after:page;page-break-after:always}
+.slide:last-child{break-after:auto;page-break-after:auto}
+.dark{background:#131316;color:#f5f5f7}.white{background:#fff}
+h1,h2,h3,p{margin:0}h1{font-size:62px;line-height:1.06;letter-spacing:-3.1px;font-weight:650}h2{font-size:51px;line-height:1.09;letter-spacing:-2.4px;font-weight:620}h3{font-size:28px;line-height:1.18;letter-spacing:-.8px;font-weight:600}
+.eyebrow{font-size:15px;line-height:1.3;letter-spacing:1.7px;font-weight:600;color:#74747d;text-transform:uppercase;margin-bottom:22px}.dark .eyebrow{color:#aaabb5}
+.blue{color:#0071e3}.dark .blue{color:#53a5ff}.muted{color:#6e6e78}.dark .muted{color:#b5b5c0}
+.lead{font-size:23px;line-height:1.45;color:#5c5c67}.dark .lead{color:#c1c1cd}.body{font-size:20px;line-height:1.5;color:#5f5f69}.dark .body{color:#bebec8}
+.footer{position:absolute;left:64px;right:64px;bottom:24px;display:flex;justify-content:space-between;align-items:flex-end;font-size:13px;line-height:1.35;color:#777780;gap:30px}.dark .footer{color:#a0a0ad}.footer a{color:inherit;text-decoration:none}
+.page{white-space:nowrap}.two{display:grid;grid-template-columns:1fr 1fr;gap:28px}.card{border:1px solid #dedee5;border-radius:24px;overflow:hidden;background:#fff}.card.dark{background:#151518;border-color:#151518}.pill{display:inline-block;font-size:15px;line-height:1.2;padding:9px 13px;border-radius:100px;border:1px solid #d9d9e2;color:#666671}.dark .pill{border-color:#4d4d59;color:#c6c6d1}
+.cover-cases{margin-top:32px;height:393px}.cover-card{display:flex;flex-direction:column}.cover-head{height:92px;padding:23px 26px;display:flex;justify-content:space-between;align-items:center}.cover-head h3{font-size:35px}.cover-head p{font-size:16px;line-height:1.35;max-width:170px;text-align:right;color:#7a7a84}.dark .cover-head p{color:#b8b8c3}
+.plan-window{position:relative;overflow:hidden;background:#fff;flex:1}.plan-window img{position:absolute;width:602.352941%;height:auto;left:-297.058824%;top:50%;transform:translateY(-81.773386%)}
+.cavity-window{flex:1;min-height:0;background:#141416;overflow:hidden}.cavity-window img{width:100%;height:100%;object-fit:cover;display:block}
+.brand{font-size:25px;line-height:1;letter-spacing:-.8px;font-weight:600;margin-bottom:26px}.brand span{color:#94949e;margin:0 8px}
+.environment{display:grid;grid-template-columns:440px 1fr;gap:52px;margin-top:32px}.environment .plan-window{height:390px;border:1px solid #dddde5;border-radius:24px}.task-label{position:absolute;left:20px;bottom:20px;padding:15px 18px;border-radius:15px;background:#fffffff2;font-size:19px;line-height:1.3;max-width:395px;border:1px solid #dedee5}
+.step{display:grid;grid-template-columns:38px 1fr;gap:13px;margin-bottom:17px}.step .num{color:#0071e3;font-size:18px;font-weight:600;padding-top:3px}.step h3{font-size:21px;margin-bottom:4px}.step p{font-size:17px;line-height:1.4;color:#666670}.reward{margin-top:20px}.reward-line{display:flex;height:12px;border-radius:10px;overflow:hidden;margin:12px 0}.reward-line span:nth-child(1){background:#0071e3;width:75%}.reward-line span:nth-child(2){background:#60aaff;width:15%}.reward-line span:nth-child(3){background:#b2d7ff;width:10%}.reward-legend{display:flex;justify-content:space-between;font-size:15px;color:#585864}.note{font-size:15px;line-height:1.45;color:#777780}.dark .note{color:#b0b0bd}
+.boundary-layout{display:grid;grid-template-columns:530px 1fr;gap:48px;margin-top:30px}.boundary-svg{width:530px;height:398px;border:1px solid #dedee5;border-radius:24px;background:white}.legend{display:flex;gap:24px;margin-top:13px;font-size:15px;color:#676771}.legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px}.quote{border-left:3px solid #d79031;padding:3px 0 3px 17px;font-size:21px;line-height:1.45;margin-top:14px;color:#5b5b66}.answers{display:flex;gap:25px;margin:24px 0 20px}.answer{flex:1;border-top:1px solid #d7d7e0;padding-top:15px}.answer .model{font-size:16px;color:#73737e}.answer strong{display:block;font-size:51px;font-weight:620;letter-spacing:-2px;line-height:1.2;margin-top:7px}.answer strong small{font-size:21px;font-weight:450;letter-spacing:0}.answer .delta{font-size:15px;margin-top:7px;color:#71717c}
+.results-layout{display:grid;grid-template-columns:690px 1fr;gap:50px;margin-top:36px}.chart{padding:3px 0}.bar-row{display:grid;grid-template-columns:214px 1fr 64px;align-items:center;gap:14px;margin-bottom:25px}.bar-label{font-size:18px;line-height:1.3}.bar-label small{display:block;font-size:13px;color:#777782;margin-top:4px}.track{height:17px;border-radius:4px;background:#e9e9ef;overflow:hidden}.fill{height:100%;background:#0071e3;border-radius:4px}.fill.gray{background:#9999a4}.fill.charcoal{background:#555562}.bar-value{font-size:23px;font-weight:550;text-align:right}.stat{padding-bottom:18px;margin-bottom:17px;border-bottom:1px solid #dddde5}.stat strong{font-size:48px;letter-spacing:-2px;line-height:1}.stat p{font-size:17px;color:#6d6d79;line-height:1.35;margin-top:7px}.scope-note{margin-top:18px;border-top:1px solid #dedee5;padding-top:17px;font-size:17px;line-height:1.5;color:#5e5e69}
+.physics-layout{display:grid;grid-template-columns:420px 1fr;gap:28px;margin-top:26px}.physics-image{height:411px;border-radius:24px;overflow:hidden;background:#141416;border:1px solid #363640}.physics-image img{width:100%;height:100%;object-fit:cover}.physics-copy .lead{font-size:22px}.physics-copy .body{font-size:19px;margin-top:22px}.coupling{font-size:24px;line-height:1.45;margin-top:26px}.physics-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}
+.q-layout{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:32px}.q-card{background:#1c1c20;border:1px solid #393941;border-radius:22px;overflow:hidden}.q-head{padding:21px 25px 14px;display:flex;justify-content:space-between;align-items:center}.q-head p{font-size:18px;color:#c1c1cc;line-height:1.4}.q-head strong{font-size:47px;letter-spacing:-2px;font-weight:600}.q-head strong small{font-size:25px;letter-spacing:0;margin-right:4px}.q-card img{display:block;width:100%;height:203px;object-fit:contain;background:#111}.q-bottom{margin-top:26px;display:flex;justify-content:space-between;gap:28px;align-items:center}.q-bottom .lead{font-size:24px;color:#f0f0f5;max-width:650px}.q-bottom .note{max-width:380px;font-size:16px}
+.checks{margin-top:29px}.check-card{padding:28px 30px;height:397px}.check-card .eyebrow{font-size:13px;margin-bottom:15px}.check-card h3{font-size:29px;margin-bottom:16px}.check-table{width:100%;border-collapse:collapse;font-size:17px;margin-top:17px}.check-table td{border-bottom:1px solid #dedee5;padding:10px 0}.check-table td:last-child{text-align:right;font-weight:600;color:#0071e3}.check-card .body{font-size:18px}.checker-flow{font-size:21px;line-height:1.5;padding:15px 0 19px;color:#0071e3}.check-card .note{font-size:15px}.fixed-scope{margin-top:18px;border-top:1px solid #dedee5;padding-top:16px;font-size:17px;line-height:1.45;color:#5d5d69}
+.closing-title{max-width:1020px;font-size:67px}.closing-cases{margin-top:34px;height:257px}.closing-case{padding:27px 30px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}.closing-case h3{font-size:36px}.closing-case p{font-size:19px;line-height:1.4;max-width:320px;color:#6d6d77}.closing-case.dark p{color:#bdbdc8}.closing-case a{font-size:20px;color:#0071e3;text-decoration:none;position:relative;z-index:2}.closing-case.dark a{color:#72b7ff}.closing-links{display:grid;grid-template-columns:1.45fr 1fr;gap:34px;margin-top:27px}.closing-links .label{font-size:14px;letter-spacing:1px;color:#7a7a86;text-transform:uppercase;margin-bottom:7px}.closing-links a{font-size:17px;color:#3b3b46;text-decoration:none;line-height:1.4;overflow-wrap:anywhere}.closing-links .note{font-size:15px;margin-top:7px}
+@media print{html,body{background:#fff}.slide{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style></head>
+<body>
+<section class="slide" data-title="Two parallel cases">
+  <div class="brand">Blueprint <span>+</span> Cavity</div>
+  <h1>Can AI show <span class="blue">its work?</span></h1>
+  <p class="lead" style="margin-top:17px">Two parallel cases. Real questions. Checkable answers.</p>
+  <div class="two cover-cases">
+    <article class="card cover-card"><div class="cover-head"><h3>Blueprint</h3><p>Construction<br>reasoning</p></div><div class="plan-window"><img src="../../data/previews/bp-01-clean.png" alt="Original licensed school drawing, cropped around the fitness room"></div></article>
+    <article class="card dark cover-card"><div class="cover-head"><h3>Cavity</h3><p>Nanocavity<br>research</p></div><div class="cavity-window"><img src="../../web/cavity-preview.png" alt="Original precomputed hBN field visualization"></div></article>
+  </div>
+  <div class="footer"><span>Recorded construction evaluation · Precomputed research exploration</span><span class="page">01 / 08</span></div>
+</section>
+
+<section class="slide white" data-title="The RL environment">
+  <p class="eyebrow">Blueprint / The agent environment</p>
+  <h2>A clear task.<br><span class="blue">A checkable answer.</span></h2>
+  <div class="environment">
+    <div class="plan-window"><img src="../../data/previews/bp-01-clean.png" alt="Fitness room on the task drawing"><div class="task-label">Goal: measure the fitness room’s<br><b>net internal floor area.</b></div></div>
+    <div>
+      <div class="step"><span class="num">01</span><div><h3>Observe</h3><p>A licensed drawing, a work order and tool outputs.</p></div></div>
+      <div class="step"><span class="num">02</span><div><h3>Act</h3><p>Render and crop; read text with OCR; inspect geometry;<br>recover scale and calculate.</p></div></div>
+      <div class="step"><span class="num">03</span><div><h3>Submit</h3><p>Quantity, unit, drawing evidence, confidence<br>and assumptions.</p></div></div>
+      <div class="reward"><h3 style="font-size:21px">Receive a deterministic reward, 0–1</h3><div class="reward-line"><span></span><span></span><span></span></div><div class="reward-legend"><span><b>75%</b> value</span><span><b>15%</b> evidence</span><span><b>10%</b> confidence</span></div><p class="note" style="margin-top:13px">Evidence credit is gated by the numerical answer.</p></div>
+    </div>
+  </div>
+  <div class="footer"><span>36 tasks · 12 scenarios × vector / clean image / synthetic scan · 5 task families</span><span class="page">02 / 08</span></div>
+</section>
+
+<section class="slide" data-title="A concrete boundary error">
+  <p class="eyebrow">Blueprint / A saved model decision</p>
+  <h2>One boundary choice.<br><span class="blue">A different answer.</span></h2>
+  <div class="boundary-layout">
+    <div>
+      <svg class="boundary-svg" viewBox="2160 2160 440 385" role="img" aria-label="Original drawing with saved agent and reference extents">
+        <image href="../../data/previews/bp-01-clean.png" width="4096" height="2897"/>
+        <rect x="2295" y="2225" width="118" height="293" fill="#e58a23" fill-opacity=".14" stroke="#c97816" stroke-width="2.6"/>
+        <rect x="2294.2465" y="2250.7574" width="118.9396" height="268.8299" fill="#0071e3" fill-opacity=".1" stroke="#0071e3" stroke-width="3"/>
+      </svg>
+      <div class="legend"><span><i style="background:#cf8729"></i>DeepSeek’s submitted extent</span><span><i style="background:#0071e3"></i>Reference footprint</span></div>
+    </div>
+    <div>
+      <p class="lead" style="font-size:22px">The saved run treats the lower horizontal line as furniture or equipment.</p>
+      <p class="quote">Its selected region extends above<br>the reference inner-wall boundary.</p>
+      <div class="answers"><div class="answer"><p class="model">DeepSeek</p><strong>29.1 <small>m²</small></strong><p class="delta">+8.2% from reference</p></div><div class="answer"><p class="model">Kimi</p><strong class="blue">26.4 <small>m²</small></strong><p class="delta">−1.9% from reference</p></div></div>
+      <p class="body">Reference: <b>26.9 m²</b> · Numeric tolerance: <b>2%</b></p>
+      <p class="note" style="margin-top:12px">Same drawing and task. This boundary choice contributes to the discrepancy; it is not the only numerical factor.</p>
+    </div>
+  </div>
+  <div class="footer"><a href="https://blueprint-takeoff-lab.bronze-crane-2444.chatgpt.site/#tour/1">Inspect the saved actions, submitted evidence and scoring in the guided case ↗</a><span class="page">03 / 08</span></div>
+</section>
+
+<section class="slide white" data-title="Historical results and limits">
+  <p class="eyebrow">Blueprint / Historical evidence</p>
+  <h2>A visible reward gap.<br><span class="blue">A defined scope.</span></h2>
+  <div class="results-layout">
+    <div>
+      <div class="chart">
+        <div class="bar-row"><div class="bar-label">Privileged reference<small>Gold-reading oracle · scoring ceiling</small></div><div class="track"><div class="fill gray" style="width:100%"></div></div><div class="bar-value">1.000</div></div>
+        <div class="bar-row"><div class="bar-label">Kimi<small>36 historical model attempts</small></div><div class="track"><div class="fill" style="width:80.7308%"></div></div><div class="bar-value">0.807</div></div>
+        <div class="bar-row"><div class="bar-label">DeepSeek<small>36 historical model attempts</small></div><div class="track"><div class="fill charcoal" style="width:39.2409%"></div></div><div class="bar-value">0.392</div></div>
+        <div class="bar-row"><div class="bar-label">No-op<small>36 historical control trials</small></div><div class="track"></div><div class="bar-value">0.000</div></div>
+      </div>
+      <p class="note">Mean verifier reward, not accuracy. The oracle uses privileged gold;<br>it is not a same-input learned baseline.</p>
+    </div>
+    <div><div class="stat"><strong>72</strong><p>Actual model attempts<br>with saved replays</p></div><div class="stat"><strong>144</strong><p>Historical trials total<br>including oracle and no-op</p></div></div>
+  </div>
+  <p class="scope-note"><b>One recorded attempt per model/task.</b> No three-repeat claim. No model weights trained.<br>Shared drawings and synthetic scans do not establish generalization to unseen buildings.</p>
+  <div class="footer"><a href="https://github.com/Yue-fy/blueprint-cavity/blob/main/docs/EVALUATION.md">Source: recorded construction evaluation · warnings remain in the denominator ↗</a><span class="page">04 / 08</span></div>
+</section>
+
+<section class="slide dark" data-title="Cavity physical setting">
+  <p class="eyebrow">Cavity / The physical question</p>
+  <h2>How can light fit<br><span class="blue">into a space this small?</span></h2>
+  <div class="physics-layout">
+    <div class="physics-copy"><p class="lead">hBN is a layered crystal.<br>Infrared light couples to<br>vibrations of its lattice.</p><div class="coupling">Light + lattice vibrations<br><span class="blue">→ confined optical modes</span></div><p class="body">The cavity’s geometry shapes the patterns.<br>Explore fields, modes and spectra<br>before accepting an interpretation.</p><div class="physics-tags"><span class="pill">Precomputed RCWA</span><span class="pill">COMSOL</span></div></div>
+    <div><div class="physics-image"><img src="../../web/cavity-preview.png" alt="Precomputed hBN nanocavity field, heights stretched six times"></div><p class="note" style="margin-top:12px">Computed field visualization · heights stretched ×6 · not microscopy.</p></div>
+  </div>
+  <div class="footer"><span>Independent research case. No live physical simulation or hBN agent benchmark is claimed.</span><span class="page">05 / 08</span></div>
+</section>
+
+<section class="slide dark" data-title="One spectrum two windows">
+  <p class="eyebrow">Cavity / Measurement sensitivity</p>
+  <h2>Same spectrum.<br><span class="blue">Different Q estimates.</span></h2>
+  <div class="q-layout">
+    <article class="q-card"><div class="q-head"><p>Full analysis window<br><span class="note">1420–1580 cm⁻¹</span></p><strong><small>Q</small>52.7</strong></div><img src="assets/q-full.png" alt="Actual explorer plot using the full spectral window"></article>
+    <article class="q-card"><div class="q-head"><p>Narrow analysis window<br><span class="note">1522–1554 cm⁻¹</span></p><strong><small>Q</small>96.4</strong></div><img src="assets/q-narrow.png" alt="The same explorer spectrum using the narrow analysis window"></article>
+  </div>
+  <div class="q-bottom"><p class="lead">A higher estimate does not mean<br>the physical cavity improved.</p><p class="note">Changing the window changes the endpoint baseline and estimated linewidth. These are not new experimental ground truths.</p></div>
+  <div class="footer"><a href="https://blueprint-takeoff-lab.bronze-crane-2444.chatgpt.site/hbn/#tab=4">Actual browser plots from the saved data · try the window experiment ↗</a><span class="page">06 / 08</span></div>
+</section>
+
+<section class="slide" data-title="Two kinds of checks">
+  <p class="eyebrow">Integrity / Keep the checks explicit</p>
+  <h2>Check the score.<br><span class="blue">Check the claim’s scope.</span></h2>
+  <div class="two checks">
+    <article class="card check-card"><p class="eyebrow">Environment scoring audit</p><h3>240 offline fixtures.</h3><p class="body">40 tasks × 6 deterministic controls.<br><b>These are not new model runs.</b></p><table class="check-table"><tr><td>Reference answer</td><td>1.00</td></tr><tr><td>No submission</td><td>0.00</td></tr><tr><td>Explicit abstention</td><td>0.10</td></tr></table><p class="note" style="margin-top:14px">Also checks confident-wrong answers, duplicate keys and overflowing numbers. “Stop-early” is explicit abstention after observing.</p></article>
+    <article class="card check-card"><p class="eyebrow">Cavity / Local reply checker</p><h3>A fixed mathematical reference.</h3><p class="body">Paste an AI’s answer to the toy problem.<br>The browser compares supported numbers.</p><p class="checker-flow">Paste → Parse → Compare</p><p class="body">No live model API call.<br>No scientific proof verification.<br>No cavity-design validation.</p><p class="note" style="margin-top:14px">This checker is independent of the hBN field and spectral plots. It does not check a new physical claim against the current cavity.</p></article>
+  </div>
+  <div class="footer"><span>Audit scope: 36 construction + 4 separate mathematical tasks. Cavity is outside both historical evaluation matrices.</span><span class="page">07 / 08</span></div>
+</section>
+
+<section class="slide white" data-title="Explore the product">
+  <div class="brand">Blueprint <span>+</span> Cavity</div>
+  <h1 class="closing-title">Explore the work.<br><span class="blue">Check the evidence.</span></h1>
+  <div class="two closing-cases"><article class="card closing-case"><h3>Blueprint</h3><p>Follow a real drawing task,<br>replay a decision and inspect its reward.</p><a href="https://blueprint-takeoff-lab.bronze-crane-2444.chatgpt.site/#tour/1">Open the guided case ↗</a></article><article class="card dark closing-case"><h3>Cavity</h3><p>Explore stored fields,<br>change a window and try the local checker.</p><a href="https://blueprint-takeoff-lab.bronze-crane-2444.chatgpt.site/#cavity">Open the research case ↗</a></article></div>
+  <div class="closing-links"><div><p class="label">Public demo</p><a href="https://blueprint-takeoff-lab.bronze-crane-2444.chatgpt.site/">blueprint-takeoff-lab.bronze-crane-2444.chatgpt.site</a><p class="note">No login or password.</p></div><div><p class="label">Source, evidence and reproduction</p><a href="https://github.com/Yue-fy/blueprint-cavity">github.com/Yue-fy/blueprint-cavity</a><p class="note">Runnable product, saved evidence and offline checks.</p></div></div>
+  <div class="footer"><span>Two parallel cases. Their data and evaluation scopes remain separate.</span><span class="page">08 / 08</span></div>
+</section>
+</body></html>

@@ -1,0 +1,62 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "title": "Two parallel cases",
+      "width": 1280,
+      "height": 720,
+      "outside": []
+    },
+    {
+      "page": 2,
+      "title": "The RL environment",
+      "width": 1280,
+      "height": 720,
+      "outside": []
+    },
+    {
+      "page": 3,
+      "title": "A concrete boundary error",
+      "width": 1280,
+      "height": 720,
+      "outside": []
+    },
+    {
+      "page": 4,
+      "title": "Historical results and limits",
+      "width": 1280,
+      "height": 720,
+      "outside": []
+    },
+    {
+      "page": 5,
+      "title": "Cavity physical setting",
+      "width": 1280,
+      "height": 720,
+      "outside": []
+    },
+    {
+      "page": 6,
+      "title": "One spectrum two windows",
+      "width": 1280,
+      "height": 720,
+      "outside": []
+    },
+    {
+      "page": 7,
+      "title": "Two kinds of checks",
+      "width": 1280,
+      "height": 720,
+      "outside": []
+    },
+    {
+      "page": 8,
+      "title": "Explore the product",
+      "width": 1280,
+      "height": 720,
+      "outside": []
+    }
+  ],
+  "browser_errors": [],
+  "pdf_bytes": 2228754
+}

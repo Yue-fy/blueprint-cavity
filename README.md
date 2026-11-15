@@ -21,6 +21,7 @@ The **[public demo](https://blueprint-takeoff-lab.bronze-crane-2444.chatgpt.site
 - **2–4 minutes:** follow the Blueprint room-area story, then open Cavity's linewidth-window experiment.
 - **10 minutes:** use the [judge's review guide](docs/REVIEW_GUIDE.md) to inspect a replay, submit a human answer, explore Cavity and check the evidence boundaries.
 - **Full detail:** [44-page Chinese product manual](docs/PRODUCT_MANUAL.zh-CN.pdf) and [10-page Chinese walkthrough](docs/JUDGE_WALKTHROUGH.zh-CN.pdf).
+- **Submission:** [Copy-ready form fields](submission/form-fields.en.txt) and an [English presentation PDF](docs/presentation/Blueprint-Cavity-Presentation.pdf).
 
 The film, covers, English subtitles, upload copy and manuals are available in [Release v1.0.0](https://github.com/Yue-fy/blueprint-cavity/releases/tag/v1.0.0) and the [public download hub](https://blueprint-takeoff-lab.bronze-crane-2444.chatgpt.site/submit/). The prepared film has not yet been uploaded to YouTube.
 
@@ -81,7 +82,7 @@ These numbers are **rewards, not accuracy percentages**. The 144 trials include 
 
 hBN is a layered crystal in which infrared light couples to lattice vibrations. The cavity geometry affects how those coupled waves fit inside the structure. Cavity makes the saved fields, modes and spectra visible before asking whether a numerical interpretation is supported.
 
-On the same saved spectrum, a full window produces a Q estimate of **52.7**, while a narrower window produces **96.4**. The interaction shows sensitivity to analysis choices. The local reply checker compares supported numbers pasted from an AI response; it does not call a model, run a new simulation or validate a scientific proof.
+On the same saved spectrum, a full window produces a Q estimate of **52.7**, while a narrower window produces **96.4**. The interaction shows sensitivity to analysis choices. A companion local reply checker compares a supported numeric answer pasted from an AI response with a fixed mathematical reference. It does not call a model, run a new simulation, validate a scientific proof or verify a cavity design.
 
 See the [Cavity source and scope](hbn_demo/README.md). A separate [four-task mathematical toy](science_demo/ENVIRONMENT.md) has its own 16 historical trials. Those trials are not hBN validation and are not included in the construction denominator.
 
