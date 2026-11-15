@@ -1,0 +1,8 @@
+{
+  "source": "demo/hbn_live/out/cavity3d_hero_mag.png",
+  "output": "web/cavity-preview.png",
+  "sha256": "6a5316d0dc87831f87f2ca8ca785e7777f7308e2539d7312dacf193b2dac586e",
+  "bytes": 781400,
+  "purpose": "Unmodified project-owned precomputed field visualization for the Cavity case entry. CSS controls display size only.",
+  "authorization": "hbn_demo/authorization.json"
+}

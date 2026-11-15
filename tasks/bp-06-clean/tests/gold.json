@@ -1,0 +1,234 @@
+{
+  "value": 18,
+  "unit": "count",
+  "alt_values": [],
+  "family": "openings",
+  "pages": [
+    {
+      "width": 4096,
+      "height": 2897,
+      "space": "image_px"
+    }
+  ],
+  "evidence": [
+    {
+      "page": 0,
+      "bbox": [
+        333.2257,
+        639.8697,
+        359.981,
+        691.5827
+      ],
+      "space": "image_px",
+      "note": "West facade window opening"
+    },
+    {
+      "page": 0,
+      "bbox": [
+        333.2257,
+        701.8962,
+        359.981,
+        753.6092
+      ],
+      "space": "image_px",
+      "note": "West facade window opening"
+    },
+    {
+      "page": 0,
+      "bbox": [
+        333.2257,
+        825.9491,
+        359.981,
+        877.808
+      ],
+      "space": "image_px",
+      "note": "West facade window opening"
+    },
+    {
+      "page": 0,
+      "bbox": [
+        333.2257,
+        887.9755,
+        359.981,
+        939.8345
+      ],
+      "space": "image_px",
+      "note": "West facade window opening"
+    },
+    {
+      "page": 0,
+      "bbox": [
+        333.2257,
+        1012.1743,
+        359.981,
+        1063.8874
+      ],
+      "space": "image_px",
+      "note": "West facade window opening"
+    },
+    {
+      "page": 0,
+      "bbox": [
+        333.2257,
+        1074.2008,
+        359.981,
+        1125.9138
+      ],
+      "space": "image_px",
+      "note": "West facade window opening"
+    },
+    {
+      "page": 0,
+      "bbox": [
+        333.2257,
+        1136.2272,
+        359.981,
+        1188.0862
+      ],
+      "space": "image_px",
+      "note": "West facade window opening"
+    },
+    {
+      "page": 0,
+      "bbox": [
+        333.2257,
+        1198.3996,
+        359.981,
+        1250.1127
+      ],
+      "space": "image_px",
+      "note": "West facade window opening"
+    },
+    {
+      "page": 0,
+      "bbox": [
+        333.2257,
+        1260.4261,
+        359.981,
+        1312.1391
+      ],
+      "space": "image_px",
+      "note": "West facade window opening"
+    },
+    {
+      "page": 0,
+      "bbox": [
+        333.2257,
+        1384.479,
+        359.981,
+        1436.192
+      ],
+      "space": "image_px",
+      "note": "West facade window opening"
+    },
+    {
+      "page": 0,
+      "bbox": [
+        333.2257,
+        1446.5054,
+        359.981,
+        1498.3644
+      ],
+      "space": "image_px",
+      "note": "West facade window opening"
+    },
+    {
+      "page": 0,
+      "bbox": [
+        333.2257,
+        1570.7043,
+        359.981,
+        1622.4173
+      ],
+      "space": "image_px",
+      "note": "West facade window opening"
+    },
+    {
+      "page": 0,
+      "bbox": [
+        333.2257,
+        1632.7307,
+        359.981,
+        1684.4437
+      ],
+      "space": "image_px",
+      "note": "West facade window opening"
+    },
+    {
+      "page": 0,
+      "bbox": [
+        333.2257,
+        1694.7572,
+        359.981,
+        1746.4702
+      ],
+      "space": "image_px",
+      "note": "West facade window opening"
+    },
+    {
+      "page": 0,
+      "bbox": [
+        333.2257,
+        1756.7836,
+        359.981,
+        1808.6426
+      ],
+      "space": "image_px",
+      "note": "West facade window opening"
+    },
+    {
+      "page": 0,
+      "bbox": [
+        333.2257,
+        1818.956,
+        359.981,
+        1870.669
+      ],
+      "space": "image_px",
+      "note": "West facade window opening"
+    },
+    {
+      "page": 0,
+      "bbox": [
+        333.2257,
+        1880.9825,
+        359.981,
+        1932.6955
+      ],
+      "space": "image_px",
+      "note": "West facade window opening"
+    },
+    {
+      "page": 0,
+      "bbox": [
+        333.2257,
+        1943.0089,
+        359.981,
+        1994.7219
+      ],
+      "space": "image_px",
+      "note": "West facade window opening"
+    }
+  ],
+  "scenario_id": "bp-06",
+  "provenance": {
+    "reference_id": "sl-237-dfe_pdf",
+    "manifest": "stoa_like_dev.jsonl",
+    "manifest_sha256": "f6bb375c1379f957f2bdf842f1552108cc41341c350ee648756e5948fd4dd49f",
+    "reference_row_sha256": "002d45d14a79079632ee18d6ca8bc7107fe339606343cbba6bd9030a77f9a419",
+    "verified": "expert",
+    "original_question": "How many windows are on the west facade of the classroom wing?",
+    "original_how": "expert (certain, workbench 20:48, gold_id dfe-08): Where I looked: the outer wall on the left side of the classroom wing, from the Plant Room at the top to the stair at the bottom. There is no north arrow on this sheet, so I took the top of the sheet as north, which makes the left side west. Scale: only used to check sizes (scale bar, 0 to 20 m). Method: I went along the wall from north to south and looked at every gap in the black wall. Window: a gap with thin parallel lines inside it (the glazing). All of them are the same size, ≈1.30 m wide. Door: a gap with no lines inside and a swing arc outside, ≈0.92 m wide. There are 4, the classrooms' doors to the outside. The Plant Room opening at the top has zigzag leaves: a louvred double door, not a window. The doors split the windows into groups: 2, 2, 5, 2, 7 = 18. Decisions: neighbouring windows are separated by solid wall piers (≈0.5 m), so each one counts as a separate window. Glazed do",
+    "gold_author": "human expert (Ziying), expert workbench",
+    "evidence_author": "AfterQuery curation agent, not human expert",
+    "evidence_method": "New boxes from normalized vector geometry/text and visual drawing review; region boxes identify scope, not exhaustive geometric proof.",
+    "expert_reference_id": "h-5939f2951c86",
+    "expert_method": "Where I looked: the outer wall on the left side of the classroom wing, from the Plant Room at the top to the stair at the bottom. There is no north arrow on this sheet, so I took the top of the sheet as north, which makes the left side west.\nScale: only used to check sizes (scale bar, 0 to 20 m).\nMethod: I went along the wall from north to south and looked at every gap in the black wall.\nWindow: a gap with thin parallel lines inside it (the glazing). All of them are the same size, ≈1.30 m wide.\nDoor: a gap with no lines inside and a swing arc outside, ≈0.92 m wide. There are 4, the classrooms' doors to the outside.\nThe Plant Room opening at the top has zigzag leaves: a louvred double door, not a window. The doors split the windows into groups: 2, 2, 5, 2, 7 = 18.\nDecisions: neighbouring windows are separated by solid wall piers (≈0.5 m), so each one counts as a separate window. Glazed doors would count as doors, but there are none here.\nResult: 18. Exact count, if west = left side of the sheet.\n\nRules a machine can reuse:\n\nDirection words (\"west facade\"): find the north arrow; if there is none, take the top of the sheet as north and say so.\nWindow symbol on CAD plans: a gap in the wall with thin parallel lines inside (glazing).\nDoor symbol: a gap with no lines inside, plus a swing arc.\nWall piers between gaps mean separate windows, even when the windows are the same size and close together.\nSanity check: a facade with classrooms behind it always has windows; 0 is not a plausible answer.",
+    "expert_author": "expert",
+    "expert_method_sha256": "252ece20c516d67c913aec8218c3c394cadb3c4bdc1889b981345272250b4649",
+    "independent_check": "Vector glazing centerlines at x=142.421 pt yield 18 distinct opening spans, matching expert groups 2/2/5/2/7; narrow west-facade crop visually inspected."
+  },
+  "source_asset_sha256": "2622eb4115c23a363de088f3b38c277f9d782d05212f6bbdb99a68b39663e1cd",
+  "input_sha256": "9e2f1060d2ad456ef081341932d6bac71d9f2dca33f955a67f1b9face7547b61",
+  "condition": "clean"
+}

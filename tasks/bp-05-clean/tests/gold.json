@@ -1,0 +1,46 @@
+{
+  "value": 22.0,
+  "unit": "m",
+  "alt_values": [],
+  "family": "skirting",
+  "pages": [
+    {
+      "width": 4096,
+      "height": 2897,
+      "space": "image_px"
+    }
+  ],
+  "evidence": [
+    {
+      "page": 0,
+      "bbox": [
+        2418.294,
+        1866.3393,
+        2599.4033,
+        2136.872
+      ],
+      "space": "image_px",
+      "note": "Kitchen L-shaped perimeter and door openings; box includes cut-out rooms"
+    }
+  ],
+  "scenario_id": "bp-05",
+  "provenance": {
+    "reference_id": "sl-258-dfe_pdf",
+    "manifest": "stoa_like_dev.jsonl",
+    "manifest_sha256": "f6bb375c1379f957f2bdf842f1552108cc41341c350ee648756e5948fd4dd49f",
+    "reference_row_sha256": "dac16fc0fed5a87fefcd15aacc9414ea67c142182a74d5832a41c9758f55cef4",
+    "verified": "expert",
+    "original_question": "How many metres of skirting does the Kitchen need (room perimeter minus door openings)?",
+    "original_how": "expert (certain, workbench 21:17, gold_id dfe-05): Where I looked: the room labelled \"Kitchen\" in the east wing, east of the Servery and Furniture Store, south of the two Plant Rooms. Scale: Set scale on the scale bar, 0 to 20 m (1 m ≈ 60.6 px at full resolution); the printed 1:200 on A2 gives the same. Method: the Kitchen is L-shaped: the Store, Changing and Toilet block cuts out its bottom-right corner. Going round the inner wall faces: top 5.21 m, right (outer wall) down to the cut-out 6.04 m, top of the cut-out 3.65 m, left side of the cut-out (Store wall) 1.80 m, bottom 1.57 m, left (Servery wall) 7.84 m. Perimeter 26.11 m. Door openings in this perimeter: double door to outside (right wall) 1.70 m; single door to the Servery (left wall) 0.87 m; single door to the Store 0.84 m and single door to the Changing room 0.68 m (both in the top wall of the cut-out). Total 4.09 m. 26.11 − 4.09 = 22.02 m. Decisions: the Toilet door opens from",
+    "gold_author": "human expert (Ziying), expert workbench",
+    "evidence_author": "AfterQuery curation agent, not human expert",
+    "evidence_method": "New boxes from normalized vector geometry/text and visual drawing review; region boxes identify scope, not exhaustive geometric proof.",
+    "expert_reference_id": "h-8902149eeba5",
+    "expert_method": "Where I looked: the room labelled \"Kitchen\" in the east wing, east of the Servery and Furniture Store, south of the two Plant Rooms.\nScale: Set scale on the scale bar, 0 to 20 m (1 m ≈ 60.6 px at full resolution); the printed 1:200 on A2 gives the same.\nMethod: the Kitchen is L-shaped: the Store, Changing and Toilet block cuts out its bottom-right corner. Going round the inner wall faces: top 5.21 m, right (outer wall) down to the cut-out 6.04 m, top of the cut-out 3.65 m, left side of the cut-out (Store wall) 1.80 m, bottom 1.57 m, left (Servery wall) 7.84 m. Perimeter 26.11 m. Door openings in this perimeter: double door to outside (right wall) 1.70 m; single door to the Servery (left wall) 0.87 m; single door to the Store 0.84 m and single door to the Changing room 0.68 m (both in the top wall of the cut-out). Total 4.09 m. 26.11 − 4.09 = 22.02 m.\nDecisions: the Toilet door opens from the Changing room, not from the Kitchen, so it is not subtracted. The window in the right wall is not subtracted (wall below it). The thin double line in the left wall (≈3.96 m, to the Servery) is drawn like a window, so it is treated as a serving hatch with wall below, as in the Multi-Purpose Hall question; if it is a full-height opening, the answer is ≈18.0 m. Door reveals are not added.\nResult: ≈ 22.0 m (±0.2 m). Check: the L-shape matters. Treating the Kitchen as a plain 5.21 × 7.84 m rectangle gives a perimeter of 26.10 m, almost the same number, but with the wrong door list (the Store and Changing doors would not be on that outline). Follow the walls, not the bounding box.",
+    "expert_author": "expert",
+    "expert_method_sha256": "18a6fdcb726af6aac28cf43f52475cda94ef468e90abd3f02a1a1e54905ee092"
+  },
+  "source_asset_sha256": "2622eb4115c23a363de088f3b38c277f9d782d05212f6bbdb99a68b39663e1cd",
+  "input_sha256": "9e2f1060d2ad456ef081341932d6bac71d9f2dca33f955a67f1b9face7547b61",
+  "condition": "clean"
+}

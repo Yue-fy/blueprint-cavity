@@ -1,0 +1,488 @@
+{
+  "kind": "offline-fixture-audit",
+  "passed": true,
+  "controls": [
+    {
+      "suite": "core",
+      "task": "bp-01-clean",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-01-scan",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-01-vector",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-02-clean",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-02-scan",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-02-vector",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-03-clean",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-03-scan",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-03-vector",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-04-clean",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-04-scan",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-04-vector",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-05-clean",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-05-scan",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-05-vector",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-06-clean",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-06-scan",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-06-vector",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-07-clean",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-07-scan",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-07-vector",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-08-clean",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-08-scan",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-08-vector",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-09-clean",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-09-scan",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-09-vector",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-10-clean",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-10-scan",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-10-vector",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-11-clean",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-11-scan",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-11-vector",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-12-clean",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-12-scan",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "core",
+      "task": "bp-12-vector",
+      "reference": 1.0,
+      "noop": 0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0,
+      "overflow_number": 0
+    },
+    {
+      "suite": "science",
+      "task": "science-a-01",
+      "reference": 1.0,
+      "noop": 0.0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0.0,
+      "overflow_number": 0.0
+    },
+    {
+      "suite": "science",
+      "task": "science-a-02",
+      "reference": 1.0,
+      "noop": 0.0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0.0,
+      "overflow_number": 0.0
+    },
+    {
+      "suite": "science",
+      "task": "science-a-03",
+      "reference": 1.0,
+      "noop": 0.0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0.0,
+      "overflow_number": 0.0
+    },
+    {
+      "suite": "science",
+      "task": "science-a-04",
+      "reference": 1.0,
+      "noop": 0.0,
+      "stop_early": 0.1,
+      "confident_wrong": 0.0,
+      "duplicate_keys": 0.0,
+      "overflow_number": 0.0
+    }
+  ],
+  "history": {
+    "core": {
+      "sha256": "69999d30e6f5c714da0796ef0437b274b5ca0824bf67a2269abe2e99eee46102",
+      "trials": 144,
+      "complete": true,
+      "models": {
+        "nop": {
+          "n": 36,
+          "expected_n": 36,
+          "complete": true,
+          "mean_reward": 0.0,
+          "warnings": 0
+        },
+        "oracle": {
+          "n": 36,
+          "expected_n": 36,
+          "complete": true,
+          "mean_reward": 1.0,
+          "warnings": 0
+        },
+        "verda/deepseek-4-1-flash-1017": {
+          "n": 36,
+          "expected_n": 36,
+          "complete": true,
+          "mean_reward": 0.3924090871444403,
+          "warnings": 2
+        },
+        "verda/kimi-k3-1-pro": {
+          "n": 36,
+          "expected_n": 36,
+          "complete": true,
+          "mean_reward": 0.8073081062604558,
+          "warnings": 0
+        }
+      }
+    },
+    "science": {
+      "sha256": "c9938412d23ac8edfb50b11f49dc74e14b31de50152d2fc1d7b14aba6cf30acc",
+      "trials": 16,
+      "complete": true,
+      "models": {
+        "nop": {
+          "n": 4,
+          "expected_n": 4,
+          "complete": true,
+          "mean_reward": 0.0,
+          "warnings": 0
+        },
+        "oracle": {
+          "n": 4,
+          "expected_n": 4,
+          "complete": true,
+          "mean_reward": 1.0,
+          "warnings": 0
+        },
+        "verda/deepseek-4-1-flash-1017": {
+          "n": 4,
+          "expected_n": 4,
+          "complete": true,
+          "mean_reward": 0.2533675,
+          "warnings": 2
+        },
+        "verda/kimi-k3-1-pro": {
+          "n": 4,
+          "expected_n": 4,
+          "complete": true,
+          "mean_reward": 0.7499999500000001,
+          "warnings": 0
+        }
+      }
+    }
+  },
+  "independent_repeats_completed": false,
+  "training_completed": false,
+  "limitations": [
+    "Fixture scores are not new Harbor trajectories or three independent model repeats.",
+    "Core reference uses privileged gold. Science reference derives its answer from neutral input.",
+    "Stop-early is explicit abstention (0.10), not an interrupted model trial.",
+    "Core CLI follows symlinks and can block on FIFO; frozen Harbor artifact transfer filters special files. Do not feed untrusted paths to the CLI.",
+    "Annotated box overlap is a proxy for evidence; a correct quantity can lose evidence credit.",
+    "hBN explorer and published background figure are outside the 160-trial benchmark."
+  ]
+}

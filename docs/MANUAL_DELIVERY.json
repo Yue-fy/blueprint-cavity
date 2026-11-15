@@ -1,0 +1,70 @@
+{
+  "edition": "curated public repository",
+  "original_record": "MANUAL_DELIVERY.original.json",
+  "pdf_bytes_unchanged": true,
+  "markdown_omitted_archival_links": {
+    "docs/PRODUCT_MANUAL.zh-CN.md": [
+      "../BRIEF.md",
+      "../HBN_HANDOFF.md",
+      "../demo/hbn_live/README.md",
+      "../demo/hbn_live/interactive/hbn_ai_demo.html",
+      "../demo/hbn_live/live_agent/README.md",
+      "../demo/hbn_live/modules/comsol_field/README.md",
+      "../demo/hbn_live/modules/q_widths/README.md",
+      "../demo/hbn_live/modules/rcwa_dense/README.md",
+      "../demo/hbn_live/modules/snom_map/README.md",
+      "../hbn_demo/build-manifest.json",
+      "../hbn_demo/build.py",
+      "../hbn_demo/check_browser.py",
+      "../hbn_demo/grade.py",
+      "../hbn_demo/test_grade.cjs",
+      "../hosting/DEPLOYMENT.json",
+      "../hosting/README.md",
+      "../hosting/auth.py",
+      "../hosting/modal_app.py",
+      "../hosting/proxy.mjs",
+      "../hosting/stage.py",
+      "../hosting/worker-tail.mjs",
+      "../video/README.md",
+      "../video/blueprint-launch/assets/fonts/LICENSES.md",
+      "../video/blueprint-launch/assets/nature-communications-2021-fig1.png",
+      "../video/blueprint-launch/index.html",
+      "../video/blueprint-launch/materials.md",
+      "../video/blueprint-launch/treatment.md",
+      "FINAL_VERIFICATION.md",
+      "hbn-integration/BOUNDARY_REVIEW.md",
+      "hbn-integration/FINAL_REVIEW.zh-CN.md",
+      "hbn-integration/PHYSICS_REVIEW.md",
+      "hbn-integration/UI_REVIEW.md"
+    ],
+    "docs/JUDGE_WALKTHROUGH.zh-CN.md": [
+      "../hbn_demo/build.py",
+      "../hosting/DEPLOYMENT.json",
+      "../hosting/README.md",
+      "../video/blueprint-launch/index.html",
+      "../video/blueprint-launch/materials.md",
+      "../video/blueprint-launch/treatment.md",
+      "hbn-integration/FINAL_REVIEW.zh-CN.md",
+      "hbn-integration/PHYSICS_REVIEW.md",
+      "render_manual.py"
+    ]
+  },
+  "files": {
+    "docs/PRODUCT_MANUAL.zh-CN.md": {
+      "bytes": 144286,
+      "sha256": "aeb84e06255e13234bbc1ac0cdbcb0754ef8d1eedbd7009f0be88a6e084afc72"
+    },
+    "docs/JUDGE_WALKTHROUGH.zh-CN.md": {
+      "bytes": 32404,
+      "sha256": "484839c933ae1be8ba4404a5951c1212caf7609808c2183a66abc5feeaa9d47a"
+    },
+    "docs/PRODUCT_MANUAL.zh-CN.pdf": {
+      "bytes": 1886492,
+      "sha256": "db88fc3cec2a9db00da25199d38249cd90741252797b6053f520fca050c9f3e7"
+    },
+    "docs/JUDGE_WALKTHROUGH.zh-CN.pdf": {
+      "bytes": 1038620,
+      "sha256": "fd41c094f465cb11956a812606382f6a3e44ab284384a9331bde8b19e57d6707"
+    }
+  }
+}

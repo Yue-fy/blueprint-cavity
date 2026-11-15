@@ -1,0 +1,46 @@
+{
+  "value": 50.4,
+  "unit": "m",
+  "alt_values": [],
+  "family": "skirting",
+  "pages": [
+    {
+      "width": 1684.0,
+      "height": 1191.0,
+      "space": "pdf_pt"
+    }
+  ],
+  "evidence": [
+    {
+      "page": 0,
+      "bbox": [
+        711,
+        684,
+        966,
+        879
+      ],
+      "space": "pdf_pt",
+      "note": "Multi-Purpose Hall perimeter; folding partition inside"
+    }
+  ],
+  "scenario_id": "bp-03",
+  "provenance": {
+    "reference_id": "sl-233-dfe_pdf",
+    "manifest": "stoa_like_dev.jsonl",
+    "manifest_sha256": "f6bb375c1379f957f2bdf842f1552108cc41341c350ee648756e5948fd4dd49f",
+    "reference_row_sha256": "400cb05d2277a08c78b9acd31d277b7730e251120bdeddb56f87ddad4a12dc48",
+    "verified": "expert",
+    "original_question": "How many metres of skirting (baseboard) does the Multi-Purpose Hall need (room perimeter minus door openings)?",
+    "original_how": "expert (certain, workbench 20:34, gold_id dfe-04): Where I looked: the room labelled \"Multi-Purpose Hall\" in the east wing. Scale: Set scale on the scale bar, 0 to 20 m. Check: the printed 1:200 on A2 gives the same (1 m = 5 mm on paper). Method: the hall is a plain rectangle. Length tool along the inner face of the walls: 17.84 m × 13.78 m, so the perimeter is 2 × (17.84 + 13.78) = 63.24 m. Then I measured every door opening in the perimeter walls (the gap in the black wall, not the swing arc): top wall: 2 double doors, 1.72 + 1.70 m left wall: 1 double door, 1.72 m bottom wall: 2 double doors on either side of a post, 1.72 + 1.73 m right wall: double door to the Store 1.72 m, double door to the Servery 1.63 m, single door 0.89 m total 8 openings = 12.83 m 63.24 − 12.83 = 50.41 m. Decisions: windows are not subtracted (there is wall below them, so the skirting continues). The zigzag line across the hall is a folding partition, not a wal",
+    "gold_author": "human expert (Ziying), expert workbench",
+    "evidence_author": "AfterQuery curation agent, not human expert",
+    "evidence_method": "New boxes from normalized vector geometry/text and visual drawing review; region boxes identify scope, not exhaustive geometric proof.",
+    "expert_reference_id": "h-c42de6fe2f59",
+    "expert_method": "Where I looked: the room labelled \"Multi-Purpose Hall\" in the east wing.\nScale: Set scale on the scale bar, 0 to 20 m. Check: the printed 1:200 on A2 gives the same (1 m = 5 mm on paper).\nMethod: the hall is a plain rectangle. Length tool along the inner face of the walls: 17.84 m × 13.78 m, so the perimeter is 2 × (17.84 + 13.78) = 63.24 m. Then I measured every door opening in the perimeter walls (the gap in the black wall, not the swing arc):\ntop wall: 2 double doors, 1.72 + 1.70 m\nleft wall: 1 double door, 1.72 m\nbottom wall: 2 double doors on either side of a post, 1.72 + 1.73 m\nright wall: double door to the Store 1.72 m, double door to the Servery 1.63 m, single door 0.89 m\ntotal 8 openings = 12.83 m 63.24 − 12.83 = 50.41 m.\nDecisions: windows are not subtracted (there is wall below them, so the skirting continues). The zigzag line across the hall is a folding partition, not a wall, so it gets no skirting; the small door at its top end belongs to the partition, not the perimeter. The thin double line on the right wall (≈2.69 m, to the Servery) is drawn like a window, so I treated it as a hatch or glazed screen with wall below and did not subtract it. If it is a full-height opening, the answer is ≈47.7 m. Door reveals (jamb sides) are not added.\nResult: ≈ 50.4 m (±0.5 m)",
+    "expert_author": "expert",
+    "expert_method_sha256": "e311269d0658c5b85ee51d21a83dcc0de52ce8f6da7bae5f9b1b388cc6f33a32"
+  },
+  "source_asset_sha256": "2622eb4115c23a363de088f3b38c277f9d782d05212f6bbdb99a68b39663e1cd",
+  "input_sha256": "2622eb4115c23a363de088f3b38c277f9d782d05212f6bbdb99a68b39663e1cd",
+  "condition": "vector"
+}

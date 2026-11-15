@@ -1,0 +1,50 @@
+{
+  "job_name": "smoke-no-snapshot",
+  "jobs_dir": "runs/raw",
+  "n_concurrent_trials": 1,
+  "environment": {
+    "type": "modal",
+    "delete": true,
+    "kwargs": {
+      "app_name": "blueprint-takeoff-eval",
+      "sandbox_timeout_secs": 1200
+    }
+  },
+  "agents": [
+    {
+      "name": "opencode",
+      "model_name": "verda/deepseek-4-1-flash-1017",
+      "skip_model_parsing": true,
+      "base_url": "https://inference.verda.com/v1",
+      "model_api_key_name": "VERDA_INFERENCE_API_KEY",
+      "model_api_format": "openai_chat_completions",
+      "kwargs": {
+        "version": "1.19.5",
+        "opencode_config": {
+          "provider": {
+            "verda": {
+              "npm": "@ai-sdk/openai-compatible",
+              "name": "Verda",
+              "models": {
+                "deepseek-4-1-flash-1017": {
+                  "name": "deepseek-4-1-flash-1017",
+                  "limit": {
+                    "context": 128000,
+                    "output": 8192
+                  }
+                }
+              }
+            }
+          },
+          "snapshot": false
+        },
+        "skip_install": true
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "path": "tasks/bp-10-vector"
+    }
+  ]
+}

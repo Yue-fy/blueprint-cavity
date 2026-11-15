@@ -1,0 +1,40 @@
+{
+  "authorized_on": "2026-11-14",
+  "authorized_by": "captain",
+  "scope": "Publicly licensed construction drawings; verified named development manifests and human expert annotations for AfterQuery task curation.",
+  "record": "docs/DECISIONS.md",
+  "forbidden_sources_accessed": false,
+  "imported_sources": [
+    "stoa_like_dev.jsonl selected rows",
+    "expert_methods.jsonl selected expert methods",
+    "three neutral single-sheet public PDFs"
+  ],
+  "reviewed_only": [
+    "scan_dev.jsonl metadata",
+    "human/README.md",
+    "human/questions.jsonl",
+    "human/expert_rules.jsonl",
+    "human/stoa_gold.json",
+    "human/stoa_gold_ours.jsonl",
+    "human/agent_refs_checked.jsonl"
+  ],
+  "privacy": "No private dataset drawing imported; no client addresses, system answers, cookies or secrets included. Expert methods retained only for selected public drawings.",
+  "split_policy": {
+    "unit": "scenario",
+    "holdout_scenarios": [
+      "bp-02",
+      "bp-06",
+      "bp-11"
+    ],
+    "holdout_tasks": 9,
+    "drawing_overlap": true,
+    "disclosure": "Holdout scenarios share drawings with train scenarios. All scenarios were inspected during curation; holdout means reserved from policy/prompt tuning, not a blind untouched test and not unseen-building generalization."
+  },
+  "scan_policy": {
+    "synthetic": true,
+    "seed": 20261114,
+    "operations": "grayscale; Gaussian blur radius0.55; contrast0.72; seeded additive Gaussian noise sd2.0; JPEG quality68; PNG output",
+    "geometry": "No resampling after initial rasterization; no crop, rotation or skew. Clean and synthetic scan dimensions identical, evidence coordinates unchanged.",
+    "quality_note": "Synthetic scan stress test, not a claim of real scan acquisition or full scan realism."
+  }
+}

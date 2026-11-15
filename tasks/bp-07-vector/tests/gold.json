@@ -1,0 +1,58 @@
+{
+  "value": 2,
+  "unit": "count",
+  "alt_values": [],
+  "family": "openings",
+  "pages": [
+    {
+      "width": 1684.0,
+      "height": 1191.0,
+      "space": "pdf_pt"
+    }
+  ],
+  "evidence": [
+    {
+      "page": 0,
+      "bbox": [
+        675,
+        995,
+        710,
+        1004
+      ],
+      "space": "pdf_pt",
+      "note": "Sliding entrance door, inner opening"
+    },
+    {
+      "page": 0,
+      "bbox": [
+        675,
+        1032,
+        710,
+        1042
+      ],
+      "space": "pdf_pt",
+      "note": "Sliding entrance door, outer opening"
+    }
+  ],
+  "scenario_id": "bp-07",
+  "provenance": {
+    "reference_id": "sl-260-dfe_pdf",
+    "manifest": "stoa_like_dev.jsonl",
+    "manifest_sha256": "f6bb375c1379f957f2bdf842f1552108cc41341c350ee648756e5948fd4dd49f",
+    "reference_row_sha256": "ddd42da1cf3997ff088e83e2832805a37165e181ce790f4a0d510a5d8d289b33",
+    "verified": "expert",
+    "original_question": "How many sliding doors are on the whole plan?",
+    "original_how": "expert (Ziying, from her written method for dfe-07 at 21:11; marks not exported): the 2 sliding doors of the Entrance Lobby (two opposite arrows)",
+    "gold_author": "human expert (Ziying), expert workbench",
+    "evidence_author": "AfterQuery curation agent, not human expert",
+    "evidence_method": "New boxes from normalized vector geometry/text and visual drawing review; region boxes identify scope, not exhaustive geometric proof.",
+    "expert_reference_id": "h-74690510df13",
+    "expert_method": "Door symbols on this sheet:\n\nOne quarter-circle arc with a leaf line = single door.\nTwo arcs meeting in the middle = double door; it counts as one door opening (two leaves).\nA short angled line with no arc = a cupboard or small store door drawn half-open. Whether it is a cupboard or a store depends on the space behind it: a labelled room (e.g. \"Store\") is a room door, an unlabelled shallow recess off the corridor is a cupboard.\nSmall zigzag in an outer wall = folding or louvred door. The long zigzag across the Multi-Purpose Hall is a movable partition, not a door.\nTwo opposite arrows (←→) = sliding door.\nWhere I looked: the whole plan: the classroom wing, the enclosed walkway and the east wing.\nScale: not needed for counting.\n3. Method: split the plan into 9 zones and counted zone by zone so no door was counted twice, using the door symbols in Part A. All doors: classroom wing 65, walkway 3, east wing 60 = 128. Then removed the 13 cupboard doors (short angled leaf, no room label, shallow recess off a corridor). 128 − 13 = 115.\n4. Decisions: a door counts only if a person can walk through it. So: cupboard doors are out; WC and shower cubicle doors (11) are in; walk-in Stores drawn with an angled leaf are in, because they are labelled rooms; louvred doors to plant rooms (4) and the sliding doors of the Entrance Lobby (2) are in. The lift is out: a person can enter it, but no door is drawn. The folding partition in the hall is a movable wall, not a door; the small door at its end is in.\n5. Result: 115 (±3). Without cubicle doors: 104.",
+    "expert_author": "expert",
+    "expert_method_sha256": "c62cec2ba5baf6f6f072d5534819c5ed222a80f300138e692e2fc773ef5f503f",
+    "independent_check": "Entrance Lobby crop visually shows two opposing-arrow sliding-door symbols, one inner and one outer opening."
+  },
+  "source_asset_sha256": "2622eb4115c23a363de088f3b38c277f9d782d05212f6bbdb99a68b39663e1cd",
+  "input_sha256": "2622eb4115c23a363de088f3b38c277f9d782d05212f6bbdb99a68b39663e1cd",
+  "condition": "vector"
+}

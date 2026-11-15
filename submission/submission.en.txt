@@ -1,0 +1,23 @@
+Project name
+Blueprint + Cavity
+
+Punchline
+Two cases for checking AI work: recorded construction takeoff with inspectable rewards, and precomputed nanocavity physics with local checks of numerical claims.
+
+Description
+Blueprint + Cavity makes AI work inspectable through two parallel cases with different levels of evidence.
+
+Blueprint is a construction takeoff environment for Harbor. An agent receives a licensed drawing and work order, inspects PDFs or images, uses terminal tools for rendering, OCR and geometry, and submits a quantity, unit, confidence, evidence rectangles and assumptions. The decisions are practical: recover scale, identify the correct boundary, deduct openings and distinguish printed elevations from measured areas. The 36 tasks cover 12 scenarios in vector, clean-image and explicitly synthetic-scan conditions, across five takeoff families.
+
+A deterministic offline verifier combines value (75%), evidence (15%) and confidence calibration (10%). Evidence credit is gated by the numerical result. Compatible units and documented alternatives are accepted; malformed answers earn zero. A no-op earns zero, and valid abstention can earn at most 0.1. The human workspace uses the actual scorer, so judges can measure, submit, reveal a reference and inspect the resulting reward.
+
+The historical core matrix contains 144 completed trials: 36 DeepSeek, 36 Kimi, 36 privileged gold-reference oracle and 36 no-op. The 72 model trials have actual saved replays. Mean rewards are DeepSeek 0.392409, Kimi 0.807308, oracle 1.000000 and no-op 0.000000. Rewards are not accuracy percentages. The oracle demonstrates the verifier's reference ceiling; it is not a fair same-input learned baseline. Each model/task pair has one recorded formal attempt, not three independent repeats. For one fitness-room task, DeepSeek submits 29.1 m² and Kimi 26.4 m² against a 26.9 m² reference; the replay exposes a boundary assumption behind the error.
+
+Cavity is a separate scientific interface for precomputed hBN nanocavity fields, modes, spectra and linewidth-window sensitivity. Its local checker can inspect numerical fields pasted from an AI reply and flag discrepancies. It makes no live model calls, launches no new physical simulation and does not verify a scientific proof. Cavity is not part of the construction benchmark. A separate four-task mathematical toy has its own 16 historical trials; those results are not hBN validation.
+
+The public, responsive site gives both cases equal entry points, with guided interaction, a results ledger, recorded trajectories and a Chinese manual. The 84-second captioned film follows one Blueprint task and introduces Cavity. The drawing sources, answer provenance and licensing are documented. The construction variants share source drawings, so this is an auditable environment demonstration, not an unseen-building generalization claim.
+
+For review, an offline audit checks historical completeness and 240 deterministic verifier fixtures. A separate command prepares fresh reference, three-agent-attempt, no-op and stop-early trials with source/derived hashes and a Verda-only agent network policy; execution requires an explicit flag. That future protocol has not yet been run, and runtime egress enforcement remains unverified. Historical public-network configurations may access now-published answers. No model weights have been trained and no post-training improvement is claimed.
+
+Try both cases without a login:
+https://blueprint-takeoff-lab.bronze-crane-2444.chatgpt.site/

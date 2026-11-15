@@ -1,0 +1,131 @@
+{
+  "job_name": "full-oracle-verified",
+  "jobs_dir": "runs/raw",
+  "n_concurrent_trials": 2,
+  "environment": {
+    "type": "modal",
+    "delete": true,
+    "kwargs": {
+      "app_name": "blueprint-takeoff-eval",
+      "sandbox_timeout_secs": 1200
+    }
+  },
+  "verifier": {
+    "override_timeout_sec": 60
+  },
+  "agents": [
+    {
+      "name": "oracle"
+    }
+  ],
+  "tasks": [
+    {
+      "path": "tasks/bp-01-clean"
+    },
+    {
+      "path": "tasks/bp-01-scan"
+    },
+    {
+      "path": "tasks/bp-01-vector"
+    },
+    {
+      "path": "tasks/bp-02-clean"
+    },
+    {
+      "path": "tasks/bp-02-scan"
+    },
+    {
+      "path": "tasks/bp-02-vector"
+    },
+    {
+      "path": "tasks/bp-03-clean"
+    },
+    {
+      "path": "tasks/bp-03-scan"
+    },
+    {
+      "path": "tasks/bp-03-vector"
+    },
+    {
+      "path": "tasks/bp-04-clean"
+    },
+    {
+      "path": "tasks/bp-04-scan"
+    },
+    {
+      "path": "tasks/bp-04-vector"
+    },
+    {
+      "path": "tasks/bp-05-clean"
+    },
+    {
+      "path": "tasks/bp-05-scan"
+    },
+    {
+      "path": "tasks/bp-05-vector"
+    },
+    {
+      "path": "tasks/bp-06-clean"
+    },
+    {
+      "path": "tasks/bp-06-scan"
+    },
+    {
+      "path": "tasks/bp-06-vector"
+    },
+    {
+      "path": "tasks/bp-07-clean"
+    },
+    {
+      "path": "tasks/bp-07-scan"
+    },
+    {
+      "path": "tasks/bp-07-vector"
+    },
+    {
+      "path": "tasks/bp-08-clean"
+    },
+    {
+      "path": "tasks/bp-08-scan"
+    },
+    {
+      "path": "tasks/bp-08-vector"
+    },
+    {
+      "path": "tasks/bp-09-clean"
+    },
+    {
+      "path": "tasks/bp-09-scan"
+    },
+    {
+      "path": "tasks/bp-09-vector"
+    },
+    {
+      "path": "tasks/bp-10-clean"
+    },
+    {
+      "path": "tasks/bp-10-scan"
+    },
+    {
+      "path": "tasks/bp-10-vector"
+    },
+    {
+      "path": "tasks/bp-11-clean"
+    },
+    {
+      "path": "tasks/bp-11-scan"
+    },
+    {
+      "path": "tasks/bp-11-vector"
+    },
+    {
+      "path": "tasks/bp-12-clean"
+    },
+    {
+      "path": "tasks/bp-12-scan"
+    },
+    {
+      "path": "tasks/bp-12-vector"
+    }
+  ]
+}

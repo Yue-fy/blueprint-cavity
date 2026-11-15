@@ -1,0 +1,500 @@
+{
+  "schema_version": 1,
+  "scope": "separate-four-task-generic-case-a",
+  "exported_at": "2026-11-14T23:24:35.990076+00:00",
+  "runs": [
+    {
+      "job": "science-deepseek-four",
+      "task_id": "science-a-01",
+      "model": "verda/deepseek-4-1-flash-1017",
+      "status": "graded_with_warning",
+      "reward": 0.0,
+      "error_type": "AgentTimeoutError",
+      "terminal_reason": "launcher_terminal",
+      "launcher_terminal_state": null,
+      "launcher_returncode": 0,
+      "duration_sec": 680.893075,
+      "cost_usd": null,
+      "input_tokens": 32288,
+      "output_tokens": 655,
+      "submission": null,
+      "score": {
+        "calibration": 0.0,
+        "correct": false,
+        "reason": "Answer missing or malformed JSON.",
+        "reward": 0.0,
+        "valid": false,
+        "value_score": 0.0
+      },
+      "raw_trial": "runs/science/science-deepseek-four/science-a-01__uhzBVrn"
+    },
+    {
+      "job": "science-deepseek-four",
+      "task_id": "science-a-02",
+      "model": "verda/deepseek-4-1-flash-1017",
+      "status": "completed",
+      "reward": 0.013509999999999989,
+      "error_type": null,
+      "terminal_reason": "launcher_terminal",
+      "launcher_terminal_state": null,
+      "launcher_returncode": 0,
+      "duration_sec": 206.520172,
+      "cost_usd": null,
+      "input_tokens": 127705,
+      "output_tokens": 7758,
+      "submission": {
+        "value": 8.433125e-05,
+        "confidence": 0.93,
+        "rationale": "Set A=0,c=1/2,g=1/10, f(u)=(1-u)^{3/2}, P(u)=f(u)-1. E=g(c+f(u)+f(v))=g(B+P(u)+P(v)) with B=c+2=5/2. Write F=Phi(E), Phi(E)=-0.5(log(1-E)+E). Expanding Phi about gB gives a univariate analytic h(s)=Phi(gB+g s); then F(u,v)=sum_n h_n (P(u)+P(v))^n. The diagonal coefficient a_ii = [u^i v^i]F receives contributions from all terms [u^i]P(u)^k [v^i]P(v)^{n-k} with k,n-k<=i, i.e. 2<=n<=2i. C_i=[u^i](1-u)^{3/2}=binom(3/2,i)(-1)^i ~ i^{-5/2}/Gamma(-3/2) (alternating), so C_i^2 ~ i^{-5}/(Gamma(-3/2)^2)=9 i^{-5}/(16 pi). The ratio a_ii/C_i^2 converges to a finite positive constant (not to 0, since the power structure and binomial growth offset the decay). Direct exact-rational Taylor expansion of F in u,v up to total degree N=70, computing a_ii/C_i^2 for each i, gives a monotonically converging sequence: i=40 -> 8.4331230e-5, i=60 -> 8.43312470e-5, i=70 -> 8.43312494e-5. Richardson extrapolation in 1/i using the last 10 terms yields limit 8.4331254e-5; the last three iterates agree to ~1e-11 relative, so the limit is taken as 8.433125e-5. This agrees to well within 0.1% relative error."
+      },
+      "score": {
+        "calibration": 0.1350999999999999,
+        "correct": false,
+        "reason": "ok",
+        "relative_error": 0.984778209375,
+        "reward": 0.013509999999999989,
+        "valid": true,
+        "value_score": 0.0
+      },
+      "raw_trial": "runs/science/science-deepseek-four/science-a-02__9gsA7ss"
+    },
+    {
+      "job": "science-deepseek-four",
+      "task_id": "science-a-03",
+      "model": "verda/deepseek-4-1-flash-1017",
+      "status": "completed",
+      "reward": 0.9999600000000001,
+      "error_type": null,
+      "terminal_reason": "launcher_terminal",
+      "launcher_terminal_state": null,
+      "launcher_returncode": 0,
+      "duration_sec": 330.046249,
+      "cost_usd": null,
+      "input_tokens": 979992,
+      "output_tokens": 20607,
+      "submission": {
+        "value": 0.003925651,
+        "confidence": 0.98,
+        "rationale": "Set den=1-E(0,0), E(0,0)=g(c+2(A+1))=0.35, den=0.65. Write 1-E(u,v)=den*(1-W) with W=P(u)+P(v), P(u)=sum_{i>=1} (g/den) C_i u^i (C_i=binom(3/2,i)(-1)^i). Then F=-0.5[log(den)-S+E], E=E0+den*W, and d=den*W has no diagonal (i,j) with i=j>=1. Hence a_ii=0.5*S_diag where S=-log(1-W)=sum_{k>=1} W^k/k. Since W=P(u)+P(v) is separable, diag(W^k)[i,i]=sum_m binom(k,m) p_i^{(m)} p_i^{(k-m)} with p_i^{(m)} = coeff of u^i in P(u)^m. Computing this for increasing i (exactly matching a direct bivariate-series evaluation at small i=8,10,12 to machine precision) gives a_ii/C_i^2 steadily converging: i=80 ->0.00392565, i=160->0.0039256523, i=200->0.0039256526, i=240->0.00392565276, with power-law (p~3) extrapolation to ~0.0039256529. The value adopted, 0.003925651, agrees with direct 2D series and the separable formula to well within 0.001 relative error; asymptotic limit ~0.00392565."
+      },
+      "score": {
+        "calibration": 0.9996,
+        "correct": true,
+        "reason": "ok",
+        "relative_error": 4.942448980083114e-07,
+        "reward": 0.9999600000000001,
+        "valid": true,
+        "value_score": 1.0
+      },
+      "raw_trial": "runs/science/science-deepseek-four/science-a-03__vEDDQ7x"
+    },
+    {
+      "job": "science-deepseek-four",
+      "task_id": "science-a-04",
+      "model": "verda/deepseek-4-1-flash-1017",
+      "status": "graded_with_warning",
+      "reward": 0.0,
+      "error_type": "AgentTimeoutError",
+      "terminal_reason": "launcher_terminal",
+      "launcher_terminal_state": null,
+      "launcher_returncode": 0,
+      "duration_sec": 684.020784,
+      "cost_usd": null,
+      "input_tokens": 167121,
+      "output_tokens": 5226,
+      "submission": null,
+      "score": {
+        "calibration": 0.0,
+        "correct": false,
+        "reason": "Answer missing or malformed JSON.",
+        "reward": 0.0,
+        "valid": false,
+        "value_score": 0.0
+      },
+      "raw_trial": "runs/science/science-deepseek-four/science-a-04__tGDKFim"
+    },
+    {
+      "job": "science-kimi-four",
+      "task_id": "science-a-01",
+      "model": "verda/kimi-k3-1-pro",
+      "status": "completed",
+      "reward": 1.0,
+      "error_type": null,
+      "terminal_reason": "launcher_terminal",
+      "launcher_terminal_state": "exited",
+      "launcher_returncode": 0,
+      "duration_sec": 155.762827,
+      "cost_usd": null,
+      "input_tokens": 136095,
+      "output_tokens": 1949,
+      "submission": {
+        "value": 0.008888888888888889,
+        "confidence": 1,
+        "rationale": "Let P=(1-u)^(3/2), Q=(1-v)^(3/2), and Phi(E)=-0.5*(log(1-E)+E). Since f(u)=1+P and f(v)=1+Q, F=Phi(0.25+0.1*(P+Q)). Near u=v=1 (equivalently P=Q=0), the coefficient of PQ is B=0.1^2*Phi''(0.25)=0.005/(0.75)^2=2/225. Because Phi''(E)=0.5/(1-E)^2, this PQ term contributes B*C_i^2 to a_ii asymptotically. Every other term P^r Q^s with both r,s positive contributes o(C_i^2): P^2 and Q^2 are polynomials, while higher nonpolynomial powers have faster-decaying coefficients. Terms lacking P or Q cannot contribute to a_ii for i>0. Therefore a_ii/C_i^2 tends to B=2/225. An independent direct Taylor-series computation gave a_120/C_120^2 = 0.008888881018, consistent with this limit."
+      },
+      "score": {
+        "calibration": 1,
+        "correct": true,
+        "reason": "ok",
+        "relative_error": 0.0,
+        "reward": 1.0,
+        "valid": true,
+        "value_score": 1.0
+      },
+      "raw_trial": "runs/science/science-kimi-four/science-a-01__XCRVMVm"
+    },
+    {
+      "job": "science-kimi-four",
+      "task_id": "science-a-02",
+      "model": "verda/kimi-k3-1-pro",
+      "status": "completed",
+      "reward": 0.9999999,
+      "error_type": null,
+      "terminal_reason": "launcher_terminal",
+      "launcher_terminal_state": "exited",
+      "launcher_returncode": 0,
+      "duration_sec": 130.114212,
+      "cost_usd": 0.11843360000000001,
+      "input_tokens": 98829,
+      "output_tokens": 2439,
+      "submission": {
+        "value": 0.00554016620498615,
+        "confidence": 0.999,
+        "rationale": "Let h(u)=(1-u)^(3/2) and Phi(t)=-0.5[log(1-t)+t]. Since f(u)=A+h(u), E(u,v)=b+g h(u)+g h(v), where b=E(1,1)=g(c+2A)=0.05. Expand the analytic function Phi(b+g z+g w) about z=w=0. Its mixed linear term is g^2 Phi''(b) z w. For every fixed k>=2, [u^i]h(u)^k=O(i^(-3k/2-1))=o(C_i), whereas [u^i]h(u)=C_i; terms lacking z or w cannot contribute to a_ii for i>0. Thus the mixed linear term gives a_ii ~ g^2 Phi''(b) C_i^2. Because Phi''(t)=1/[2(1-t)^2], the requested limit is g^2/[2(1-b)^2]=0.01/[2(0.95)^2]=2/361=0.00554016620498615."
+      },
+      "score": {
+        "calibration": 0.999999,
+        "correct": true,
+        "reason": "ok",
+        "relative_error": 0.0,
+        "reward": 0.9999999,
+        "valid": true,
+        "value_score": 1.0
+      },
+      "raw_trial": "runs/science/science-kimi-four/science-a-02__D9RihUC"
+    },
+    {
+      "job": "science-kimi-four",
+      "task_id": "science-a-03",
+      "model": "verda/kimi-k3-1-pro",
+      "status": "completed",
+      "reward": 0.0,
+      "error_type": null,
+      "terminal_reason": "launcher_terminal",
+      "launcher_terminal_state": "exited",
+      "launcher_returncode": 0,
+      "duration_sec": 74.010322,
+      "cost_usd": 0.06003520000000001,
+      "input_tokens": 51457,
+      "output_tokens": 568,
+      "submission": {
+        "value": 0.0057988165680473375,
+        "confidence": 1,
+        "rationale": "Let h(u)=(1-u)^(3/2), so E=e0+g(h(u)+h(v)) with e0=E(0,0)=g(c+2A+2)=0.35. Since F=sum_{n>=2} E^n/(2n), the leading diagonal term for each fixed n comes only from choosing h(u) and h(v) exactly once; its coefficient is n(n-1)e0^(n-2)g^2 C_i^2. Terms containing h(u)^p or h(v)^q with p or q at least 2 are lower order because [(1-u)^(3p/2) coefficients] = o(C_i) for p>=2. Thus a_ii/C_i^2 tends to (g^2/2) sum_{n>=2}(n-1)e0^(n-2) = g^2/(2(1-e0)^2) = 0.07^2/(2*0.65^2) = 49/8450."
+      },
+      "score": {
+        "calibration": 0,
+        "correct": false,
+        "reason": "ok",
+        "relative_error": 0.47715976331360954,
+        "reward": 0.0,
+        "valid": true,
+        "value_score": 0.0
+      },
+      "raw_trial": "runs/science/science-kimi-four/science-a-03__nyZeYd7"
+    },
+    {
+      "job": "science-kimi-four",
+      "task_id": "science-a-04",
+      "model": "verda/kimi-k3-1-pro",
+      "status": "completed",
+      "reward": 0.9999999,
+      "error_type": null,
+      "terminal_reason": "launcher_terminal",
+      "launcher_terminal_state": "exited",
+      "launcher_returncode": 0,
+      "duration_sec": 207.789067,
+      "cost_usd": 0.222046,
+      "input_tokens": 269072,
+      "output_tokens": 4423,
+      "submission": {
+        "value": 0.003992448004138947,
+        "confidence": 0.999,
+        "rationale": "Let e = E(1,1) = g(c+2A) = -0.231 and D = 1-e = 1.231. Near u=v=1, put X=(1-u)^(3/2) and Y=(1-v)^(3/2), so E=e+g(X+Y). Since the second Taylor coefficient of F in E is 1/(4(1-E)^2), the mixed quadratic term is (g^2/(2D^2))XY. Its u^i v^i coefficient is (g^2/(2D^2))C_i^2. All higher-degree mixed terms are either eventually zero or have faster algebraic decay, so a_ii/C_i^2 tends to g^2/(2D^2)=6050/1515361=0.003992448004138947. Direct diagonal-series computations agree: the ratios at i=80, 120, and 160 have relative errors about -1.40e-6, -3.98e-7, and -1.64e-7 from this value."
+      },
+      "score": {
+        "calibration": 0.999999,
+        "correct": true,
+        "reason": "ok",
+        "relative_error": 2.220446049250313e-16,
+        "reward": 0.9999999,
+        "valid": true,
+        "value_score": 1.0
+      },
+      "raw_trial": "runs/science/science-kimi-four/science-a-04__2LnPW3k"
+    },
+    {
+      "job": "science-oracle-four",
+      "task_id": "science-a-01",
+      "model": "oracle",
+      "status": "completed",
+      "reward": 1.0,
+      "error_type": null,
+      "terminal_reason": "launcher_terminal",
+      "launcher_terminal_state": "exited",
+      "launcher_returncode": 0,
+      "duration_sec": 16.126451,
+      "cost_usd": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "submission": {
+        "confidence": 1,
+        "rationale": "Host-only offline reference oracle.",
+        "value": 0.008888888888888889
+      },
+      "score": {
+        "calibration": 1,
+        "correct": true,
+        "reason": "ok",
+        "relative_error": 0.0,
+        "reward": 1.0,
+        "valid": true,
+        "value_score": 1.0
+      },
+      "raw_trial": "runs/science/science-oracle-four/science-a-01__eLB5PJF"
+    },
+    {
+      "job": "science-oracle-four",
+      "task_id": "science-a-02",
+      "model": "oracle",
+      "status": "completed",
+      "reward": 1.0,
+      "error_type": null,
+      "terminal_reason": "launcher_terminal",
+      "launcher_terminal_state": "exited",
+      "launcher_returncode": 0,
+      "duration_sec": 9.440073,
+      "cost_usd": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "submission": {
+        "confidence": 1,
+        "rationale": "Host-only offline reference oracle.",
+        "value": 0.00554016620498615
+      },
+      "score": {
+        "calibration": 1,
+        "correct": true,
+        "reason": "ok",
+        "relative_error": 0.0,
+        "reward": 1.0,
+        "valid": true,
+        "value_score": 1.0
+      },
+      "raw_trial": "runs/science/science-oracle-four/science-a-02__x3x4gED"
+    },
+    {
+      "job": "science-oracle-four",
+      "task_id": "science-a-03",
+      "model": "oracle",
+      "status": "completed",
+      "reward": 1.0,
+      "error_type": null,
+      "terminal_reason": "launcher_terminal",
+      "launcher_terminal_state": "exited",
+      "launcher_returncode": 0,
+      "duration_sec": 12.258237,
+      "cost_usd": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "submission": {
+        "confidence": 1,
+        "rationale": "Host-only offline reference oracle.",
+        "value": 0.003925652940233937
+      },
+      "score": {
+        "calibration": 1,
+        "correct": true,
+        "reason": "ok",
+        "relative_error": 0.0,
+        "reward": 1.0,
+        "valid": true,
+        "value_score": 1.0
+      },
+      "raw_trial": "runs/science/science-oracle-four/science-a-03__pn6QtRA"
+    },
+    {
+      "job": "science-oracle-four",
+      "task_id": "science-a-04",
+      "model": "oracle",
+      "status": "completed",
+      "reward": 1.0,
+      "error_type": null,
+      "terminal_reason": "launcher_terminal",
+      "launcher_terminal_state": "exited",
+      "launcher_returncode": 0,
+      "duration_sec": 11.447475,
+      "cost_usd": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "submission": {
+        "confidence": 1,
+        "rationale": "Host-only offline reference oracle.",
+        "value": 0.003992448004138948
+      },
+      "score": {
+        "calibration": 1,
+        "correct": true,
+        "reason": "ok",
+        "relative_error": 0.0,
+        "reward": 1.0,
+        "valid": true,
+        "value_score": 1.0
+      },
+      "raw_trial": "runs/science/science-oracle-four/science-a-04__46mPwox"
+    },
+    {
+      "job": "science-nop-four",
+      "task_id": "science-a-01",
+      "model": "nop",
+      "status": "completed",
+      "reward": 0.0,
+      "error_type": null,
+      "terminal_reason": "launcher_terminal",
+      "launcher_terminal_state": "exited",
+      "launcher_returncode": 0,
+      "duration_sec": 27.887239,
+      "cost_usd": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "submission": null,
+      "score": {
+        "calibration": 0.0,
+        "correct": false,
+        "reason": "Answer missing or malformed JSON.",
+        "reward": 0.0,
+        "valid": false,
+        "value_score": 0.0
+      },
+      "raw_trial": "runs/science/science-nop-four/science-a-01__hyDnTbq"
+    },
+    {
+      "job": "science-nop-four",
+      "task_id": "science-a-02",
+      "model": "nop",
+      "status": "completed",
+      "reward": 0.0,
+      "error_type": null,
+      "terminal_reason": "launcher_terminal",
+      "launcher_terminal_state": "exited",
+      "launcher_returncode": 0,
+      "duration_sec": 11.835286,
+      "cost_usd": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "submission": null,
+      "score": {
+        "calibration": 0.0,
+        "correct": false,
+        "reason": "Answer missing or malformed JSON.",
+        "reward": 0.0,
+        "valid": false,
+        "value_score": 0.0
+      },
+      "raw_trial": "runs/science/science-nop-four/science-a-02__9W5GJRe"
+    },
+    {
+      "job": "science-nop-four",
+      "task_id": "science-a-03",
+      "model": "nop",
+      "status": "completed",
+      "reward": 0.0,
+      "error_type": null,
+      "terminal_reason": "launcher_terminal",
+      "launcher_terminal_state": "exited",
+      "launcher_returncode": 0,
+      "duration_sec": 15.397129,
+      "cost_usd": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "submission": null,
+      "score": {
+        "calibration": 0.0,
+        "correct": false,
+        "reason": "Answer missing or malformed JSON.",
+        "reward": 0.0,
+        "valid": false,
+        "value_score": 0.0
+      },
+      "raw_trial": "runs/science/science-nop-four/science-a-03__qTFLTVg"
+    },
+    {
+      "job": "science-nop-four",
+      "task_id": "science-a-04",
+      "model": "nop",
+      "status": "completed",
+      "reward": 0.0,
+      "error_type": null,
+      "terminal_reason": "launcher_terminal",
+      "launcher_terminal_state": "exited",
+      "launcher_returncode": 0,
+      "duration_sec": 11.21216,
+      "cost_usd": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "submission": null,
+      "score": {
+        "calibration": 0.0,
+        "correct": false,
+        "reason": "Answer missing or malformed JSON.",
+        "reward": 0.0,
+        "valid": false,
+        "value_score": 0.0
+      },
+      "raw_trial": "runs/science/science-nop-four/science-a-04__dXZdmCy"
+    }
+  ],
+  "summary": [
+    {
+      "job": "science-deepseek-four",
+      "model": "verda/deepseek-4-1-flash-1017",
+      "planned": 4,
+      "graded": 4,
+      "pending": 0,
+      "mean_reward": 0.2533675,
+      "cost_usd": null
+    },
+    {
+      "job": "science-kimi-four",
+      "model": "verda/kimi-k3-1-pro",
+      "planned": 4,
+      "graded": 4,
+      "pending": 0,
+      "mean_reward": 0.7499999500000001,
+      "cost_usd": null
+    },
+    {
+      "job": "science-oracle-four",
+      "model": "oracle",
+      "planned": 4,
+      "graded": 4,
+      "pending": 0,
+      "mean_reward": 1.0,
+      "cost_usd": null
+    },
+    {
+      "job": "science-nop-four",
+      "model": "nop",
+      "planned": 4,
+      "graded": 4,
+      "pending": 0,
+      "mean_reward": 0.0,
+      "cost_usd": null
+    }
+  ],
+  "limitations": [
+    "The generic toy proof and numerical checks were independently reviewed; original research applications are not validated.",
+    "No original research projects, posts, models, or datasets were uploaded.",
+    "Unknown API costs are null; missing or failed finished trials count as zero."
+  ]
+}

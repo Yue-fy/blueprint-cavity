@@ -1,0 +1,328 @@
+{
+  "status": "validated_private_candidate",
+  "definition": {
+    "f": "A + (1-u)^(3/2)",
+    "E": "g*(c+f(u)+f(v))",
+    "F": "-0.5*(log(1-E)+E)",
+    "a_ii": "[u^i v^i]F",
+    "C_i": "[u^i](1-u)^(3/2)",
+    "target": "lim(i->infinity) a_ii/C_i^2",
+    "branch": "principal, analytic at u=v=0"
+  },
+  "method": {
+    "coefficient_extraction": "FFT2 of directly sampled F on |u|=|v|=exp(-4/M)",
+    "normalization": "M^-2 * radius^(-2*i), divided by binomial recurrence C_i^2",
+    "independence": "reference formula used only after numerical coefficient extraction",
+    "target_relative_tolerance": 0.001,
+    "python_version": "3.12.3",
+    "numpy_version": "2.5.4",
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    }
+  },
+  "parameters_sha256": "e002d1c000cc70d0cdbf2c0f37bf2c12cda7c740f3eaa7ebbcff4f59eb64d618",
+  "cases": [
+    {
+      "id": "a-01",
+      "parameters": {
+        "g": "0.1",
+        "c": "0.5",
+        "A": "1"
+      },
+      "reference": {
+        "numerator": 2,
+        "denominator": 225,
+        "value": 0.008888888888888889
+      },
+      "historical_wrong": 0.00554016620498615,
+      "historical_relative_error": -0.3767313019390582,
+      "control_nondiscriminating": false,
+      "method": "direct_function_fft2",
+      "domain_bound": 0.8156854249492381,
+      "grid_size": 1024,
+      "radius": 0.9961013694701175,
+      "indices": [
+        80,
+        100,
+        120
+      ],
+      "coefficients": [
+        5.092371662454511e-13,
+        1.6529213014668433e-13,
+        6.601123187787528e-14
+      ],
+      "binomial_coefficients": [
+        7.568781491022946e-06,
+        4.3120535935456284e-06,
+        2.7249407250335884e-06
+      ],
+      "ratios": [
+        0.008889312172014543,
+        0.008889633914948042,
+        0.008890040065495248
+      ],
+      "relative_errors": [
+        4.7619351636107865e-05,
+        8.381543165469907e-05,
+        0.0001295073682154868
+      ],
+      "max_imaginary_ratio": 1.2373123732723367e-08,
+      "max_abs_E_on_grid": 0.8140321824259651,
+      "max_abs_F_on_grid": 0.43407473080441283,
+      "roundoff_ratio_scale_not_bound": [
+        6.2866146757624e-05,
+        0.00022644304684570345,
+        0.0006629361217264822
+      ],
+      "alias_suppression_per_wrap": 0.018315638888734644,
+      "runtime_sec": 0.057137187104672194,
+      "finite_index_relative_span": 8.188801657931996e-05,
+      "grid_sensitivity": {
+        "compared_grid_size": 512,
+        "compared_radius": 0.9922179382602435,
+        "compared_ratios": [
+          0.008891003386387208,
+          0.008892347847264729,
+          0.008893951194644891
+        ],
+        "relative_changes": [
+          0.00019025255722149303,
+          0.00030529179746352497,
+          0.0004399450532088789
+        ],
+        "max_relative_change": 0.0004399450532088789,
+        "runtime_sec": 0.07650189101696014
+      }
+    },
+    {
+      "id": "a-02",
+      "parameters": {
+        "g": "0.1",
+        "c": "0.5",
+        "A": "0"
+      },
+      "reference": {
+        "numerator": 2,
+        "denominator": 361,
+        "value": 0.00554016620498615
+      },
+      "historical_wrong": 0.00554016620498615,
+      "historical_relative_error": 0.0,
+      "control_nondiscriminating": true,
+      "method": "direct_function_fft2",
+      "domain_bound": 0.6156854249492382,
+      "grid_size": 1024,
+      "radius": 0.9961013694701175,
+      "indices": [
+        80,
+        100,
+        120
+      ],
+      "coefficients": [
+        3.1739188507151243e-13,
+        1.0302138742132737e-13,
+        4.114260611956052e-14
+      ],
+      "binomial_coefficients": [
+        7.568781491022946e-06,
+        4.3120535935456284e-06,
+        2.7249407250335884e-06
+      ],
+      "ratios": [
+        0.005540435251548254,
+        0.005540629301424755,
+        0.005540866401015813
+      ],
+      "relative_errors": [
+        4.8562904459981127e-05,
+        8.358890716819722e-05,
+        0.00012638538335418836
+      ],
+      "max_imaginary_ratio": 1.0889285065876423e-08,
+      "max_abs_E_on_grid": 0.614032182425965,
+      "max_abs_F_on_grid": 0.1689845523638454,
+      "roundoff_ratio_scale_not_bound": [
+        2.447368371107426e-05,
+        8.815389192596941e-05,
+        0.0002580799015141253
+      ],
+      "alias_suppression_per_wrap": 0.018315638888734644,
+      "runtime_sec": 0.06008604494854808,
+      "finite_index_relative_span": 7.782247889431132e-05,
+      "grid_sensitivity": {
+        "compared_grid_size": 512,
+        "compared_radius": 0.9922179382602435,
+        "compared_ratios": [
+          0.005541502264183259,
+          0.005542368991835277,
+          0.005543358836645496
+        ],
+        "relative_changes": [
+          0.00019258642806208037,
+          0.00031398787319592003,
+          0.00044982777950153263
+        ],
+        "max_relative_change": 0.00044982777950153263,
+        "runtime_sec": 0.01265393104404211
+      }
+    },
+    {
+      "id": "a-03",
+      "parameters": {
+        "g": "0.07",
+        "c": "-0.4",
+        "A": "1.7"
+      },
+      "reference": {
+        "numerator": 49,
+        "denominator": 12482,
+        "value": 0.003925652940233937
+      },
+      "historical_wrong": 0.0023183545549516267,
+      "historical_relative_error": -0.4094346621447713,
+      "control_nondiscriminating": false,
+      "method": "direct_function_fft2",
+      "domain_bound": 0.6619797974644667,
+      "grid_size": 1024,
+      "radius": 0.9961013694701175,
+      "indices": [
+        80,
+        100,
+        120
+      ],
+      "coefficients": [
+        2.2489784208415084e-13,
+        7.299891404447208e-14,
+        2.915308794268771e-14
+      ],
+      "binomial_coefficients": [
+        7.568781491022946e-06,
+        4.3120535935456284e-06,
+        2.7249407250335884e-06
+      ],
+      "ratios": [
+        0.003925846850178337,
+        0.003925980150828936,
+        0.003926182143106859
+      ],
+      "relative_errors": [
+        4.939559032668406e-05,
+        8.335189075059368e-05,
+        0.00013480633183293733
+      ],
+      "max_imaginary_ratio": 1.2868974811459363e-08,
+      "max_abs_E_on_grid": 0.6048225276981755,
+      "max_abs_F_on_grid": 0.1617988951599274,
+      "roundoff_ratio_scale_not_bound": [
+        2.343299981893811e-05,
+        8.440536201770084e-05,
+        0.0002471056812226249
+      ],
+      "alias_suppression_per_wrap": 0.018315638888734644,
+      "runtime_sec": 0.08044274291023612,
+      "finite_index_relative_span": 8.541074150644317e-05,
+      "grid_sensitivity": {
+        "compared_grid_size": 512,
+        "compared_radius": 0.9922179382602435,
+        "compared_ratios": [
+          0.003926596632295503,
+          0.003927219469885946,
+          0.003927942291625841
+        ],
+        "relative_changes": [
+          0.0001909860842208566,
+          0.0003156712488086022,
+          0.0004483104590733422
+        ],
+        "max_relative_change": 0.0004483104590733422,
+        "runtime_sec": 0.015316767152398825
+      }
+    },
+    {
+      "id": "a-04",
+      "parameters": {
+        "g": "-0.11",
+        "c": "0.9",
+        "A": "0.6"
+      },
+      "reference": {
+        "numerator": 6050,
+        "denominator": 1515361,
+        "value": 0.003992448004138948
+      },
+      "historical_wrong": 0.005009103320828514,
+      "historical_relative_error": 0.254644597909755,
+      "control_nondiscriminating": false,
+      "method": "direct_function_fft2",
+      "domain_bound": 0.8532539674441618,
+      "grid_size": 1024,
+      "radius": 0.9961013694701175,
+      "indices": [
+        80,
+        100,
+        120
+      ],
+      "coefficients": [
+        2.2872442309813945e-13,
+        7.424113618320728e-14,
+        2.9648986187652274e-14
+      ],
+      "binomial_coefficients": [
+        7.568781491022946e-06,
+        4.3120535935456284e-06,
+        2.7249407250335884e-06
+      ],
+      "ratios": [
+        0.00399264416082171,
+        0.003992788534534802,
+        0.003992967069561495
+      ],
+      "relative_errors": [
+        4.913193172684238e-05,
+        8.529363325493478e-05,
+        0.0001300118178142462
+      ],
+      "max_imaginary_ratio": 5.229061110152274e-09,
+      "max_abs_E_on_grid": 0.8514354006685616,
+      "max_abs_F_on_grid": 0.11773708508691927,
+      "roundoff_ratio_scale_not_bound": [
+        1.705161886795988e-05,
+        6.141971043651177e-05,
+        0.0001798127396779339
+      ],
+      "alias_suppression_per_wrap": 0.018315638888734644,
+      "runtime_sec": 0.05432188604027033,
+      "finite_index_relative_span": 8.087988608735843e-05,
+      "grid_sensitivity": {
+        "compared_grid_size": 512,
+        "compared_radius": 0.9922179382602435,
+        "compared_ratios": [
+          0.00399339758097611,
+          0.003994000549483137,
+          0.003994768048175803
+        ],
+        "relative_changes": [
+          0.00018870205409071694,
+          0.00030355099897017013,
+          0.0004510376827391305
+        ],
+        "max_relative_change": 0.0004510376827391305,
+        "runtime_sec": 0.0172113967128098
+      }
+    }
+  ],
+  "runtime_sec": 0.3796871588565409,
+  "limitations": [
+    "Owner approval recorded 2026-11-15 covers the generic mathematical toy demonstration/publication, independently rewritten code, numerical outputs, and validation using Verda or Modal. This copy remains owner-private; original scientific projects, research posts and identities, unpublished material models and research datasets, and raw scientific-server files and logs are excluded.",
+    "Permission metadata updated after the numerical evidence was generated; that generation preceded approval. Numerical cases and recorded runtimes are unchanged by this permission-only update.",
+    "Independent toy derivation and computation; original research code, logs, and lattice results were not inspected or rerun.",
+    "Finite-index and grid agreement is empirical, not a certified numerical error enclosure or proof of the limit.",
+    "roundoff_ratio_scale_not_bound is an epsilon-based diagnostic, not a rigorous bound.",
+    "Grid comparisons change both M and radius; they measure combined aliasing/roundoff sensitivity.",
+    "A=0 is nondiscriminating: the historical expression equals the correct reference.",
+    "Higher indices eventually amplify double-precision error; only reported indices are validated.",
+    "The conservative sufficient analytic domain condition is required; no claim covers parameters outside it."
+  ]
+}

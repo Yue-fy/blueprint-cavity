@@ -1,0 +1,44 @@
+Try both cases — no login required:
+https://blueprint-takeoff-lab.bronze-crane-2444.chatgpt.site/
+
+An AI answer is easier to trust when you can inspect the drawing, the decision and the evidence.
+
+This 84-second film follows one real Blueprint fitness-room task: DeepSeek reports 29.1 m², Kimi reports 26.4 m², and the reference is 26.9 m². Watch saved model actions and a human using the same workspace, then meet Cavity, the parallel scientific case.
+
+EXPLORE
+Blueprint guided case:
+https://blueprint-takeoff-lab.bronze-crane-2444.chatgpt.site/#tour/1
+Cavity introduction:
+https://blueprint-takeoff-lab.bronze-crane-2444.chatgpt.site/#cavity
+Cavity interactive lab:
+https://blueprint-takeoff-lab.bronze-crane-2444.chatgpt.site/hbn/
+Detailed Chinese product manual:
+https://blueprint-takeoff-lab.bronze-crane-2444.chatgpt.site/guide/
+
+WHAT THE EVIDENCE SHOWS
+Blueprint has 36 construction tasks across five task families and three drawing conditions. Its 144 historical trials comprise 72 actual model trials with saved replays, 36 privileged gold-reference oracle trials and 36 no-op trials. Mean verifier rewards: Kimi 0.807308, DeepSeek 0.392409, oracle 1.000000, no-op 0.000000. These are rewards, not accuracy percentages. The oracle is a privileged reference, not a fair same-input model baseline.
+
+Cavity explores precomputed hBN nanocavity fields, modes, spectra and linewidth-window sensitivity. Pasted AI replies are checked locally for numerical consistency. It is not a live AI API, an online scientific agent or a new simulation run. Cavity has a different evidence scope from the construction benchmark.
+
+The film contains recorded model replays and human UI interaction. It does not show live inference. Three independent agent repeats have not been run, and no model weights have been trained.
+
+English captions are burned into the film; a separate English subtitle track is provided for upload. Music only, with no narration.
+
+MUSIC
+'Catalyst' by Scott Buckley – released under CC-BY 4.0. www.scottbuckley.com.au
+Track: https://www.scottbuckley.com.au/library/catalyst/
+License: https://creativecommons.org/licenses/by/4.0/
+An 84-second excerpt with fades and loudness adjustment is used.
+
+SCIENTIFIC BACKGROUND FIGURE
+Barra-Burillo et al., “Microcavity phonon polaritons from the weak to the ultrastrong phonon–photon coupling regime,” Nature Communications 12, 6206 (2021).
+https://doi.org/10.1038/s41467-021-26060-x
+Figure 1a, cropped, licensed under CC BY 4.0:
+https://creativecommons.org/licenses/by/4.0/
+This published figure explains light–lattice-vibration coupling. It depicts a different microcavity geometry and is not a measurement or validation of this project's nanocavity.
+
+DRAWING
+UK Department for Education, Special School Plan Level 00.
+Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright.
+Source: https://www.gov.uk/government/publications/a-new-model-design-for-a-special-school
+License: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

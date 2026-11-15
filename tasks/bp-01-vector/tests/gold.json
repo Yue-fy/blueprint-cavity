@@ -1,0 +1,43 @@
+{
+  "value": 26.9,
+  "unit": "m2",
+  "alt_values": [],
+  "family": "area",
+  "pages": [
+    {
+      "width": 1684.0,
+      "height": 1191.0,
+      "space": "pdf_pt"
+    }
+  ],
+  "evidence": [
+    {
+      "page": 0,
+      "bbox": [
+        943.24,
+        925.32,
+        992.14,
+        1035.84
+      ],
+      "space": "pdf_pt",
+      "note": "Fitness room inner-wall footprint"
+    }
+  ],
+  "scenario_id": "bp-01",
+  "provenance": {
+    "reference_id": "sl-001-dfe_pdf",
+    "manifest": "stoa_like_dev.jsonl",
+    "manifest_sha256": "f6bb375c1379f957f2bdf842f1552108cc41341c350ee648756e5948fd4dd49f",
+    "reference_row_sha256": "749e9e68458aca07f37deb42e12992b43fb9cf8868907899cc50d6fe1624f8b2",
+    "verified": "measured",
+    "original_question": "What is the floor area of the fitness room?",
+    "original_how": "wall faces 943.24-992.14 x 925.32-1035.84 pt = 3.450 x 7.798 m (4 seeds agree)",
+    "gold_author": "existing development reference; agent-authored provenance",
+    "evidence_author": "AfterQuery curation agent, not human expert",
+    "evidence_method": "New boxes from normalized vector geometry/text and visual drawing review; region boxes identify scope, not exhaustive geometric proof.",
+    "independent_check": "Recomputed area from recorded wall-face PDF coordinates at 1:200: 26.9037 m2; room location and boundary visually inspected."
+  },
+  "source_asset_sha256": "2622eb4115c23a363de088f3b38c277f9d782d05212f6bbdb99a68b39663e1cd",
+  "input_sha256": "2622eb4115c23a363de088f3b38c277f9d782d05212f6bbdb99a68b39663e1cd",
+  "condition": "vector"
+}

@@ -1,0 +1,52 @@
+{
+  "value": 7.0,
+  "unit": "m2",
+  "alt_values": [],
+  "family": "area",
+  "pages": [
+    {
+      "width": 4096,
+      "height": 2897,
+      "space": "image_px"
+    }
+  ],
+  "evidence": [
+    {
+      "page": 0,
+      "bbox": [
+        2046.0055,
+        2282.5733,
+        2164.9452,
+        2352.4808
+      ],
+      "space": "image_px",
+      "note": "Laundry inner-wall footprint and corridor doorway"
+    }
+  ],
+  "scenario_id": "bp-02",
+  "provenance": {
+    "reference_id": "sl-002-dfe_pdf",
+    "manifest": "stoa_like_dev.jsonl",
+    "manifest_sha256": "f6bb375c1379f957f2bdf842f1552108cc41341c350ee648756e5948fd4dd49f",
+    "reference_row_sha256": "dc051f7e3ec29734d0edc13e6326519e326a19a34f3d30ab8f762724eecedfde",
+    "verified": "measured",
+    "original_question": "What is the area of the laundry?",
+    "original_how": "wall faces 841.18-890.08 x 938.40-967.14 pt = 3.450 x 2.028 m (4 seeds agree)",
+    "gold_author": "existing development reference; agent-authored provenance",
+    "evidence_author": "AfterQuery curation agent, not human expert",
+    "evidence_method": "New boxes from normalized vector geometry/text and visual drawing review; region boxes identify scope, not exhaustive geometric proof.",
+    "independent_check": "Recomputed area from recorded wall-face PDF coordinates at 1:200: 6.9961 m2; room location and boundary visually inspected."
+  },
+  "source_asset_sha256": "2622eb4115c23a363de088f3b38c277f9d782d05212f6bbdb99a68b39663e1cd",
+  "input_sha256": "47d864eb71d7c5f0fc00b5e3aa499f53da3d3cc97f52259fcbda9e5ad6c460a9",
+  "condition": "scan",
+  "scan_transform": {
+    "seed": 20261114,
+    "synthetic": true,
+    "width": 4096,
+    "height": 2897,
+    "clean_sha256": "9e2f1060d2ad456ef081341932d6bac71d9f2dca33f955a67f1b9face7547b61",
+    "scan_sha256": "47d864eb71d7c5f0fc00b5e3aa499f53da3d3cc97f52259fcbda9e5ad6c460a9",
+    "transform": "grayscale raster; Gaussian blur0.55; contrast0.72; Gaussian noise sd2; JPEG quality68; no geometric transform"
+  }
+}

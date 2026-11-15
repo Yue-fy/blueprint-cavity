@@ -1,0 +1,32 @@
+{
+  "job_name": "judge-docker-science-oracle",
+  "jobs_dir": "runs/science",
+  "n_concurrent_trials": 1,
+  "environment": {
+    "type": "docker",
+    "delete": true,
+    "kwargs": {}
+  },
+  "verifier": {
+    "override_timeout_sec": 60
+  },
+  "agents": [
+    {
+      "name": "oracle"
+    }
+  ],
+  "tasks": [
+    {
+      "path": "science_demo/tasks/science-a-01"
+    },
+    {
+      "path": "science_demo/tasks/science-a-02"
+    },
+    {
+      "path": "science_demo/tasks/science-a-03"
+    },
+    {
+      "path": "science_demo/tasks/science-a-04"
+    }
+  ]
+}

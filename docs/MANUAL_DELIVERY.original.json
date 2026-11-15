@@ -1,0 +1,64 @@
+{
+  "title": "Blueprint + Cavity 中文手册与评审演示指南",
+  "generator": "docs/render_manual.py",
+  "render_command": ".venv/bin/python docs/render_manual.py --pdf",
+  "documents": {
+    "docs/PRODUCT_MANUAL.zh-CN.md": {
+      "title": "Blueprint + Cavity 产品手册：建筑量算与纳米腔研究",
+      "chapters": 30,
+      "han_characters": 31717,
+      "characters": 71777,
+      "source_links": 200,
+      "checks": [
+        "200 relative source links exist",
+        "Chromium 1440/390: no horizontal overflow, page errors or external requests",
+        "All directory anchors and table columns validated",
+        "PDF has 44 A4 pages; final chapter text extracted; print sidebar hidden",
+        "PDF removed 201 local hrefs; no filesystem link actions remain"
+      ],
+      "pdf_pages": 44
+    },
+    "docs/JUDGE_WALKTHROUGH.zh-CN.md": {
+      "title": "Blueprint + Cavity：十分钟评审演示与证据指南",
+      "chapters": 10,
+      "han_characters": 6576,
+      "characters": 16925,
+      "source_links": 70,
+      "checks": [
+        "70 relative source links exist",
+        "Chromium 1440/390: no horizontal overflow, page errors or external requests",
+        "All directory anchors and table columns validated",
+        "PDF has 10 A4 pages; final chapter text extracted; print sidebar hidden",
+        "PDF removed 71 local hrefs; no filesystem link actions remain"
+      ],
+      "pdf_pages": 10
+    }
+  },
+  "files": {
+    "docs/PRODUCT_MANUAL.zh-CN.md": {
+      "bytes": 142072,
+      "sha256": "f528d8bc1d77167da34ac3ebec8eec6de595e33db0c7bf2c51d157ff901468df"
+    },
+    "docs/PRODUCT_MANUAL.zh-CN.html": {
+      "bytes": 174390,
+      "sha256": "c40fd8ffce4e5a6babd060b11e2d05000910c36af63f3ee08d8ce759927095a2"
+    },
+    "dist/docs/PRODUCT_MANUAL.zh-CN.pdf": {
+      "bytes": 1886492,
+      "sha256": "db88fc3cec2a9db00da25199d38249cd90741252797b6053f520fca050c9f3e7"
+    },
+    "docs/JUDGE_WALKTHROUGH.zh-CN.md": {
+      "bytes": 31639,
+      "sha256": "612e53f33b5d2a845fb58c08f882b9a37b1b56628fdc450dd4f00eaf3b0d6d05"
+    },
+    "docs/JUDGE_WALKTHROUGH.zh-CN.html": {
+      "bytes": 42625,
+      "sha256": "1eb4e0de18eeb2f80d6c7b3acba2c9a3a84fdaeefce1eeafbea5df7c11eb777b"
+    },
+    "dist/docs/JUDGE_WALKTHROUGH.zh-CN.pdf": {
+      "bytes": 1038620,
+      "sha256": "fd41c094f465cb11956a812606382f6a3e44ab284384a9331bde8b19e57d6707"
+    }
+  },
+  "public_distribution_note": "Original generation record with the host-specific browser path omitted. PDF bytes are unchanged; public Markdown edits are recorded in MANUAL_DELIVERY.json."
+}

@@ -1,0 +1,43 @@
+{
+  "value": 16,
+  "unit": "in",
+  "alt_values": [],
+  "family": "piping",
+  "pages": [
+    {
+      "width": 2448.0,
+      "height": 1584.0,
+      "space": "pdf_pt"
+    }
+  ],
+  "evidence": [
+    {
+      "page": 0,
+      "bbox": [
+        1317.1,
+        141.461,
+        1423.035,
+        156.114
+      ],
+      "space": "pdf_pt",
+      "note": "16\" SUCTION HEADER"
+    }
+  ],
+  "scenario_id": "bp-12",
+  "provenance": {
+    "reference_id": "sl-011-m101_pdf",
+    "manifest": "stoa_like_dev.jsonl",
+    "manifest_sha256": "f6bb375c1379f957f2bdf842f1552108cc41341c350ee648756e5948fd4dd49f",
+    "reference_row_sha256": "ee24f4c8f26a812cdb088cf405597f0e30ae5a2a8e54dec543a4fc8e4ac01d1c",
+    "verified": "printed",
+    "original_question": "What size is the suction header?",
+    "original_how": "callout '16\" SUCTION HEADER'",
+    "gold_author": "existing development reference; agent-authored provenance",
+    "evidence_author": "AfterQuery curation agent, not human expert",
+    "evidence_method": "New boxes from normalized vector geometry/text and visual drawing review; region boxes identify scope, not exhaustive geometric proof.",
+    "independent_check": "Selected callout text boxes were independently extracted from normalized public PDF; distinct tags enumerated and source label checked."
+  },
+  "source_asset_sha256": "a2d21f8b69edfdf565fe4b5c2306f71c7d34a2f6fd80c099af314d4cfcd84279",
+  "input_sha256": "a2d21f8b69edfdf565fe4b5c2306f71c7d34a2f6fd80c099af314d4cfcd84279",
+  "condition": "vector"
+}

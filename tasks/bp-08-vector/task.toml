@@ -1,0 +1,40 @@
+schema_version = "1.4"
+artifacts = [{source = "/workspace/answer.json"}]
+
+[task]
+name = "blueprint-takeoff/bp-08-vector"
+version = "1.0.0"
+description = "D16 slab field area"
+
+[metadata]
+family = "slab"
+condition = "vector"
+difficulty = "medium"
+scenario_id = "bp-08"
+split = "train"
+source_id = "usace-slab"
+source_url = "https://www.wbdg.org/dod/non-cos-standards/aw-078-24-33"
+license = "Public domain (US federal work, United States)"
+trap = false
+synthetic_scan = false
+
+[agent]
+timeout_sec = 600
+
+[environment]
+build_timeout_sec = 900
+cpus = 1
+memory_mb = 2048
+storage_mb = 4096
+network_mode = "public"
+
+[verifier]
+timeout_sec = 60
+environment_mode = "separate"
+
+[verifier.environment]
+build_timeout_sec = 600
+cpus = 1
+memory_mb = 256
+storage_mb = 512
+network_mode = "no-network"

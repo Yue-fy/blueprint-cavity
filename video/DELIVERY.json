@@ -1,0 +1,73 @@
+{
+  "title": "Blueprint \u2014 A drawing. A decision. The evidence.",
+  "duration_seconds": 84,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "renderer": "huashu-motion 0.4.0",
+  "renderer_commit": "0272906902c33c796a81637545905ea7f2b81c5a",
+  "audio": {
+    "title": "Catalyst",
+    "composer": "Scott Buckley",
+    "license": "CC BY 4.0",
+    "source": "https://www.scottbuckley.com.au/library/catalyst/",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "'Catalyst' by Scott Buckley \u2013 released under CC-BY 4.0. www.scottbuckley.com.au",
+    "edit": "84-second excerpt, fades and loudness adjustment; no narration",
+    "listening_review": "No subjective listening review claimed. Encoding and loudness verified separately.",
+    "measured_integrated_lufs": -16.9
+  },
+  "captions": "English on-screen copy and companion VTT",
+  "signature": false,
+  "structure": "One construction task; a separately identified hBN research extension; actual public demo ending",
+  "public_url": "https://blueprint-takeoff-lab.bronze-crane-2444.chatgpt.site",
+  "figure_source": "Barra-Burillo et al., Nature Communications 12,6206 (2021), DOI10.1038/s41467-021-26060-x, Fig1a cropped, CC BY4.0",
+  "source_evidence": {
+    "task": "bp-01-clean",
+    "sources": {
+      "tasks/bp-01-clean/tests/gold.json": "81d6fa4c45a1dbb7ed32da64cf6c1f2b40369dca16d2f65237545c3d99ba422c",
+      "data/trajectories/full-deepseek-bp-01-clean.json": "32b498c6fea62e4639cf2128e7f8507e380d80f77c6a9130a60c29e921ede60d",
+      "data/trajectories/full-kimi-bp-01-clean.json": "5ed1eeca16f3ef109e42e850794821703e50ff0c93dbc95f79dd24c89a795ae9"
+    },
+    "deepseek_value": 29.1,
+    "kimi_value": 26.4,
+    "reference_value": 26.9,
+    "tolerance": 0.02,
+    "observed_failure": "Submission explicitly treats y\u22482245 line as furniture/equipment, using extent [2295,2225,2413,2518].",
+    "overlay_kind": "Authored visualization of saved evidence, not a live AI screen recording."
+  },
+  "files": {
+    "blueprint-launch.mp4": {
+      "bytes": 10467588,
+      "sha256": "8b8d239a6a21e4140b8717d942e308c4a6906f755895fbd9d001c64fd048d182"
+    },
+    "blueprint-launch.vtt": {
+      "bytes": 1862,
+      "sha256": "75bb726cf87789aaf68143880e8be3848359da2900813d981e8dcc6bdb27f65d"
+    },
+    "blueprint-launch-preview.gif": {
+      "bytes": 315037,
+      "sha256": "2aba1cea266a3dea819efadffbdca87581bc14873a66a6c66c37c271ac5055b0"
+    },
+    "blueprint-poster.jpg": {
+      "bytes": 67020,
+      "sha256": "08f27bc3597fa9140b33ed7c4f334c4febcc79587314510491a90a5fccf813e3"
+    },
+    "editable/source.zip": {
+      "bytes": 25590316,
+      "sha256": "c63b1f230620c93fe606015f0c6009deb4a56917886b0243b2391d5b1c588edc"
+    }
+  },
+  "validation": {
+    "composition_errors": 0,
+    "composition_warnings": 0,
+    "sampled_frames": 20,
+    "mp4_duration_seconds": 84,
+    "aac_duration_seconds": 84,
+    "single_frame_pops": false,
+    "source_zip_crc": "passed",
+    "ending_reviewed_at_seconds": 83.5,
+    "actual_web_recording_reviewed_at_seconds": 77.5,
+    "motion_qa": "Reading holds and calm ending retained by editorial judgment; no repeat render to chase motion score."
+  }
+}

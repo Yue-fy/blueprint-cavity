@@ -1,0 +1,48 @@
+{
+  "value": 9.96,
+  "unit": "m",
+  "alt_values": [
+    10.08
+  ],
+  "family": "skirting",
+  "pages": [
+    {
+      "width": 4096,
+      "height": 2897,
+      "space": "image_px"
+    }
+  ],
+  "evidence": [
+    {
+      "page": 0,
+      "bbox": [
+        2046.0055,
+        2282.5733,
+        2164.9452,
+        2352.4808
+      ],
+      "space": "image_px",
+      "note": "Laundry inner-wall footprint and corridor doorway"
+    }
+  ],
+  "scenario_id": "bp-04",
+  "provenance": {
+    "reference_id": "sl-235-dfe_pdf",
+    "manifest": "stoa_like_dev.jsonl",
+    "manifest_sha256": "f6bb375c1379f957f2bdf842f1552108cc41341c350ee648756e5948fd4dd49f",
+    "reference_row_sha256": "7a72c55b6c4534d454e005aac73031f84740e8dbe63ab0c3e0f80696e2695529",
+    "verified": "expert",
+    "original_question": "How many metres of skirting does the Laundry need (room perimeter minus door openings)?",
+    "original_how": "expert (certain, workbench 20:38, gold_id dfe-06): Where I looked: the room labelled \"Laundry\" in the east wing, between two Stores (one above, one below), with the Staff Workroom on its right and the corridor on its left. Scale: Set scale on the scale bar, 0 to 20 m (1 m ≈ 60.6 px at full resolution). The printed 1:200 on A2 gives the same. Method: the room is a plain rectangle. Length tool along the inner face of the walls: 3.40 m × 2.00 m, so the perimeter is 2 × (3.40 + 2.00) = 10.80 m. There is one door opening, a single door in the left (corridor) wall: 0.84 m (the gap in the black wall; the swing arc has the same radius, ≈0.83 m, which confirms it). 10.80 − 0.84 = 9.96 m. Decisions: no windows in this room. Walls shared with the Stores and the Staff Workroom still need skirting on the Laundry side. Door reveals are not added. Result: 9.96 m (±0.1 m). [alt_answer = X1 sl-055 laundry skirting]",
+    "gold_author": "human expert (Ziying), expert workbench",
+    "evidence_author": "AfterQuery curation agent, not human expert",
+    "evidence_method": "New boxes from normalized vector geometry/text and visual drawing review; region boxes identify scope, not exhaustive geometric proof.",
+    "expert_reference_id": "h-83341c9c311b",
+    "expert_method": "Where I looked: the room labelled \"Laundry\" in the east wing, between two Stores (one above, one below), with the Staff Workroom on its right and the corridor on its left.\nScale: Set scale on the scale bar, 0 to 20 m (1 m ≈ 60.6 px at full resolution). The printed 1:200 on A2 gives the same.\nMethod: the room is a plain rectangle. Length tool along the inner face of the walls: 3.40 m × 2.00 m, so the perimeter is 2 × (3.40 + 2.00) = 10.80 m. There is one door opening, a single door in the left (corridor) wall: 0.84 m (the gap in the black wall; the swing arc has the same radius, ≈0.83 m, which confirms it). 10.80 − 0.84 = 9.96 m.\nDecisions: no windows in this room. Walls shared with the Stores and the Staff Workroom still need skirting on the Laundry side. Door reveals are not added.\nResult: 9.96 m (±0.1 m).",
+    "expert_author": "expert",
+    "expert_method_sha256": "2d083a35c2915b04587b166327b7f2525254d7748858362d0ad8087310e75a5e"
+  },
+  "source_asset_sha256": "2622eb4115c23a363de088f3b38c277f9d782d05212f6bbdb99a68b39663e1cd",
+  "input_sha256": "9e2f1060d2ad456ef081341932d6bac71d9f2dca33f955a67f1b9face7547b61",
+  "condition": "clean"
+}

@@ -1,0 +1,96 @@
+{
+  "value": 5,
+  "unit": "count",
+  "alt_values": [],
+  "family": "piping",
+  "pages": [
+    {
+      "width": 4096,
+      "height": 2651,
+      "space": "image_px"
+    }
+  ],
+  "evidence": [
+    {
+      "page": 0,
+      "bbox": [
+        1350.4418,
+        712.4245,
+        1391.7599,
+        736.9479
+      ],
+      "space": "image_px",
+      "note": "FP-1"
+    },
+    {
+      "page": 0,
+      "bbox": [
+        1543.5963,
+        712.4245,
+        1584.9144,
+        736.9479
+      ],
+      "space": "image_px",
+      "note": "FP-2"
+    },
+    {
+      "page": 0,
+      "bbox": [
+        1739.2607,
+        712.4245,
+        1780.577,
+        736.9479
+      ],
+      "space": "image_px",
+      "note": "FP-3"
+    },
+    {
+      "page": 0,
+      "bbox": [
+        1934.925,
+        712.4245,
+        1976.243,
+        736.9479
+      ],
+      "space": "image_px",
+      "note": "FP-4"
+    },
+    {
+      "page": 0,
+      "bbox": [
+        2128.1799,
+        712.4245,
+        2169.4979,
+        736.9479
+      ],
+      "space": "image_px",
+      "note": "FP-5"
+    }
+  ],
+  "scenario_id": "bp-11",
+  "provenance": {
+    "reference_id": "sl-007-m101_pdf",
+    "manifest": "stoa_like_dev.jsonl",
+    "manifest_sha256": "f6bb375c1379f957f2bdf842f1552108cc41341c350ee648756e5948fd4dd49f",
+    "reference_row_sha256": "6628e613a7ac8adf25162ed6991a27cf6de279c3ed0f6ada9ba1a4f4afb05fa3",
+    "verified": "printed",
+    "original_question": "How many fuel pumps (FP) are shown on the piping plan?",
+    "original_how": "tags FP-1..FP-5 (the jockey pump and the pumphouse drain pump are separate)",
+    "gold_author": "existing development reference; agent-authored provenance",
+    "evidence_author": "AfterQuery curation agent, not human expert",
+    "evidence_method": "New boxes from normalized vector geometry/text and visual drawing review; region boxes identify scope, not exhaustive geometric proof.",
+    "independent_check": "Selected callout text boxes were independently extracted from normalized public PDF; distinct tags enumerated and source label checked."
+  },
+  "source_asset_sha256": "a2d21f8b69edfdf565fe4b5c2306f71c7d34a2f6fd80c099af314d4cfcd84279",
+  "input_sha256": "6ecacdc2514337f91049c929e95392142eb0debebcbfa2e82fd796e9fdfae12c",
+  "condition": "scan",
+  "scan_transform": {
+    "seed": 20261116,
+    "synthetic": true,
+    "width": 4096,
+    "height": 2651,
+    "clean_sha256": "8c9df999da55e7ad9cf128c7849f72c5328d0797481c4d68b5f45d31aaf73b00",
+    "scan_sha256": "6ecacdc2514337f91049c929e95392142eb0debebcbfa2e82fd796e9fdfae12c",
+    "transform": "grayscale raster; Gaussian blur0.55; contrast0.72; Gaussian noise sd2; JPEG quality68; no geometric transform"
+  }
+}

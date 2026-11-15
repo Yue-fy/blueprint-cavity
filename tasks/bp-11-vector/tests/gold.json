@@ -1,0 +1,87 @@
+{
+  "value": 5,
+  "unit": "count",
+  "alt_values": [],
+  "family": "piping",
+  "pages": [
+    {
+      "width": 2448.0,
+      "height": 1584.0,
+      "space": "pdf_pt"
+    }
+  ],
+  "evidence": [
+    {
+      "page": 0,
+      "bbox": [
+        807.1,
+        425.681,
+        831.794,
+        440.334
+      ],
+      "space": "pdf_pt",
+      "note": "FP-1"
+    },
+    {
+      "page": 0,
+      "bbox": [
+        922.54,
+        425.681,
+        947.234,
+        440.334
+      ],
+      "space": "pdf_pt",
+      "note": "FP-2"
+    },
+    {
+      "page": 0,
+      "bbox": [
+        1039.48,
+        425.681,
+        1064.173,
+        440.334
+      ],
+      "space": "pdf_pt",
+      "note": "FP-3"
+    },
+    {
+      "page": 0,
+      "bbox": [
+        1156.42,
+        425.681,
+        1181.114,
+        440.334
+      ],
+      "space": "pdf_pt",
+      "note": "FP-4"
+    },
+    {
+      "page": 0,
+      "bbox": [
+        1271.92,
+        425.681,
+        1296.614,
+        440.334
+      ],
+      "space": "pdf_pt",
+      "note": "FP-5"
+    }
+  ],
+  "scenario_id": "bp-11",
+  "provenance": {
+    "reference_id": "sl-007-m101_pdf",
+    "manifest": "stoa_like_dev.jsonl",
+    "manifest_sha256": "f6bb375c1379f957f2bdf842f1552108cc41341c350ee648756e5948fd4dd49f",
+    "reference_row_sha256": "6628e613a7ac8adf25162ed6991a27cf6de279c3ed0f6ada9ba1a4f4afb05fa3",
+    "verified": "printed",
+    "original_question": "How many fuel pumps (FP) are shown on the piping plan?",
+    "original_how": "tags FP-1..FP-5 (the jockey pump and the pumphouse drain pump are separate)",
+    "gold_author": "existing development reference; agent-authored provenance",
+    "evidence_author": "AfterQuery curation agent, not human expert",
+    "evidence_method": "New boxes from normalized vector geometry/text and visual drawing review; region boxes identify scope, not exhaustive geometric proof.",
+    "independent_check": "Selected callout text boxes were independently extracted from normalized public PDF; distinct tags enumerated and source label checked."
+  },
+  "source_asset_sha256": "a2d21f8b69edfdf565fe4b5c2306f71c7d34a2f6fd80c099af314d4cfcd84279",
+  "input_sha256": "a2d21f8b69edfdf565fe4b5c2306f71c7d34a2f6fd80c099af314d4cfcd84279",
+  "condition": "vector"
+}

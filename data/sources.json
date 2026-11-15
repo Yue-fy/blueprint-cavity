@@ -1,0 +1,107 @@
+[
+  {
+    "id": "dfe-school",
+    "title": "Department for Education — Special School Plan Level 00",
+    "url": "https://www.gov.uk/government/publications/a-new-model-design-for-a-special-school",
+    "download_url": "https://assets.publishing.service.gov.uk/media/6968f7ae3f43dfed1544b0e0/SEN-DFE-XX-00-D-X-0201-Special_School_Plan_Level_00-A-C01.pdf",
+    "license": "Open Government Licence v3.0",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "asset": "data/assets/dfe-school.pdf",
+    "asset_sha256": "2622eb4115c23a363de088f3b38c277f9d782d05212f6bbdb99a68b39663e1cd",
+    "original_sha256": "8cffed97bb8290bbd82a62f0293c80e916cdf948e23b76c756dcbe236b4a65c2",
+    "download_sha256": "8cffed97bb8290bbd82a62f0293c80e916cdf948e23b76c756dcbe236b4a65c2",
+    "source_page": 1,
+    "source_text_sha256": "9e1075c590043097644b767791124fe4890cf0ab99e2beb6fbfec321250200d5",
+    "source_match": "Exact pdftotext output match against independently downloaded primary publication page.",
+    "sanitization": "Rebuilt single-page PDF with page rotation normalized, original visible vector/text content retained; document metadata, XML metadata, attachments, scripts and annotations not imported. No cropping or scale alteration.",
+    "license_verification": {
+      "checked_on": "2026-11-14",
+      "primary_evidence": [
+        "https://www.gov.uk/government/publications/a-new-model-design-for-a-special-school",
+        "https://assets.publishing.service.gov.uk/media/6968f7ae3f43dfed1544b0e0/SEN-DFE-XX-00-D-X-0201-Special_School_Plan_Level_00-A-C01.pdf",
+        "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      ],
+      "basis": "Publication footer explicitly offers OGL v3.0; DfE is originator, with no conflicting rights notice on drawing. Contains public sector information licensed under the Open Government Licence v3.0.",
+      "verified_by": "AfterQuery curation agent; primary publication and selected sheet inspected"
+    },
+    "generated_inputs": {
+      "seed": 20261114,
+      "synthetic": true,
+      "width": 4096,
+      "height": 2897,
+      "clean_sha256": "9e2f1060d2ad456ef081341932d6bac71d9f2dca33f955a67f1b9face7547b61",
+      "scan_sha256": "47d864eb71d7c5f0fc00b5e3aa499f53da3d3cc97f52259fcbda9e5ad6c460a9",
+      "transform": "grayscale raster; Gaussian blur0.55; contrast0.72; Gaussian noise sd2; JPEG quality68; no geometric transform"
+    }
+  },
+  {
+    "id": "usace-slab",
+    "title": "USACE Omaha District — S-100F Foundation and Slab Plan",
+    "url": "https://www.wbdg.org/dod/non-cos-standards/aw-078-24-33",
+    "download_url": "https://www.wbdg.org/FFC/DOD/COS/AW_078-24-33.pdf",
+    "license": "Public domain (US federal work, United States)",
+    "license_url": "https://www.copyright.gov/title17/92chap1.html#105",
+    "asset": "data/assets/usace-slab.pdf",
+    "asset_sha256": "eb418cc8625412e99f585872c1bb7d64e70492cd603cacd303f121852a074e2c",
+    "original_sha256": "905bb7a21884afb213f1ef7168ed0f547f3b22458a6d6307b39f47d8650b29be",
+    "download_sha256": "f5553451910d3442c619ca1954d4c8e7ebb61fb1ef5a399ff5a8cc9eb4246508",
+    "source_page": 56,
+    "source_text_sha256": "30be8ff6ba36431c4d4bc59479ded0e57745a0f8851b31385b6aeb7ebfead952",
+    "source_match": "Exact pdftotext output match against independently downloaded primary publication page.",
+    "sanitization": "Rebuilt single-page PDF with page rotation normalized, original visible vector/text content retained; document metadata, XML metadata, attachments, scripts and annotations not imported. No cropping or scale alteration.",
+    "license_verification": {
+      "checked_on": "2026-11-14",
+      "primary_evidence": [
+        "https://www.wbdg.org/dod/non-cos-standards/aw-078-24-33",
+        "https://www.wbdg.org/FFC/DOD/COS/AW_078-24-33.pdf",
+        "https://www.copyright.gov/title17/92chap1.html#105"
+      ],
+      "basis": "Official DoD standard drawing identifies US Army Corps of Engineers Omaha District as author; no contractor credit or third-party copyright notice on selected sheet. Public-domain classification inferred from federal authorship under 17 USC 105; this does not assert public-domain status outside the United States or endorsement.",
+      "verified_by": "AfterQuery curation agent; primary publication and selected sheet inspected"
+    },
+    "generated_inputs": {
+      "seed": 20261115,
+      "synthetic": true,
+      "width": 4096,
+      "height": 2894,
+      "clean_sha256": "1ac971b53c849d3a8c0b450b8bb70dbde88afb7a73f65411b231fad5099f420c",
+      "scan_sha256": "ff28796d42bc44cf827ebe599c8357d70e70bfd104691f70d340463b1a67b136",
+      "transform": "grayscale raster; Gaussian blur0.55; contrast0.72; Gaussian noise sd2; JPEG quality68; no geometric transform"
+    }
+  },
+  {
+    "id": "usace-piping",
+    "title": "USACE Omaha District — M-101A Piping Plan",
+    "url": "https://www.wbdg.org/dod/non-cos-standards/aw-078-24-28",
+    "download_url": "https://www.wbdg.org/FFC/DOD/COS/AW_078-24-28_march_2020.pdf",
+    "license": "Public domain (US federal work, United States)",
+    "license_url": "https://www.copyright.gov/title17/92chap1.html#105",
+    "asset": "data/assets/usace-piping.pdf",
+    "asset_sha256": "a2d21f8b69edfdf565fe4b5c2306f71c7d34a2f6fd80c099af314d4cfcd84279",
+    "original_sha256": "b3b23bf96e80fb4a8d97d84fcd23900d1af25d1f82b90db7878405e82ac24afc",
+    "download_sha256": "914ade62f3e49f93d5c6e73a900894446cf1eacdb80b61abcf3ef72adec06281",
+    "source_page": 96,
+    "source_text_sha256": "f874609e65a16579d560526423fa246baeee2a804b20a47989ce923b4ce9104c",
+    "source_match": "Exact pdftotext output match against independently downloaded primary publication page.",
+    "sanitization": "Rebuilt single-page PDF with page rotation normalized, original visible vector/text content retained; document metadata, XML metadata, attachments, scripts and annotations not imported. No cropping or scale alteration.",
+    "license_verification": {
+      "checked_on": "2026-11-14",
+      "primary_evidence": [
+        "https://www.wbdg.org/dod/non-cos-standards/aw-078-24-28",
+        "https://www.wbdg.org/FFC/DOD/COS/AW_078-24-28_march_2020.pdf",
+        "https://www.copyright.gov/title17/92chap1.html#105"
+      ],
+      "basis": "Official DoD standard drawing identifies US Army Corps of Engineers Omaha District as author; no contractor credit or third-party copyright notice on selected sheet. Public-domain classification inferred from federal authorship under 17 USC 105; this does not assert public-domain status outside the United States or endorsement.",
+      "verified_by": "AfterQuery curation agent; primary publication and selected sheet inspected"
+    },
+    "generated_inputs": {
+      "seed": 20261116,
+      "synthetic": true,
+      "width": 4096,
+      "height": 2651,
+      "clean_sha256": "8c9df999da55e7ad9cf128c7849f72c5328d0797481c4d68b5f45d31aaf73b00",
+      "scan_sha256": "6ecacdc2514337f91049c929e95392142eb0debebcbfa2e82fd796e9fdfae12c",
+      "transform": "grayscale raster; Gaussian blur0.55; contrast0.72; Gaussian noise sd2; JPEG quality68; no geometric transform"
+    }
+  }
+]

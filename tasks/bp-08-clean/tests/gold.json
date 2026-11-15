@@ -1,0 +1,54 @@
+{
+  "value": 214.5,
+  "unit": "m2",
+  "alt_values": [],
+  "family": "slab",
+  "pages": [
+    {
+      "width": 4096,
+      "height": 2894,
+      "space": "image_px"
+    }
+  ],
+  "evidence": [
+    {
+      "page": 0,
+      "bbox": [
+        663.1946,
+        720.0629,
+        2558.2819,
+        1792.424
+      ],
+      "space": "image_px",
+      "note": "Rectangular six-panel slab field, excluding projecting stair bay"
+    },
+    {
+      "page": 0,
+      "bbox": [
+        1673.4686,
+        1297.2853,
+        1710.3497,
+        1322.5064
+      ],
+      "space": "image_px",
+      "note": "D16"
+    }
+  ],
+  "scenario_id": "bp-08",
+  "provenance": {
+    "reference_id": "sl-014-s100_pdf",
+    "manifest": "stoa_like_dev.jsonl",
+    "manifest_sha256": "f6bb375c1379f957f2bdf842f1552108cc41341c350ee648756e5948fd4dd49f",
+    "reference_row_sha256": "b31718bff59f4c04a3ccbf6fd2996c16af0acfb4fb6c2be9ea48c8d75a61034d",
+    "verified": "printed",
+    "original_question": "What is the area of the 300 mm slab-on-grade with D16 bars (the large slab on the left)?",
+    "original_how": "control-joint panels 5800 + 7400 + 6300 = 19500 by 5500 + 5500 = 11000 mm (render check 19.51 x 11.08 m)",
+    "gold_author": "existing development reference; agent-authored provenance",
+    "evidence_author": "AfterQuery curation agent, not human expert",
+    "evidence_method": "New boxes from normalized vector geometry/text and visual drawing review; region boxes identify scope, not exhaustive geometric proof.",
+    "independent_check": "Printed 5800+7400+6300 =19500 mm; 5500+5500=11000 mm; rectangular field area214.5 m2. Scope tightened to exclude projecting stair bay visible on sheet."
+  },
+  "source_asset_sha256": "eb418cc8625412e99f585872c1bb7d64e70492cd603cacd303f121852a074e2c",
+  "input_sha256": "1ac971b53c849d3a8c0b450b8bb70dbde88afb7a73f65411b231fad5099f420c",
+  "condition": "clean"
+}

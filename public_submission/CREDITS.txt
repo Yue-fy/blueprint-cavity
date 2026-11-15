@@ -1,0 +1,59 @@
+Blueprint + Cavity — Credits and reuse notes
+
+MUSIC
+
+'Catalyst' by Scott Buckley – released under CC-BY 4.0. www.scottbuckley.com.au
+
+Composer: Scott Buckley
+Track: Catalyst
+Source: https://www.scottbuckley.com.au/library/catalyst/
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+License URL: https://creativecommons.org/licenses/by/4.0/
+Use in this film: an 84-second excerpt, with fades and loudness adjustment.
+No narration is included.
+
+Retain the exact attribution above in the YouTube description. Keeping it only in the film or this text file is insufficient for the prepared publishing workflow. Music source and licensing instructions:
+https://www.scottbuckley.com.au/library/using-this-music/
+
+SCIENTIFIC BACKGROUND FIGURE
+
+Barra-Burillo, M., Muniain, U., Catalano, S., et al.
+“Microcavity phonon polaritons from the weak to the ultrastrong phonon–photon coupling regime.”
+Nature Communications 12, 6206 (2021).
+https://doi.org/10.1038/s41467-021-26060-x
+
+Figure 1a is shown as a crop of Figure 1.
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+
+The published figure is background for light–lattice-vibration coupling. It depicts a different microcavity geometry from the project's metal-edge hBN nanocavity. It is not this project's measurement, simulation result or experimental validation. Cropping and use within the film do not imply endorsement by the authors or publisher.
+
+CONSTRUCTION DRAWING SHOWN IN THE FILM
+
+UK Department for Education.
+Special School Plan Level 00, drawing SEN-DFE-XX-00-D-X-0201, revision C01, 12 January 2026.
+Source publication:
+https://www.gov.uk/government/publications/a-new-model-design-for-a-special-school
+
+Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright.
+https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+
+The film uses drawing crops and added measurement/evidence annotations. These additions are project annotations, not claims of Department for Education review or endorsement. The broader benchmark's other source drawings and their distinct license bases are recorded in the repository's LICENSES.md.
+
+PROJECT DISPLAY AND EVIDENCE
+
+Blueprint + Cavity presents the project's interface recordings, historical model replays, human interaction and owner-authorized precomputed hBN visualizations. The owner authorized public display of the existing complete demo and its embedded hBN data. That display authorization is not a new blanket open-data license for research materials.
+
+The field visualizations are computed scientific displays, not microscopy photographs. Historical recorded model actions are not live inference. The Cavity browser checker validates supported numerical fields from pasted text; it does not prove the science or call a model provider.
+
+Code and third-party assets retain their own licenses. The repository's LICENSES.md, LICENSE, hbn_demo/authorization.json and the film's font/vendor license files provide their detailed scope. The MIT code license does not replace the music, paper-figure, drawing, font, vendor or research-data terms.
+
+FILM AND WEBSITE
+
+Film: 84 seconds, 1920×1080, 30 fps, English burned captions plus companion English subtitle files.
+Public product:
+https://blueprint-takeoff-lab.bronze-crane-2444.chatgpt.site/
+Web playback:
+https://blueprint-takeoff-lab.bronze-crane-2444.chatgpt.site/film/
+
+No YouTube upload URL exists at the time these submission texts are prepared. Use the actual URL returned by YouTube only after upload and access verification.

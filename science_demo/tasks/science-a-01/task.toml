@@ -1,0 +1,35 @@
+schema_version = "1.4"
+artifacts = [{source = "/workspace/answer.json"}]
+
+[task]
+name = "science-demo/science-a-01"
+version = "0.1.0"
+description = "Private optional diagonal coefficient limit prototype"
+
+[metadata]
+family = "scientific-limit"
+optional = true
+private_candidate = true
+scientific_review = "pending"
+public_use_approval = "pending"
+
+[agent]
+timeout_sec = 600
+
+[environment]
+build_timeout_sec = 900
+cpus = 1
+memory_mb = 2048
+storage_mb = 4096
+network_mode = "public"
+
+[verifier]
+timeout_sec = 60
+environment_mode = "separate"
+
+[verifier.environment]
+build_timeout_sec = 600
+cpus = 1
+memory_mb = 256
+storage_mb = 512
+network_mode = "no-network"

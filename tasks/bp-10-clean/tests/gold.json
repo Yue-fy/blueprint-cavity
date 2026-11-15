@@ -1,0 +1,87 @@
+{
+  "value": 5,
+  "unit": "count",
+  "alt_values": [],
+  "family": "piping",
+  "pages": [
+    {
+      "width": 4096,
+      "height": 2651,
+      "space": "image_px"
+    }
+  ],
+  "evidence": [
+    {
+      "page": 0,
+      "bbox": [
+        1421.921,
+        1008.6536,
+        1465.0847,
+        1033.177
+      ],
+      "space": "image_px",
+      "note": "CV-1"
+    },
+    {
+      "page": 0,
+      "bbox": [
+        1617.6858,
+        1008.6536,
+        1660.8494,
+        1033.177
+      ],
+      "space": "image_px",
+      "note": "CV-2"
+    },
+    {
+      "page": 0,
+      "bbox": [
+        1813.7516,
+        1008.6536,
+        1856.9152,
+        1033.177
+      ],
+      "space": "image_px",
+      "note": "CV-3"
+    },
+    {
+      "page": 0,
+      "bbox": [
+        2008.1108,
+        1008.6536,
+        2051.2962,
+        1033.177
+      ],
+      "space": "image_px",
+      "note": "CV-4"
+    },
+    {
+      "page": 0,
+      "bbox": [
+        2203.7752,
+        1008.6536,
+        2246.9338,
+        1033.177
+      ],
+      "space": "image_px",
+      "note": "CV-5"
+    }
+  ],
+  "scenario_id": "bp-10",
+  "provenance": {
+    "reference_id": "sl-006-m101_pdf",
+    "manifest": "stoa_like_dev.jsonl",
+    "manifest_sha256": "f6bb375c1379f957f2bdf842f1552108cc41341c350ee648756e5948fd4dd49f",
+    "reference_row_sha256": "555e2ca0fe2c7ca70b056e2f881b7c18420dce9868998f1b369e416f1b1071d0",
+    "verified": "printed",
+    "original_question": "How many non-surge check valves with rate-of-flow controllers are there?",
+    "original_how": "callout 'NON-SURGE CHECK VALVE (CV) W/ RATE OF FLOW CONTROLLER (TYP. OF 5)', tags CV-1..CV-5",
+    "gold_author": "existing development reference; agent-authored provenance",
+    "evidence_author": "AfterQuery curation agent, not human expert",
+    "evidence_method": "New boxes from normalized vector geometry/text and visual drawing review; region boxes identify scope, not exhaustive geometric proof.",
+    "independent_check": "Selected callout text boxes were independently extracted from normalized public PDF; distinct tags enumerated and source label checked."
+  },
+  "source_asset_sha256": "a2d21f8b69edfdf565fe4b5c2306f71c7d34a2f6fd80c099af314d4cfcd84279",
+  "input_sha256": "8c9df999da55e7ad9cf128c7849f72c5328d0797481c4d68b5f45d31aaf73b00",
+  "condition": "clean"
+}

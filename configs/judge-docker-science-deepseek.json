@@ -1,0 +1,59 @@
+{
+  "job_name": "judge-docker-science-deepseek",
+  "jobs_dir": "runs/science",
+  "n_concurrent_trials": 1,
+  "environment": {
+    "type": "docker",
+    "delete": true,
+    "kwargs": {}
+  },
+  "verifier": {
+    "override_timeout_sec": 60
+  },
+  "agents": [
+    {
+      "name": "opencode",
+      "model_name": "verda/deepseek-4-1-flash-1017",
+      "skip_model_parsing": true,
+      "base_url": "https://inference.verda.com/v1",
+      "model_api_key_name": "VERDA_INFERENCE_API_KEY",
+      "model_api_format": "openai_chat_completions",
+      "kwargs": {
+        "version": "1.19.5",
+        "skip_install": true,
+        "opencode_config": {
+          "snapshot": false,
+          "provider": {
+            "verda": {
+              "npm": "@ai-sdk/openai-compatible",
+              "name": "Verda",
+              "models": {
+                "deepseek-4-1-flash-1017": {
+                  "name": "deepseek-4-1-flash-1017",
+                  "limit": {
+                    "context": 128000,
+                    "output": 8192
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "path": "science_demo/tasks/science-a-01"
+    },
+    {
+      "path": "science_demo/tasks/science-a-02"
+    },
+    {
+      "path": "science_demo/tasks/science-a-03"
+    },
+    {
+      "path": "science_demo/tasks/science-a-04"
+    }
+  ]
+}

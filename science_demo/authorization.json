@@ -1,0 +1,17 @@
+{
+  "confirmed_by": "project_owner",
+  "confirmed_local_date": "2026-11-15",
+  "source": "Explicit user reply to the scientific-use and private-access questions",
+  "generic_toy_demonstration_allowed": true,
+  "independently_rewritten_code_allowed": true,
+  "numerical_outputs_allowed": true,
+  "provider_validation_allowed": ["Verda", "Modal"],
+  "website_audience": "owner-private",
+  "repository_visibility": "private",
+  "excluded_material": [
+    "original scientific projects",
+    "original research posts and identities",
+    "unpublished material models and research datasets",
+    "raw scientific-server files and logs"
+  ]
+}

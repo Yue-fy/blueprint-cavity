@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "confirmed_by": "project_owner",
+  "confirmed_local_date": "2026-11-15",
+  "timezone": "Europe/Helsinki",
+  "source_quote": "未发表的我授权你也可以展示",
+  "context": "Owner supplied private branch demo/hbn-live and explicitly expanded display authorization after the unpublished-data boundary was explained.",
+  "source_branch": "demo/hbn-live",
+  "source_commit": "67d2dbd74e493f20518c7b65dbb97bfd25b5cad3",
+  "owner_authorized_display": true,
+  "owner_private_hosting": true,
+  "scope": [
+    "curated hBN interactive demonstration",
+    "owner-owned unpublished precomputed RCWA and COMSOL visualizations and spectra embedded in that demonstration",
+    "necessary display code, scientific explanations and properly attributed comparison data"
+  ],
+  "hosting_targets": [
+    "existing public Site",
+    "existing authenticated Modal backend"
+  ],
+  "website_audience": "public",
+  "repository_visibility": "public",
+  "not_required_or_included": [
+    "original large mph or npz files and raw research-server logs",
+    "copyrighted paper-panel crops excluded from the incoming branch",
+    "credentials or environment files"
+  ],
+  "no_new_authorization_inferred_for": [
+    "new expensive simulations or GPU training",
+    "sending original research data to a model API"
+  ],
+  "owner_public_hosting": true,
+  "public_audience_authorization": {
+    "confirmed_by": "project_owner",
+    "confirmed_local_date": "2026-11-15",
+    "source_quote": "包含，公开现有完整演示与 hBN 数据",
+    "context": "Explicit reply authorizing anonymous password-free public delivery, including existing full hBN simulations and spectra."
+  },
+  "public_repository": "https://github.com/Yue-fy/blueprint-cavity",
+  "public_repository_authorization": {
+    "confirmed_local_date": "2026-11-15",
+    "timezone": "Europe/Helsinki",
+    "source_quote": "可以准备一个github仓库不，最好是整理过后的，到时候我直接给仓库地址就好了。",
+    "scope": "Curated submission repository containing the already authorized public demo and embedded precomputed hBN data. Original development history and raw solver projects remain excluded."
+  }
+}

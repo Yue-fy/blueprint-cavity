@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "title": "Blueprint + Cavity",
+  "website": "https://blueprint-takeoff-lab.bronze-crane-2444.chatgpt.site",
+  "youtube": {
+    "status": "ready_to_upload",
+    "url": null,
+    "title": "Blueprint + Cavity | AI decisions you can inspect",
+    "upload_requires_user_channel": true
+  },
+  "film": {
+    "duration_seconds": 84,
+    "width": 1920,
+    "height": 1080,
+    "caption_cues": 15,
+    "accepted_mp4_bytes_unchanged": true
+  },
+  "scope": "Presentation assets only. Evaluation/source archive is delivered separately.",
+  "files": {
+    "CREDITS.txt": {
+      "bytes": 3637,
+      "sha256": "0b060f5aada21f4a384739724e2632acbe4ccb5ed90f01a3ea6f4f7df1631338"
+    },
+    "README.zh-CN.txt": {
+      "bytes": 5940,
+      "sha256": "6d24280cb61a8fe75a18d61406efe235078175642f236ba1edff272b4f9a4ccd"
+    },
+    "blueprint-cavity-film.mp4": {
+      "bytes": 10467588,
+      "sha256": "8b8d239a6a21e4140b8717d942e308c4a6906f755895fbd9d001c64fd048d182"
+    },
+    "captions.en.srt": {
+      "bytes": 1980,
+      "sha256": "3d76af2b810691501cdfedb5cef1a1903b752b3711e7be9568945e6fc37a809e"
+    },
+    "captions.en.vtt": {
+      "bytes": 1862,
+      "sha256": "75bb726cf87789aaf68143880e8be3848359da2900813d981e8dcc6bdb27f65d"
+    },
+    "cover-square.jpg": {
+      "bytes": 219102,
+      "sha256": "0ef881080253214ba8373c2cb5780f5fd408791393e33e5756baaae510a118f0"
+    },
+    "judge-walkthrough.zh-CN.pdf": {
+      "bytes": 1038620,
+      "sha256": "fd41c094f465cb11956a812606382f6a3e44ab284384a9331bde8b19e57d6707"
+    },
+    "links.txt": {
+      "bytes": 578,
+      "sha256": "03f1e0dbdf96e1c6b834fd1b6c96012e8ee3b794c2f4a06711bb6945ea946f55"
+    },
+    "product-manual.zh-CN.pdf": {
+      "bytes": 1886492,
+      "sha256": "db88fc3cec2a9db00da25199d38249cd90741252797b6053f520fca050c9f3e7"
+    },
+    "submission.en.txt": {
+      "bytes": 3537,
+      "sha256": "7bec25b93695a237c7287e3d70aab8e8deaf032024077d7eaa2172c6ed52cf47"
+    },
+    "youtube-description.txt": {
+      "bytes": 3068,
+      "sha256": "5c918715cf6ebb27a4d175ce9a1880dd3a17c9c7508bc7071c0785474acc4afe"
+    },
+    "youtube-thumbnail.jpg": {
+      "bytes": 456979,
+      "sha256": "eee35a5750fa3ca2629cabb565db5a2b567a824803280764a847431b7038bf64"
+    },
+    "youtube-title.txt": {
+      "bytes": 50,
+      "sha256": "c49c4f376b2a82e63eb616aa28c4a84bad2df8e8897f240e6a00aa775bdc5771"
+    }
+  },
+  "archive": {
+    "path": "dist/submission/blueprint-cavity-submission.zip",
+    "bytes": 12582846,
+    "sha256": "5f7b8f94111e21fe4df56dd0f2f4d87d49048a30acffe8cacf467e4bad1c8f38",
+    "entries": 15,
+    "crc_verified": true
+  }
+}

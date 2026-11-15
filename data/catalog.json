@@ -1,0 +1,974 @@
+[
+  {
+    "title": "Fitness room floor area",
+    "question": "What is the floor area of the fitness room?",
+    "family": "area",
+    "split": "train",
+    "trap": false,
+    "id": "bp-01-clean",
+    "scenario_id": "bp-01",
+    "condition": "clean",
+    "difficulty": "medium",
+    "pages": [
+      {
+        "width": 4096,
+        "height": 2897,
+        "space": "image_px"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-01-clean/image",
+    "source": {
+      "id": "dfe-school",
+      "title": "Department for Education — Special School Plan Level 00",
+      "url": "https://www.gov.uk/government/publications/a-new-model-design-for-a-special-school",
+      "license": "Open Government Licence v3.0",
+      "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "drawing_filename": "drawing.png"
+  },
+  {
+    "title": "Fitness room floor area",
+    "question": "What is the floor area of the fitness room?",
+    "family": "area",
+    "split": "train",
+    "trap": false,
+    "id": "bp-01-scan",
+    "scenario_id": "bp-01",
+    "condition": "scan",
+    "difficulty": "hard",
+    "pages": [
+      {
+        "width": 4096,
+        "height": 2897,
+        "space": "image_px"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-01-scan/image",
+    "source": {
+      "id": "dfe-school",
+      "title": "Department for Education — Special School Plan Level 00",
+      "url": "https://www.gov.uk/government/publications/a-new-model-design-for-a-special-school",
+      "license": "Open Government Licence v3.0",
+      "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "drawing_filename": "drawing.png"
+  },
+  {
+    "title": "Fitness room floor area",
+    "question": "What is the floor area of the fitness room?",
+    "family": "area",
+    "split": "train",
+    "trap": false,
+    "id": "bp-01-vector",
+    "scenario_id": "bp-01",
+    "condition": "vector",
+    "difficulty": "medium",
+    "pages": [
+      {
+        "width": 1684.0,
+        "height": 1191.0,
+        "space": "pdf_pt"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-01-vector/image",
+    "source": {
+      "id": "dfe-school",
+      "title": "Department for Education — Special School Plan Level 00",
+      "url": "https://www.gov.uk/government/publications/a-new-model-design-for-a-special-school",
+      "license": "Open Government Licence v3.0",
+      "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "drawing_filename": "drawing.pdf"
+  },
+  {
+    "title": "Laundry floor area",
+    "question": "What is the area of the laundry?",
+    "family": "area",
+    "split": "holdout",
+    "trap": false,
+    "id": "bp-02-clean",
+    "scenario_id": "bp-02",
+    "condition": "clean",
+    "difficulty": "medium",
+    "pages": [
+      {
+        "width": 4096,
+        "height": 2897,
+        "space": "image_px"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-02-clean/image",
+    "source": {
+      "id": "dfe-school",
+      "title": "Department for Education — Special School Plan Level 00",
+      "url": "https://www.gov.uk/government/publications/a-new-model-design-for-a-special-school",
+      "license": "Open Government Licence v3.0",
+      "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "drawing_filename": "drawing.png"
+  },
+  {
+    "title": "Laundry floor area",
+    "question": "What is the area of the laundry?",
+    "family": "area",
+    "split": "holdout",
+    "trap": false,
+    "id": "bp-02-scan",
+    "scenario_id": "bp-02",
+    "condition": "scan",
+    "difficulty": "hard",
+    "pages": [
+      {
+        "width": 4096,
+        "height": 2897,
+        "space": "image_px"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-02-scan/image",
+    "source": {
+      "id": "dfe-school",
+      "title": "Department for Education — Special School Plan Level 00",
+      "url": "https://www.gov.uk/government/publications/a-new-model-design-for-a-special-school",
+      "license": "Open Government Licence v3.0",
+      "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "drawing_filename": "drawing.png"
+  },
+  {
+    "title": "Laundry floor area",
+    "question": "What is the area of the laundry?",
+    "family": "area",
+    "split": "holdout",
+    "trap": false,
+    "id": "bp-02-vector",
+    "scenario_id": "bp-02",
+    "condition": "vector",
+    "difficulty": "medium",
+    "pages": [
+      {
+        "width": 1684.0,
+        "height": 1191.0,
+        "space": "pdf_pt"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-02-vector/image",
+    "source": {
+      "id": "dfe-school",
+      "title": "Department for Education — Special School Plan Level 00",
+      "url": "https://www.gov.uk/government/publications/a-new-model-design-for-a-special-school",
+      "license": "Open Government Licence v3.0",
+      "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "drawing_filename": "drawing.pdf"
+  },
+  {
+    "title": "Hall skirting",
+    "question": "How many metres of skirting (baseboard) does the Multi-Purpose Hall need (room perimeter minus door openings)?",
+    "family": "skirting",
+    "split": "train",
+    "trap": false,
+    "id": "bp-03-clean",
+    "scenario_id": "bp-03",
+    "condition": "clean",
+    "difficulty": "hard",
+    "pages": [
+      {
+        "width": 4096,
+        "height": 2897,
+        "space": "image_px"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-03-clean/image",
+    "source": {
+      "id": "dfe-school",
+      "title": "Department for Education — Special School Plan Level 00",
+      "url": "https://www.gov.uk/government/publications/a-new-model-design-for-a-special-school",
+      "license": "Open Government Licence v3.0",
+      "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "drawing_filename": "drawing.png"
+  },
+  {
+    "title": "Hall skirting",
+    "question": "How many metres of skirting (baseboard) does the Multi-Purpose Hall need (room perimeter minus door openings)?",
+    "family": "skirting",
+    "split": "train",
+    "trap": false,
+    "id": "bp-03-scan",
+    "scenario_id": "bp-03",
+    "condition": "scan",
+    "difficulty": "hard",
+    "pages": [
+      {
+        "width": 4096,
+        "height": 2897,
+        "space": "image_px"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-03-scan/image",
+    "source": {
+      "id": "dfe-school",
+      "title": "Department for Education — Special School Plan Level 00",
+      "url": "https://www.gov.uk/government/publications/a-new-model-design-for-a-special-school",
+      "license": "Open Government Licence v3.0",
+      "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "drawing_filename": "drawing.png"
+  },
+  {
+    "title": "Hall skirting",
+    "question": "How many metres of skirting (baseboard) does the Multi-Purpose Hall need (room perimeter minus door openings)?",
+    "family": "skirting",
+    "split": "train",
+    "trap": false,
+    "id": "bp-03-vector",
+    "scenario_id": "bp-03",
+    "condition": "vector",
+    "difficulty": "hard",
+    "pages": [
+      {
+        "width": 1684.0,
+        "height": 1191.0,
+        "space": "pdf_pt"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-03-vector/image",
+    "source": {
+      "id": "dfe-school",
+      "title": "Department for Education — Special School Plan Level 00",
+      "url": "https://www.gov.uk/government/publications/a-new-model-design-for-a-special-school",
+      "license": "Open Government Licence v3.0",
+      "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "drawing_filename": "drawing.pdf"
+  },
+  {
+    "title": "Laundry skirting",
+    "question": "How many metres of skirting does the Laundry need (room perimeter minus door openings)?",
+    "family": "skirting",
+    "split": "train",
+    "trap": false,
+    "id": "bp-04-clean",
+    "scenario_id": "bp-04",
+    "condition": "clean",
+    "difficulty": "medium",
+    "pages": [
+      {
+        "width": 4096,
+        "height": 2897,
+        "space": "image_px"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-04-clean/image",
+    "source": {
+      "id": "dfe-school",
+      "title": "Department for Education — Special School Plan Level 00",
+      "url": "https://www.gov.uk/government/publications/a-new-model-design-for-a-special-school",
+      "license": "Open Government Licence v3.0",
+      "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "drawing_filename": "drawing.png"
+  },
+  {
+    "title": "Laundry skirting",
+    "question": "How many metres of skirting does the Laundry need (room perimeter minus door openings)?",
+    "family": "skirting",
+    "split": "train",
+    "trap": false,
+    "id": "bp-04-scan",
+    "scenario_id": "bp-04",
+    "condition": "scan",
+    "difficulty": "hard",
+    "pages": [
+      {
+        "width": 4096,
+        "height": 2897,
+        "space": "image_px"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-04-scan/image",
+    "source": {
+      "id": "dfe-school",
+      "title": "Department for Education — Special School Plan Level 00",
+      "url": "https://www.gov.uk/government/publications/a-new-model-design-for-a-special-school",
+      "license": "Open Government Licence v3.0",
+      "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "drawing_filename": "drawing.png"
+  },
+  {
+    "title": "Laundry skirting",
+    "question": "How many metres of skirting does the Laundry need (room perimeter minus door openings)?",
+    "family": "skirting",
+    "split": "train",
+    "trap": false,
+    "id": "bp-04-vector",
+    "scenario_id": "bp-04",
+    "condition": "vector",
+    "difficulty": "medium",
+    "pages": [
+      {
+        "width": 1684.0,
+        "height": 1191.0,
+        "space": "pdf_pt"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-04-vector/image",
+    "source": {
+      "id": "dfe-school",
+      "title": "Department for Education — Special School Plan Level 00",
+      "url": "https://www.gov.uk/government/publications/a-new-model-design-for-a-special-school",
+      "license": "Open Government Licence v3.0",
+      "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "drawing_filename": "drawing.pdf"
+  },
+  {
+    "title": "Kitchen skirting",
+    "question": "How many metres of skirting does the Kitchen need (room perimeter minus door openings)?",
+    "family": "skirting",
+    "split": "train",
+    "trap": false,
+    "id": "bp-05-clean",
+    "scenario_id": "bp-05",
+    "condition": "clean",
+    "difficulty": "hard",
+    "pages": [
+      {
+        "width": 4096,
+        "height": 2897,
+        "space": "image_px"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-05-clean/image",
+    "source": {
+      "id": "dfe-school",
+      "title": "Department for Education — Special School Plan Level 00",
+      "url": "https://www.gov.uk/government/publications/a-new-model-design-for-a-special-school",
+      "license": "Open Government Licence v3.0",
+      "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "drawing_filename": "drawing.png"
+  },
+  {
+    "title": "Kitchen skirting",
+    "question": "How many metres of skirting does the Kitchen need (room perimeter minus door openings)?",
+    "family": "skirting",
+    "split": "train",
+    "trap": false,
+    "id": "bp-05-scan",
+    "scenario_id": "bp-05",
+    "condition": "scan",
+    "difficulty": "hard",
+    "pages": [
+      {
+        "width": 4096,
+        "height": 2897,
+        "space": "image_px"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-05-scan/image",
+    "source": {
+      "id": "dfe-school",
+      "title": "Department for Education — Special School Plan Level 00",
+      "url": "https://www.gov.uk/government/publications/a-new-model-design-for-a-special-school",
+      "license": "Open Government Licence v3.0",
+      "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "drawing_filename": "drawing.png"
+  },
+  {
+    "title": "Kitchen skirting",
+    "question": "How many metres of skirting does the Kitchen need (room perimeter minus door openings)?",
+    "family": "skirting",
+    "split": "train",
+    "trap": false,
+    "id": "bp-05-vector",
+    "scenario_id": "bp-05",
+    "condition": "vector",
+    "difficulty": "hard",
+    "pages": [
+      {
+        "width": 1684.0,
+        "height": 1191.0,
+        "space": "pdf_pt"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-05-vector/image",
+    "source": {
+      "id": "dfe-school",
+      "title": "Department for Education — Special School Plan Level 00",
+      "url": "https://www.gov.uk/government/publications/a-new-model-design-for-a-special-school",
+      "license": "Open Government Licence v3.0",
+      "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "drawing_filename": "drawing.pdf"
+  },
+  {
+    "title": "West facade windows",
+    "question": "How many windows are on the west facade of the classroom wing?",
+    "family": "openings",
+    "split": "holdout",
+    "trap": false,
+    "id": "bp-06-clean",
+    "scenario_id": "bp-06",
+    "condition": "clean",
+    "difficulty": "hard",
+    "pages": [
+      {
+        "width": 4096,
+        "height": 2897,
+        "space": "image_px"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-06-clean/image",
+    "source": {
+      "id": "dfe-school",
+      "title": "Department for Education — Special School Plan Level 00",
+      "url": "https://www.gov.uk/government/publications/a-new-model-design-for-a-special-school",
+      "license": "Open Government Licence v3.0",
+      "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "drawing_filename": "drawing.png"
+  },
+  {
+    "title": "West facade windows",
+    "question": "How many windows are on the west facade of the classroom wing?",
+    "family": "openings",
+    "split": "holdout",
+    "trap": false,
+    "id": "bp-06-scan",
+    "scenario_id": "bp-06",
+    "condition": "scan",
+    "difficulty": "hard",
+    "pages": [
+      {
+        "width": 4096,
+        "height": 2897,
+        "space": "image_px"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-06-scan/image",
+    "source": {
+      "id": "dfe-school",
+      "title": "Department for Education — Special School Plan Level 00",
+      "url": "https://www.gov.uk/government/publications/a-new-model-design-for-a-special-school",
+      "license": "Open Government Licence v3.0",
+      "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "drawing_filename": "drawing.png"
+  },
+  {
+    "title": "West facade windows",
+    "question": "How many windows are on the west facade of the classroom wing?",
+    "family": "openings",
+    "split": "holdout",
+    "trap": false,
+    "id": "bp-06-vector",
+    "scenario_id": "bp-06",
+    "condition": "vector",
+    "difficulty": "hard",
+    "pages": [
+      {
+        "width": 1684.0,
+        "height": 1191.0,
+        "space": "pdf_pt"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-06-vector/image",
+    "source": {
+      "id": "dfe-school",
+      "title": "Department for Education — Special School Plan Level 00",
+      "url": "https://www.gov.uk/government/publications/a-new-model-design-for-a-special-school",
+      "license": "Open Government Licence v3.0",
+      "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "drawing_filename": "drawing.pdf"
+  },
+  {
+    "title": "Entrance sliding doors",
+    "question": "How many sliding door sets are shown at the Entrance Lobby?",
+    "family": "openings",
+    "split": "train",
+    "trap": false,
+    "id": "bp-07-clean",
+    "scenario_id": "bp-07",
+    "condition": "clean",
+    "difficulty": "medium",
+    "pages": [
+      {
+        "width": 4096,
+        "height": 2897,
+        "space": "image_px"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-07-clean/image",
+    "source": {
+      "id": "dfe-school",
+      "title": "Department for Education — Special School Plan Level 00",
+      "url": "https://www.gov.uk/government/publications/a-new-model-design-for-a-special-school",
+      "license": "Open Government Licence v3.0",
+      "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "drawing_filename": "drawing.png"
+  },
+  {
+    "title": "Entrance sliding doors",
+    "question": "How many sliding door sets are shown at the Entrance Lobby?",
+    "family": "openings",
+    "split": "train",
+    "trap": false,
+    "id": "bp-07-scan",
+    "scenario_id": "bp-07",
+    "condition": "scan",
+    "difficulty": "hard",
+    "pages": [
+      {
+        "width": 4096,
+        "height": 2897,
+        "space": "image_px"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-07-scan/image",
+    "source": {
+      "id": "dfe-school",
+      "title": "Department for Education — Special School Plan Level 00",
+      "url": "https://www.gov.uk/government/publications/a-new-model-design-for-a-special-school",
+      "license": "Open Government Licence v3.0",
+      "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "drawing_filename": "drawing.png"
+  },
+  {
+    "title": "Entrance sliding doors",
+    "question": "How many sliding door sets are shown at the Entrance Lobby?",
+    "family": "openings",
+    "split": "train",
+    "trap": false,
+    "id": "bp-07-vector",
+    "scenario_id": "bp-07",
+    "condition": "vector",
+    "difficulty": "medium",
+    "pages": [
+      {
+        "width": 1684.0,
+        "height": 1191.0,
+        "space": "pdf_pt"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-07-vector/image",
+    "source": {
+      "id": "dfe-school",
+      "title": "Department for Education — Special School Plan Level 00",
+      "url": "https://www.gov.uk/government/publications/a-new-model-design-for-a-special-school",
+      "license": "Open Government Licence v3.0",
+      "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    },
+    "drawing_filename": "drawing.pdf"
+  },
+  {
+    "title": "D16 slab field area",
+    "question": "What is the gross plan area of the six-panel rectangular 300 mm D16 slab field on the left?",
+    "family": "slab",
+    "split": "train",
+    "trap": false,
+    "id": "bp-08-clean",
+    "scenario_id": "bp-08",
+    "condition": "clean",
+    "difficulty": "medium",
+    "pages": [
+      {
+        "width": 4096,
+        "height": 2894,
+        "space": "image_px"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-08-clean/image",
+    "source": {
+      "id": "usace-slab",
+      "title": "USACE Omaha District — S-100F Foundation and Slab Plan",
+      "url": "https://www.wbdg.org/dod/non-cos-standards/aw-078-24-33",
+      "license": "Public domain (US federal work, United States)",
+      "license_url": "https://www.copyright.gov/title17/92chap1.html#105"
+    },
+    "drawing_filename": "drawing.png"
+  },
+  {
+    "title": "D16 slab field area",
+    "question": "What is the gross plan area of the six-panel rectangular 300 mm D16 slab field on the left?",
+    "family": "slab",
+    "split": "train",
+    "trap": false,
+    "id": "bp-08-scan",
+    "scenario_id": "bp-08",
+    "condition": "scan",
+    "difficulty": "hard",
+    "pages": [
+      {
+        "width": 4096,
+        "height": 2894,
+        "space": "image_px"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-08-scan/image",
+    "source": {
+      "id": "usace-slab",
+      "title": "USACE Omaha District — S-100F Foundation and Slab Plan",
+      "url": "https://www.wbdg.org/dod/non-cos-standards/aw-078-24-33",
+      "license": "Public domain (US federal work, United States)",
+      "license_url": "https://www.copyright.gov/title17/92chap1.html#105"
+    },
+    "drawing_filename": "drawing.png"
+  },
+  {
+    "title": "D16 slab field area",
+    "question": "What is the gross plan area of the six-panel rectangular 300 mm D16 slab field on the left?",
+    "family": "slab",
+    "split": "train",
+    "trap": false,
+    "id": "bp-08-vector",
+    "scenario_id": "bp-08",
+    "condition": "vector",
+    "difficulty": "medium",
+    "pages": [
+      {
+        "width": 2384.0,
+        "height": 1684.0,
+        "space": "pdf_pt"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-08-vector/image",
+    "source": {
+      "id": "usace-slab",
+      "title": "USACE Omaha District — S-100F Foundation and Slab Plan",
+      "url": "https://www.wbdg.org/dod/non-cos-standards/aw-078-24-33",
+      "license": "Public domain (US federal work, United States)",
+      "license_url": "https://www.copyright.gov/title17/92chap1.html#105"
+    },
+    "drawing_filename": "drawing.pdf"
+  },
+  {
+    "title": "D13 slab area",
+    "question": "What is the gross plan area of the rectangular 150 mm slab-on-grade with D13 @ 300?",
+    "family": "slab",
+    "split": "train",
+    "trap": true,
+    "id": "bp-09-clean",
+    "scenario_id": "bp-09",
+    "condition": "clean",
+    "difficulty": "medium",
+    "pages": [
+      {
+        "width": 4096,
+        "height": 2894,
+        "space": "image_px"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-09-clean/image",
+    "source": {
+      "id": "usace-slab",
+      "title": "USACE Omaha District — S-100F Foundation and Slab Plan",
+      "url": "https://www.wbdg.org/dod/non-cos-standards/aw-078-24-33",
+      "license": "Public domain (US federal work, United States)",
+      "license_url": "https://www.copyright.gov/title17/92chap1.html#105"
+    },
+    "drawing_filename": "drawing.png"
+  },
+  {
+    "title": "D13 slab area",
+    "question": "What is the gross plan area of the rectangular 150 mm slab-on-grade with D13 @ 300?",
+    "family": "slab",
+    "split": "train",
+    "trap": true,
+    "id": "bp-09-scan",
+    "scenario_id": "bp-09",
+    "condition": "scan",
+    "difficulty": "hard",
+    "pages": [
+      {
+        "width": 4096,
+        "height": 2894,
+        "space": "image_px"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-09-scan/image",
+    "source": {
+      "id": "usace-slab",
+      "title": "USACE Omaha District — S-100F Foundation and Slab Plan",
+      "url": "https://www.wbdg.org/dod/non-cos-standards/aw-078-24-33",
+      "license": "Public domain (US federal work, United States)",
+      "license_url": "https://www.copyright.gov/title17/92chap1.html#105"
+    },
+    "drawing_filename": "drawing.png"
+  },
+  {
+    "title": "D13 slab area",
+    "question": "What is the gross plan area of the rectangular 150 mm slab-on-grade with D13 @ 300?",
+    "family": "slab",
+    "split": "train",
+    "trap": true,
+    "id": "bp-09-vector",
+    "scenario_id": "bp-09",
+    "condition": "vector",
+    "difficulty": "medium",
+    "pages": [
+      {
+        "width": 2384.0,
+        "height": 1684.0,
+        "space": "pdf_pt"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-09-vector/image",
+    "source": {
+      "id": "usace-slab",
+      "title": "USACE Omaha District — S-100F Foundation and Slab Plan",
+      "url": "https://www.wbdg.org/dod/non-cos-standards/aw-078-24-33",
+      "license": "Public domain (US federal work, United States)",
+      "license_url": "https://www.copyright.gov/title17/92chap1.html#105"
+    },
+    "drawing_filename": "drawing.pdf"
+  },
+  {
+    "title": "Check valves",
+    "question": "How many non-surge check valves with rate-of-flow controllers are there?",
+    "family": "piping",
+    "split": "train",
+    "trap": false,
+    "id": "bp-10-clean",
+    "scenario_id": "bp-10",
+    "condition": "clean",
+    "difficulty": "easy",
+    "pages": [
+      {
+        "width": 4096,
+        "height": 2651,
+        "space": "image_px"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-10-clean/image",
+    "source": {
+      "id": "usace-piping",
+      "title": "USACE Omaha District — M-101A Piping Plan",
+      "url": "https://www.wbdg.org/dod/non-cos-standards/aw-078-24-28",
+      "license": "Public domain (US federal work, United States)",
+      "license_url": "https://www.copyright.gov/title17/92chap1.html#105"
+    },
+    "drawing_filename": "drawing.png"
+  },
+  {
+    "title": "Check valves",
+    "question": "How many non-surge check valves with rate-of-flow controllers are there?",
+    "family": "piping",
+    "split": "train",
+    "trap": false,
+    "id": "bp-10-scan",
+    "scenario_id": "bp-10",
+    "condition": "scan",
+    "difficulty": "hard",
+    "pages": [
+      {
+        "width": 4096,
+        "height": 2651,
+        "space": "image_px"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-10-scan/image",
+    "source": {
+      "id": "usace-piping",
+      "title": "USACE Omaha District — M-101A Piping Plan",
+      "url": "https://www.wbdg.org/dod/non-cos-standards/aw-078-24-28",
+      "license": "Public domain (US federal work, United States)",
+      "license_url": "https://www.copyright.gov/title17/92chap1.html#105"
+    },
+    "drawing_filename": "drawing.png"
+  },
+  {
+    "title": "Check valves",
+    "question": "How many non-surge check valves with rate-of-flow controllers are there?",
+    "family": "piping",
+    "split": "train",
+    "trap": false,
+    "id": "bp-10-vector",
+    "scenario_id": "bp-10",
+    "condition": "vector",
+    "difficulty": "easy",
+    "pages": [
+      {
+        "width": 2448.0,
+        "height": 1584.0,
+        "space": "pdf_pt"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-10-vector/image",
+    "source": {
+      "id": "usace-piping",
+      "title": "USACE Omaha District — M-101A Piping Plan",
+      "url": "https://www.wbdg.org/dod/non-cos-standards/aw-078-24-28",
+      "license": "Public domain (US federal work, United States)",
+      "license_url": "https://www.copyright.gov/title17/92chap1.html#105"
+    },
+    "drawing_filename": "drawing.pdf"
+  },
+  {
+    "title": "Fuel pumps",
+    "question": "How many fuel pumps (FP) are shown on the piping plan?",
+    "family": "piping",
+    "split": "holdout",
+    "trap": false,
+    "id": "bp-11-clean",
+    "scenario_id": "bp-11",
+    "condition": "clean",
+    "difficulty": "easy",
+    "pages": [
+      {
+        "width": 4096,
+        "height": 2651,
+        "space": "image_px"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-11-clean/image",
+    "source": {
+      "id": "usace-piping",
+      "title": "USACE Omaha District — M-101A Piping Plan",
+      "url": "https://www.wbdg.org/dod/non-cos-standards/aw-078-24-28",
+      "license": "Public domain (US federal work, United States)",
+      "license_url": "https://www.copyright.gov/title17/92chap1.html#105"
+    },
+    "drawing_filename": "drawing.png"
+  },
+  {
+    "title": "Fuel pumps",
+    "question": "How many fuel pumps (FP) are shown on the piping plan?",
+    "family": "piping",
+    "split": "holdout",
+    "trap": false,
+    "id": "bp-11-scan",
+    "scenario_id": "bp-11",
+    "condition": "scan",
+    "difficulty": "hard",
+    "pages": [
+      {
+        "width": 4096,
+        "height": 2651,
+        "space": "image_px"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-11-scan/image",
+    "source": {
+      "id": "usace-piping",
+      "title": "USACE Omaha District — M-101A Piping Plan",
+      "url": "https://www.wbdg.org/dod/non-cos-standards/aw-078-24-28",
+      "license": "Public domain (US federal work, United States)",
+      "license_url": "https://www.copyright.gov/title17/92chap1.html#105"
+    },
+    "drawing_filename": "drawing.png"
+  },
+  {
+    "title": "Fuel pumps",
+    "question": "How many fuel pumps (FP) are shown on the piping plan?",
+    "family": "piping",
+    "split": "holdout",
+    "trap": false,
+    "id": "bp-11-vector",
+    "scenario_id": "bp-11",
+    "condition": "vector",
+    "difficulty": "easy",
+    "pages": [
+      {
+        "width": 2448.0,
+        "height": 1584.0,
+        "space": "pdf_pt"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-11-vector/image",
+    "source": {
+      "id": "usace-piping",
+      "title": "USACE Omaha District — M-101A Piping Plan",
+      "url": "https://www.wbdg.org/dod/non-cos-standards/aw-078-24-28",
+      "license": "Public domain (US federal work, United States)",
+      "license_url": "https://www.copyright.gov/title17/92chap1.html#105"
+    },
+    "drawing_filename": "drawing.pdf"
+  },
+  {
+    "title": "Suction header diameter",
+    "question": "What size is the suction header?",
+    "family": "piping",
+    "split": "train",
+    "trap": false,
+    "id": "bp-12-clean",
+    "scenario_id": "bp-12",
+    "condition": "clean",
+    "difficulty": "easy",
+    "pages": [
+      {
+        "width": 4096,
+        "height": 2651,
+        "space": "image_px"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-12-clean/image",
+    "source": {
+      "id": "usace-piping",
+      "title": "USACE Omaha District — M-101A Piping Plan",
+      "url": "https://www.wbdg.org/dod/non-cos-standards/aw-078-24-28",
+      "license": "Public domain (US federal work, United States)",
+      "license_url": "https://www.copyright.gov/title17/92chap1.html#105"
+    },
+    "drawing_filename": "drawing.png"
+  },
+  {
+    "title": "Suction header diameter",
+    "question": "What size is the suction header?",
+    "family": "piping",
+    "split": "train",
+    "trap": false,
+    "id": "bp-12-scan",
+    "scenario_id": "bp-12",
+    "condition": "scan",
+    "difficulty": "hard",
+    "pages": [
+      {
+        "width": 4096,
+        "height": 2651,
+        "space": "image_px"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-12-scan/image",
+    "source": {
+      "id": "usace-piping",
+      "title": "USACE Omaha District — M-101A Piping Plan",
+      "url": "https://www.wbdg.org/dod/non-cos-standards/aw-078-24-28",
+      "license": "Public domain (US federal work, United States)",
+      "license_url": "https://www.copyright.gov/title17/92chap1.html#105"
+    },
+    "drawing_filename": "drawing.png"
+  },
+  {
+    "title": "Suction header diameter",
+    "question": "What size is the suction header?",
+    "family": "piping",
+    "split": "train",
+    "trap": false,
+    "id": "bp-12-vector",
+    "scenario_id": "bp-12",
+    "condition": "vector",
+    "difficulty": "easy",
+    "pages": [
+      {
+        "width": 2448.0,
+        "height": 1584.0,
+        "space": "pdf_pt"
+      }
+    ],
+    "preview_url": "/api/tasks/bp-12-vector/image",
+    "source": {
+      "id": "usace-piping",
+      "title": "USACE Omaha District — M-101A Piping Plan",
+      "url": "https://www.wbdg.org/dod/non-cos-standards/aw-078-24-28",
+      "license": "Public domain (US federal work, United States)",
+      "license_url": "https://www.copyright.gov/title17/92chap1.html#105"
+    },
+    "drawing_filename": "drawing.pdf"
+  }
+]

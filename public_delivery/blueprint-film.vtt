@@ -1,0 +1,59 @@
+WEBVTT
+
+00:00.000 --> 00:08.000
+Blueprint is an AI testbed for real-world drawings.
+Give an agent a task. Inspect its actions. Measure the result.
+
+00:08.000 --> 00:18.000
+One drawing. One question: what is the floor area of the fitness room?
+Measure to the inner walls.
+
+00:18.000 --> 00:22.000
+A saved DeepSeek run uses OCR to locate the room label.
+
+00:22.000 --> 00:25.000
+Geometry tools inspect the room's wall lines.
+
+00:25.000 --> 00:29.000
+The drawing scale converts pixels into a measured area.
+The tool calls and submitted evidence can be replayed.
+
+00:29.000 --> 00:34.000
+A boundary decision changes the estimate.
+The saved run treats this line as furniture or equipment.
+
+00:34.000 --> 00:39.000
+It submits 29.1 square metres.
+Its selected region extends above the reference inner-wall boundary.
+
+00:39.000 --> 00:44.000
+Same drawing, same task: DeepSeek submits 29.1 square metres.
+Kimi submits 26.4 square metres.
+
+00:44.000 --> 00:49.000
+The reference is 26.9 square metres, with a 2% numeric tolerance.
+A plausible explanation is not enough. The result must survive a check.
+
+00:49.000 --> 00:56.000
+Repeatable tasks give feedback on quantity, evidence and confidence.
+36 construction tasks. 72 saved AI runs.
+
+00:56.000 --> 01:00.000
+A separate research extension: what if the evidence is a field of light?
+hBN is a layered crystal.
+
+01:00.000 --> 01:04.000
+Infrared light couples to crystal vibrations.
+The cavity's shape controls how the coupled waves fit inside it.
+
+01:04.000 --> 01:14.000
+The hBN nanocavity explorer makes the physics visible.
+Explore interactive field and mode views from precomputed research data.
+
+01:14.000 --> 01:19.000
+Your turn. Follow the task and check the evidence.
+Open the web demo. No account or password required.
+
+01:19.000 --> 01:24.000
+Blueprint. Make the answer inspectable.
+Explore the public web demo.

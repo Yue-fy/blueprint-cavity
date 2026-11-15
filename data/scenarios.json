@@ -1,0 +1,821 @@
+[
+  {
+    "id": "bp-01",
+    "title": "Fitness room floor area",
+    "question": "What is the floor area of the fitness room?",
+    "family": "area",
+    "source_id": "dfe-school",
+    "value": 26.9,
+    "unit": "m2",
+    "alt_values": [],
+    "difficulty": "medium",
+    "split": "train",
+    "trap": false,
+    "trap_description": null,
+    "conventions": "Net area to inner wall faces.",
+    "evidence": [
+      {
+        "page": 0,
+        "bbox": [
+          943.24,
+          925.32,
+          992.14,
+          1035.84
+        ],
+        "space": "pdf_pt",
+        "note": "Fitness room inner-wall footprint"
+      }
+    ],
+    "provenance": {
+      "reference_id": "sl-001-dfe_pdf",
+      "manifest": "stoa_like_dev.jsonl",
+      "manifest_sha256": "f6bb375c1379f957f2bdf842f1552108cc41341c350ee648756e5948fd4dd49f",
+      "reference_row_sha256": "749e9e68458aca07f37deb42e12992b43fb9cf8868907899cc50d6fe1624f8b2",
+      "verified": "measured",
+      "original_question": "What is the floor area of the fitness room?",
+      "original_how": "wall faces 943.24-992.14 x 925.32-1035.84 pt = 3.450 x 7.798 m (4 seeds agree)",
+      "gold_author": "existing development reference; agent-authored provenance",
+      "evidence_author": "AfterQuery curation agent, not human expert",
+      "evidence_method": "New boxes from normalized vector geometry/text and visual drawing review; region boxes identify scope, not exhaustive geometric proof.",
+      "independent_check": "Recomputed area from recorded wall-face PDF coordinates at 1:200: 26.9037 m2; room location and boundary visually inspected."
+    }
+  },
+  {
+    "id": "bp-02",
+    "title": "Laundry floor area",
+    "question": "What is the area of the laundry?",
+    "family": "area",
+    "source_id": "dfe-school",
+    "value": 7.0,
+    "unit": "m2",
+    "alt_values": [],
+    "difficulty": "medium",
+    "split": "holdout",
+    "trap": false,
+    "trap_description": null,
+    "conventions": "Net area to inner wall faces.",
+    "evidence": [
+      {
+        "page": 0,
+        "bbox": [
+          841.18,
+          938.4,
+          890.08,
+          967.14
+        ],
+        "space": "pdf_pt",
+        "note": "Laundry inner-wall footprint and corridor doorway"
+      }
+    ],
+    "provenance": {
+      "reference_id": "sl-002-dfe_pdf",
+      "manifest": "stoa_like_dev.jsonl",
+      "manifest_sha256": "f6bb375c1379f957f2bdf842f1552108cc41341c350ee648756e5948fd4dd49f",
+      "reference_row_sha256": "dc051f7e3ec29734d0edc13e6326519e326a19a34f3d30ab8f762724eecedfde",
+      "verified": "measured",
+      "original_question": "What is the area of the laundry?",
+      "original_how": "wall faces 841.18-890.08 x 938.40-967.14 pt = 3.450 x 2.028 m (4 seeds agree)",
+      "gold_author": "existing development reference; agent-authored provenance",
+      "evidence_author": "AfterQuery curation agent, not human expert",
+      "evidence_method": "New boxes from normalized vector geometry/text and visual drawing review; region boxes identify scope, not exhaustive geometric proof.",
+      "independent_check": "Recomputed area from recorded wall-face PDF coordinates at 1:200: 6.9961 m2; room location and boundary visually inspected."
+    }
+  },
+  {
+    "id": "bp-03",
+    "title": "Hall skirting",
+    "question": "How many metres of skirting (baseboard) does the Multi-Purpose Hall need (room perimeter minus door openings)?",
+    "family": "skirting",
+    "source_id": "dfe-school",
+    "value": 50.4,
+    "unit": "m",
+    "alt_values": [],
+    "difficulty": "hard",
+    "split": "train",
+    "trap": false,
+    "trap_description": null,
+    "conventions": "Measure the perimeter at inner wall faces, deduct perimeter door openings, exclude door reveals. Treat the glazed screen/serving hatch to the Servery as wall below; the folding partition is not a perimeter wall.",
+    "evidence": [
+      {
+        "page": 0,
+        "bbox": [
+          711,
+          684,
+          966,
+          879
+        ],
+        "space": "pdf_pt",
+        "note": "Multi-Purpose Hall perimeter; folding partition inside"
+      }
+    ],
+    "provenance": {
+      "reference_id": "sl-233-dfe_pdf",
+      "manifest": "stoa_like_dev.jsonl",
+      "manifest_sha256": "f6bb375c1379f957f2bdf842f1552108cc41341c350ee648756e5948fd4dd49f",
+      "reference_row_sha256": "400cb05d2277a08c78b9acd31d277b7730e251120bdeddb56f87ddad4a12dc48",
+      "verified": "expert",
+      "original_question": "How many metres of skirting (baseboard) does the Multi-Purpose Hall need (room perimeter minus door openings)?",
+      "original_how": "expert (certain, workbench 20:34, gold_id dfe-04): Where I looked: the room labelled \"Multi-Purpose Hall\" in the east wing. Scale: Set scale on the scale bar, 0 to 20 m. Check: the printed 1:200 on A2 gives the same (1 m = 5 mm on paper). Method: the hall is a plain rectangle. Length tool along the inner face of the walls: 17.84 m × 13.78 m, so the perimeter is 2 × (17.84 + 13.78) = 63.24 m. Then I measured every door opening in the perimeter walls (the gap in the black wall, not the swing arc): top wall: 2 double doors, 1.72 + 1.70 m left wall: 1 double door, 1.72 m bottom wall: 2 double doors on either side of a post, 1.72 + 1.73 m right wall: double door to the Store 1.72 m, double door to the Servery 1.63 m, single door 0.89 m total 8 openings = 12.83 m 63.24 − 12.83 = 50.41 m. Decisions: windows are not subtracted (there is wall below them, so the skirting continues). The zigzag line across the hall is a folding partition, not a wal",
+      "gold_author": "human expert (Ziying), expert workbench",
+      "evidence_author": "AfterQuery curation agent, not human expert",
+      "evidence_method": "New boxes from normalized vector geometry/text and visual drawing review; region boxes identify scope, not exhaustive geometric proof.",
+      "expert_reference_id": "h-c42de6fe2f59",
+      "expert_method": "Where I looked: the room labelled \"Multi-Purpose Hall\" in the east wing.\nScale: Set scale on the scale bar, 0 to 20 m. Check: the printed 1:200 on A2 gives the same (1 m = 5 mm on paper).\nMethod: the hall is a plain rectangle. Length tool along the inner face of the walls: 17.84 m × 13.78 m, so the perimeter is 2 × (17.84 + 13.78) = 63.24 m. Then I measured every door opening in the perimeter walls (the gap in the black wall, not the swing arc):\ntop wall: 2 double doors, 1.72 + 1.70 m\nleft wall: 1 double door, 1.72 m\nbottom wall: 2 double doors on either side of a post, 1.72 + 1.73 m\nright wall: double door to the Store 1.72 m, double door to the Servery 1.63 m, single door 0.89 m\ntotal 8 openings = 12.83 m 63.24 − 12.83 = 50.41 m.\nDecisions: windows are not subtracted (there is wall below them, so the skirting continues). The zigzag line across the hall is a folding partition, not a wall, so it gets no skirting; the small door at its top end belongs to the partition, not the perimeter. The thin double line on the right wall (≈2.69 m, to the Servery) is drawn like a window, so I treated it as a hatch or glazed screen with wall below and did not subtract it. If it is a full-height opening, the answer is ≈47.7 m. Door reveals (jamb sides) are not added.\nResult: ≈ 50.4 m (±0.5 m)",
+      "expert_author": "expert",
+      "expert_method_sha256": "e311269d0658c5b85ee51d21a83dcc0de52ce8f6da7bae5f9b1b388cc6f33a32"
+    }
+  },
+  {
+    "id": "bp-04",
+    "title": "Laundry skirting",
+    "question": "How many metres of skirting does the Laundry need (room perimeter minus door openings)?",
+    "family": "skirting",
+    "source_id": "dfe-school",
+    "value": 9.96,
+    "unit": "m",
+    "alt_values": [
+      10.08
+    ],
+    "difficulty": "medium",
+    "split": "train",
+    "trap": false,
+    "trap_description": null,
+    "conventions": "Deduct the door opening; do not add jamb reveals.",
+    "evidence": [
+      {
+        "page": 0,
+        "bbox": [
+          841.18,
+          938.4,
+          890.08,
+          967.14
+        ],
+        "space": "pdf_pt",
+        "note": "Laundry inner-wall footprint and corridor doorway"
+      }
+    ],
+    "provenance": {
+      "reference_id": "sl-235-dfe_pdf",
+      "manifest": "stoa_like_dev.jsonl",
+      "manifest_sha256": "f6bb375c1379f957f2bdf842f1552108cc41341c350ee648756e5948fd4dd49f",
+      "reference_row_sha256": "7a72c55b6c4534d454e005aac73031f84740e8dbe63ab0c3e0f80696e2695529",
+      "verified": "expert",
+      "original_question": "How many metres of skirting does the Laundry need (room perimeter minus door openings)?",
+      "original_how": "expert (certain, workbench 20:38, gold_id dfe-06): Where I looked: the room labelled \"Laundry\" in the east wing, between two Stores (one above, one below), with the Staff Workroom on its right and the corridor on its left. Scale: Set scale on the scale bar, 0 to 20 m (1 m ≈ 60.6 px at full resolution). The printed 1:200 on A2 gives the same. Method: the room is a plain rectangle. Length tool along the inner face of the walls: 3.40 m × 2.00 m, so the perimeter is 2 × (3.40 + 2.00) = 10.80 m. There is one door opening, a single door in the left (corridor) wall: 0.84 m (the gap in the black wall; the swing arc has the same radius, ≈0.83 m, which confirms it). 10.80 − 0.84 = 9.96 m. Decisions: no windows in this room. Walls shared with the Stores and the Staff Workroom still need skirting on the Laundry side. Door reveals are not added. Result: 9.96 m (±0.1 m). [alt_answer = X1 sl-055 laundry skirting]",
+      "gold_author": "human expert (Ziying), expert workbench",
+      "evidence_author": "AfterQuery curation agent, not human expert",
+      "evidence_method": "New boxes from normalized vector geometry/text and visual drawing review; region boxes identify scope, not exhaustive geometric proof.",
+      "expert_reference_id": "h-83341c9c311b",
+      "expert_method": "Where I looked: the room labelled \"Laundry\" in the east wing, between two Stores (one above, one below), with the Staff Workroom on its right and the corridor on its left.\nScale: Set scale on the scale bar, 0 to 20 m (1 m ≈ 60.6 px at full resolution). The printed 1:200 on A2 gives the same.\nMethod: the room is a plain rectangle. Length tool along the inner face of the walls: 3.40 m × 2.00 m, so the perimeter is 2 × (3.40 + 2.00) = 10.80 m. There is one door opening, a single door in the left (corridor) wall: 0.84 m (the gap in the black wall; the swing arc has the same radius, ≈0.83 m, which confirms it). 10.80 − 0.84 = 9.96 m.\nDecisions: no windows in this room. Walls shared with the Stores and the Staff Workroom still need skirting on the Laundry side. Door reveals are not added.\nResult: 9.96 m (±0.1 m).",
+      "expert_author": "expert",
+      "expert_method_sha256": "2d083a35c2915b04587b166327b7f2525254d7748858362d0ad8087310e75a5e"
+    }
+  },
+  {
+    "id": "bp-05",
+    "title": "Kitchen skirting",
+    "question": "How many metres of skirting does the Kitchen need (room perimeter minus door openings)?",
+    "family": "skirting",
+    "source_id": "dfe-school",
+    "value": 22.0,
+    "unit": "m",
+    "alt_values": [],
+    "difficulty": "hard",
+    "split": "train",
+    "trap": false,
+    "trap_description": null,
+    "conventions": "Follow the L-shaped inner perimeter, deduct its door openings, exclude door reveals. Treat the serving hatch as wall below. The Toilet is accessed from Changing, not Kitchen.",
+    "evidence": [
+      {
+        "page": 0,
+        "bbox": [
+          994.24,
+          767.28,
+          1068.7,
+          878.5
+        ],
+        "space": "pdf_pt",
+        "note": "Kitchen L-shaped perimeter and door openings; box includes cut-out rooms"
+      }
+    ],
+    "provenance": {
+      "reference_id": "sl-258-dfe_pdf",
+      "manifest": "stoa_like_dev.jsonl",
+      "manifest_sha256": "f6bb375c1379f957f2bdf842f1552108cc41341c350ee648756e5948fd4dd49f",
+      "reference_row_sha256": "dac16fc0fed5a87fefcd15aacc9414ea67c142182a74d5832a41c9758f55cef4",
+      "verified": "expert",
+      "original_question": "How many metres of skirting does the Kitchen need (room perimeter minus door openings)?",
+      "original_how": "expert (certain, workbench 21:17, gold_id dfe-05): Where I looked: the room labelled \"Kitchen\" in the east wing, east of the Servery and Furniture Store, south of the two Plant Rooms. Scale: Set scale on the scale bar, 0 to 20 m (1 m ≈ 60.6 px at full resolution); the printed 1:200 on A2 gives the same. Method: the Kitchen is L-shaped: the Store, Changing and Toilet block cuts out its bottom-right corner. Going round the inner wall faces: top 5.21 m, right (outer wall) down to the cut-out 6.04 m, top of the cut-out 3.65 m, left side of the cut-out (Store wall) 1.80 m, bottom 1.57 m, left (Servery wall) 7.84 m. Perimeter 26.11 m. Door openings in this perimeter: double door to outside (right wall) 1.70 m; single door to the Servery (left wall) 0.87 m; single door to the Store 0.84 m and single door to the Changing room 0.68 m (both in the top wall of the cut-out). Total 4.09 m. 26.11 − 4.09 = 22.02 m. Decisions: the Toilet door opens from",
+      "gold_author": "human expert (Ziying), expert workbench",
+      "evidence_author": "AfterQuery curation agent, not human expert",
+      "evidence_method": "New boxes from normalized vector geometry/text and visual drawing review; region boxes identify scope, not exhaustive geometric proof.",
+      "expert_reference_id": "h-8902149eeba5",
+      "expert_method": "Where I looked: the room labelled \"Kitchen\" in the east wing, east of the Servery and Furniture Store, south of the two Plant Rooms.\nScale: Set scale on the scale bar, 0 to 20 m (1 m ≈ 60.6 px at full resolution); the printed 1:200 on A2 gives the same.\nMethod: the Kitchen is L-shaped: the Store, Changing and Toilet block cuts out its bottom-right corner. Going round the inner wall faces: top 5.21 m, right (outer wall) down to the cut-out 6.04 m, top of the cut-out 3.65 m, left side of the cut-out (Store wall) 1.80 m, bottom 1.57 m, left (Servery wall) 7.84 m. Perimeter 26.11 m. Door openings in this perimeter: double door to outside (right wall) 1.70 m; single door to the Servery (left wall) 0.87 m; single door to the Store 0.84 m and single door to the Changing room 0.68 m (both in the top wall of the cut-out). Total 4.09 m. 26.11 − 4.09 = 22.02 m.\nDecisions: the Toilet door opens from the Changing room, not from the Kitchen, so it is not subtracted. The window in the right wall is not subtracted (wall below it). The thin double line in the left wall (≈3.96 m, to the Servery) is drawn like a window, so it is treated as a serving hatch with wall below, as in the Multi-Purpose Hall question; if it is a full-height opening, the answer is ≈18.0 m. Door reveals are not added.\nResult: ≈ 22.0 m (±0.2 m). Check: the L-shape matters. Treating the Kitchen as a plain 5.21 × 7.84 m rectangle gives a perimeter of 26.10 m, almost the same number, but with the wrong door list (the Store and Changing doors would not be on that outline). Follow the walls, not the bounding box.",
+      "expert_author": "expert",
+      "expert_method_sha256": "18a6fdcb726af6aac28cf43f52475cda94ef468e90abd3f02a1a1e54905ee092"
+    }
+  },
+  {
+    "id": "bp-06",
+    "title": "West facade windows",
+    "question": "How many windows are on the west facade of the classroom wing?",
+    "family": "openings",
+    "source_id": "dfe-school",
+    "value": 18,
+    "unit": "count",
+    "alt_values": [],
+    "difficulty": "hard",
+    "split": "holdout",
+    "trap": false,
+    "trap_description": null,
+    "conventions": "For this drawing take the top of the sheet as north. Count separate window openings in the left external wall of the classroom wing; exclude doors, including louvred plant-room doors.",
+    "evidence": [
+      {
+        "page": 0,
+        "bbox": [
+          137,
+          263.06,
+          148,
+          284.32
+        ],
+        "space": "pdf_pt",
+        "note": "West facade window opening"
+      },
+      {
+        "page": 0,
+        "bbox": [
+          137,
+          288.56,
+          148,
+          309.82
+        ],
+        "space": "pdf_pt",
+        "note": "West facade window opening"
+      },
+      {
+        "page": 0,
+        "bbox": [
+          137,
+          339.56,
+          148,
+          360.88
+        ],
+        "space": "pdf_pt",
+        "note": "West facade window opening"
+      },
+      {
+        "page": 0,
+        "bbox": [
+          137,
+          365.06,
+          148,
+          386.38
+        ],
+        "space": "pdf_pt",
+        "note": "West facade window opening"
+      },
+      {
+        "page": 0,
+        "bbox": [
+          137,
+          416.12,
+          148,
+          437.38
+        ],
+        "space": "pdf_pt",
+        "note": "West facade window opening"
+      },
+      {
+        "page": 0,
+        "bbox": [
+          137,
+          441.62,
+          148,
+          462.88
+        ],
+        "space": "pdf_pt",
+        "note": "West facade window opening"
+      },
+      {
+        "page": 0,
+        "bbox": [
+          137,
+          467.12,
+          148,
+          488.44
+        ],
+        "space": "pdf_pt",
+        "note": "West facade window opening"
+      },
+      {
+        "page": 0,
+        "bbox": [
+          137,
+          492.68,
+          148,
+          513.94
+        ],
+        "space": "pdf_pt",
+        "note": "West facade window opening"
+      },
+      {
+        "page": 0,
+        "bbox": [
+          137,
+          518.18,
+          148,
+          539.44
+        ],
+        "space": "pdf_pt",
+        "note": "West facade window opening"
+      },
+      {
+        "page": 0,
+        "bbox": [
+          137,
+          569.18,
+          148,
+          590.44
+        ],
+        "space": "pdf_pt",
+        "note": "West facade window opening"
+      },
+      {
+        "page": 0,
+        "bbox": [
+          137,
+          594.68,
+          148,
+          616.0
+        ],
+        "space": "pdf_pt",
+        "note": "West facade window opening"
+      },
+      {
+        "page": 0,
+        "bbox": [
+          137,
+          645.74,
+          148,
+          667.0
+        ],
+        "space": "pdf_pt",
+        "note": "West facade window opening"
+      },
+      {
+        "page": 0,
+        "bbox": [
+          137,
+          671.24,
+          148,
+          692.5
+        ],
+        "space": "pdf_pt",
+        "note": "West facade window opening"
+      },
+      {
+        "page": 0,
+        "bbox": [
+          137,
+          696.74,
+          148,
+          718.0
+        ],
+        "space": "pdf_pt",
+        "note": "West facade window opening"
+      },
+      {
+        "page": 0,
+        "bbox": [
+          137,
+          722.24,
+          148,
+          743.56
+        ],
+        "space": "pdf_pt",
+        "note": "West facade window opening"
+      },
+      {
+        "page": 0,
+        "bbox": [
+          137,
+          747.8,
+          148,
+          769.06
+        ],
+        "space": "pdf_pt",
+        "note": "West facade window opening"
+      },
+      {
+        "page": 0,
+        "bbox": [
+          137,
+          773.3,
+          148,
+          794.56
+        ],
+        "space": "pdf_pt",
+        "note": "West facade window opening"
+      },
+      {
+        "page": 0,
+        "bbox": [
+          137,
+          798.8,
+          148,
+          820.06
+        ],
+        "space": "pdf_pt",
+        "note": "West facade window opening"
+      }
+    ],
+    "provenance": {
+      "reference_id": "sl-237-dfe_pdf",
+      "manifest": "stoa_like_dev.jsonl",
+      "manifest_sha256": "f6bb375c1379f957f2bdf842f1552108cc41341c350ee648756e5948fd4dd49f",
+      "reference_row_sha256": "002d45d14a79079632ee18d6ca8bc7107fe339606343cbba6bd9030a77f9a419",
+      "verified": "expert",
+      "original_question": "How many windows are on the west facade of the classroom wing?",
+      "original_how": "expert (certain, workbench 20:48, gold_id dfe-08): Where I looked: the outer wall on the left side of the classroom wing, from the Plant Room at the top to the stair at the bottom. There is no north arrow on this sheet, so I took the top of the sheet as north, which makes the left side west. Scale: only used to check sizes (scale bar, 0 to 20 m). Method: I went along the wall from north to south and looked at every gap in the black wall. Window: a gap with thin parallel lines inside it (the glazing). All of them are the same size, ≈1.30 m wide. Door: a gap with no lines inside and a swing arc outside, ≈0.92 m wide. There are 4, the classrooms' doors to the outside. The Plant Room opening at the top has zigzag leaves: a louvred double door, not a window. The doors split the windows into groups: 2, 2, 5, 2, 7 = 18. Decisions: neighbouring windows are separated by solid wall piers (≈0.5 m), so each one counts as a separate window. Glazed do",
+      "gold_author": "human expert (Ziying), expert workbench",
+      "evidence_author": "AfterQuery curation agent, not human expert",
+      "evidence_method": "New boxes from normalized vector geometry/text and visual drawing review; region boxes identify scope, not exhaustive geometric proof.",
+      "expert_reference_id": "h-5939f2951c86",
+      "expert_method": "Where I looked: the outer wall on the left side of the classroom wing, from the Plant Room at the top to the stair at the bottom. There is no north arrow on this sheet, so I took the top of the sheet as north, which makes the left side west.\nScale: only used to check sizes (scale bar, 0 to 20 m).\nMethod: I went along the wall from north to south and looked at every gap in the black wall.\nWindow: a gap with thin parallel lines inside it (the glazing). All of them are the same size, ≈1.30 m wide.\nDoor: a gap with no lines inside and a swing arc outside, ≈0.92 m wide. There are 4, the classrooms' doors to the outside.\nThe Plant Room opening at the top has zigzag leaves: a louvred double door, not a window. The doors split the windows into groups: 2, 2, 5, 2, 7 = 18.\nDecisions: neighbouring windows are separated by solid wall piers (≈0.5 m), so each one counts as a separate window. Glazed doors would count as doors, but there are none here.\nResult: 18. Exact count, if west = left side of the sheet.\n\nRules a machine can reuse:\n\nDirection words (\"west facade\"): find the north arrow; if there is none, take the top of the sheet as north and say so.\nWindow symbol on CAD plans: a gap in the wall with thin parallel lines inside (glazing).\nDoor symbol: a gap with no lines inside, plus a swing arc.\nWall piers between gaps mean separate windows, even when the windows are the same size and close together.\nSanity check: a facade with classrooms behind it always has windows; 0 is not a plausible answer.",
+      "expert_author": "expert",
+      "expert_method_sha256": "252ece20c516d67c913aec8218c3c394cadb3c4bdc1889b981345272250b4649",
+      "independent_check": "Vector glazing centerlines at x=142.421 pt yield 18 distinct opening spans, matching expert groups 2/2/5/2/7; narrow west-facade crop visually inspected."
+    }
+  },
+  {
+    "id": "bp-07",
+    "title": "Entrance sliding doors",
+    "question": "How many sliding door sets are shown at the Entrance Lobby?",
+    "family": "openings",
+    "source_id": "dfe-school",
+    "value": 2,
+    "unit": "count",
+    "alt_values": [],
+    "difficulty": "medium",
+    "split": "train",
+    "trap": false,
+    "trap_description": null,
+    "conventions": "Count each sliding door set as one opening, regardless of the number of leaves.",
+    "evidence": [
+      {
+        "page": 0,
+        "bbox": [
+          675,
+          995,
+          710,
+          1004
+        ],
+        "space": "pdf_pt",
+        "note": "Sliding entrance door, inner opening"
+      },
+      {
+        "page": 0,
+        "bbox": [
+          675,
+          1032,
+          710,
+          1042
+        ],
+        "space": "pdf_pt",
+        "note": "Sliding entrance door, outer opening"
+      }
+    ],
+    "provenance": {
+      "reference_id": "sl-260-dfe_pdf",
+      "manifest": "stoa_like_dev.jsonl",
+      "manifest_sha256": "f6bb375c1379f957f2bdf842f1552108cc41341c350ee648756e5948fd4dd49f",
+      "reference_row_sha256": "ddd42da1cf3997ff088e83e2832805a37165e181ce790f4a0d510a5d8d289b33",
+      "verified": "expert",
+      "original_question": "How many sliding doors are on the whole plan?",
+      "original_how": "expert (Ziying, from her written method for dfe-07 at 21:11; marks not exported): the 2 sliding doors of the Entrance Lobby (two opposite arrows)",
+      "gold_author": "human expert (Ziying), expert workbench",
+      "evidence_author": "AfterQuery curation agent, not human expert",
+      "evidence_method": "New boxes from normalized vector geometry/text and visual drawing review; region boxes identify scope, not exhaustive geometric proof.",
+      "expert_reference_id": "h-74690510df13",
+      "expert_method": "Door symbols on this sheet:\n\nOne quarter-circle arc with a leaf line = single door.\nTwo arcs meeting in the middle = double door; it counts as one door opening (two leaves).\nA short angled line with no arc = a cupboard or small store door drawn half-open. Whether it is a cupboard or a store depends on the space behind it: a labelled room (e.g. \"Store\") is a room door, an unlabelled shallow recess off the corridor is a cupboard.\nSmall zigzag in an outer wall = folding or louvred door. The long zigzag across the Multi-Purpose Hall is a movable partition, not a door.\nTwo opposite arrows (←→) = sliding door.\nWhere I looked: the whole plan: the classroom wing, the enclosed walkway and the east wing.\nScale: not needed for counting.\n3. Method: split the plan into 9 zones and counted zone by zone so no door was counted twice, using the door symbols in Part A. All doors: classroom wing 65, walkway 3, east wing 60 = 128. Then removed the 13 cupboard doors (short angled leaf, no room label, shallow recess off a corridor). 128 − 13 = 115.\n4. Decisions: a door counts only if a person can walk through it. So: cupboard doors are out; WC and shower cubicle doors (11) are in; walk-in Stores drawn with an angled leaf are in, because they are labelled rooms; louvred doors to plant rooms (4) and the sliding doors of the Entrance Lobby (2) are in. The lift is out: a person can enter it, but no door is drawn. The folding partition in the hall is a movable wall, not a door; the small door at its end is in.\n5. Result: 115 (±3). Without cubicle doors: 104.",
+      "expert_author": "expert",
+      "expert_method_sha256": "c62cec2ba5baf6f6f072d5534819c5ed222a80f300138e692e2fc773ef5f503f",
+      "independent_check": "Entrance Lobby crop visually shows two opposing-arrow sliding-door symbols, one inner and one outer opening."
+    }
+  },
+  {
+    "id": "bp-08",
+    "title": "D16 slab field area",
+    "question": "What is the gross plan area of the six-panel rectangular 300 mm D16 slab field on the left?",
+    "family": "slab",
+    "source_id": "usace-slab",
+    "value": 214.5,
+    "unit": "m2",
+    "alt_values": [],
+    "difficulty": "medium",
+    "split": "train",
+    "trap": false,
+    "trap_description": null,
+    "conventions": "Measure the six-panel rectangular field only, excluding the projecting stair bay at the lower right. Report gross plan area before deductions for trenches, sumps or pipe penetrations.",
+    "evidence": [
+      {
+        "page": 0,
+        "bbox": [
+          386,
+          419,
+          1489,
+          1043
+        ],
+        "space": "pdf_pt",
+        "note": "Rectangular six-panel slab field, excluding projecting stair bay"
+      },
+      {
+        "page": 0,
+        "bbox": [
+          974.011,
+          754.882,
+          995.477,
+          769.558
+        ],
+        "space": "pdf_pt",
+        "note": "D16"
+      }
+    ],
+    "provenance": {
+      "reference_id": "sl-014-s100_pdf",
+      "manifest": "stoa_like_dev.jsonl",
+      "manifest_sha256": "f6bb375c1379f957f2bdf842f1552108cc41341c350ee648756e5948fd4dd49f",
+      "reference_row_sha256": "b31718bff59f4c04a3ccbf6fd2996c16af0acfb4fb6c2be9ea48c8d75a61034d",
+      "verified": "printed",
+      "original_question": "What is the area of the 300 mm slab-on-grade with D16 bars (the large slab on the left)?",
+      "original_how": "control-joint panels 5800 + 7400 + 6300 = 19500 by 5500 + 5500 = 11000 mm (render check 19.51 x 11.08 m)",
+      "gold_author": "existing development reference; agent-authored provenance",
+      "evidence_author": "AfterQuery curation agent, not human expert",
+      "evidence_method": "New boxes from normalized vector geometry/text and visual drawing review; region boxes identify scope, not exhaustive geometric proof.",
+      "independent_check": "Printed 5800+7400+6300 =19500 mm; 5500+5500=11000 mm; rectangular field area214.5 m2. Scope tightened to exclude projecting stair bay visible on sheet."
+    }
+  },
+  {
+    "id": "bp-09",
+    "title": "D13 slab area",
+    "question": "What is the gross plan area of the rectangular 150 mm slab-on-grade with D13 @ 300?",
+    "family": "slab",
+    "source_id": "usace-slab",
+    "value": 61.69,
+    "unit": "m2",
+    "alt_values": [],
+    "difficulty": "medium",
+    "split": "train",
+    "trap": true,
+    "trap_description": "TOP OF SLAB EL. =10000 is elevation, not floor area.",
+    "conventions": "Report gross plan area of the rectangular slab before deductions for trenches or pipe penetrations.",
+    "evidence": [
+      {
+        "page": 0,
+        "bbox": [
+          1507,
+          575,
+          1858,
+          1140
+        ],
+        "space": "pdf_pt",
+        "note": "150 mm D13 slab footprint"
+      },
+      {
+        "page": 0,
+        "bbox": [
+          1565.74,
+          669.861,
+          1587.222,
+          684.539
+        ],
+        "space": "pdf_pt",
+        "note": "D13"
+      }
+    ],
+    "provenance": {
+      "reference_id": "sl-015-s100_pdf",
+      "manifest": "stoa_like_dev.jsonl",
+      "manifest_sha256": "f6bb375c1379f957f2bdf842f1552108cc41341c350ee648756e5948fd4dd49f",
+      "reference_row_sha256": "133f9aef3d4823b748fd7be8e4c5f2245512c470870d0175b4caa11ad85d9e01",
+      "verified": "printed",
+      "original_question": "What is the area of the 150 mm slab-on-grade with D13 @ 300?",
+      "original_how": "room 6200 (printed) x 9950 (printed vertical, = 4975 + 4975) mm",
+      "gold_author": "existing development reference; agent-authored provenance",
+      "evidence_author": "AfterQuery curation agent, not human expert",
+      "evidence_method": "New boxes from normalized vector geometry/text and visual drawing review; region boxes identify scope, not exhaustive geometric proof.",
+      "independent_check": "Printed rectangular field6200 x9950 mm gives61.69 m2; TOP OF SLAB EL10000 is elevation, not area."
+    }
+  },
+  {
+    "id": "bp-10",
+    "title": "Check valves",
+    "question": "How many non-surge check valves with rate-of-flow controllers are there?",
+    "family": "piping",
+    "source_id": "usace-piping",
+    "value": 5,
+    "unit": "count",
+    "alt_values": [],
+    "difficulty": "easy",
+    "split": "train",
+    "trap": false,
+    "trap_description": null,
+    "conventions": "Count distinct CV-tagged valve components. A repeated callout does not add another component.",
+    "evidence": [
+      {
+        "page": 0,
+        "bbox": [
+          849.82,
+          602.681,
+          875.617,
+          617.334
+        ],
+        "space": "pdf_pt",
+        "note": "CV-1"
+      },
+      {
+        "page": 0,
+        "bbox": [
+          966.82,
+          602.681,
+          992.617,
+          617.334
+        ],
+        "space": "pdf_pt",
+        "note": "CV-2"
+      },
+      {
+        "page": 0,
+        "bbox": [
+          1084.0,
+          602.681,
+          1109.797,
+          617.334
+        ],
+        "space": "pdf_pt",
+        "note": "CV-3"
+      },
+      {
+        "page": 0,
+        "bbox": [
+          1200.16,
+          602.681,
+          1225.97,
+          617.334
+        ],
+        "space": "pdf_pt",
+        "note": "CV-4"
+      },
+      {
+        "page": 0,
+        "bbox": [
+          1317.1,
+          602.681,
+          1342.894,
+          617.334
+        ],
+        "space": "pdf_pt",
+        "note": "CV-5"
+      }
+    ],
+    "provenance": {
+      "reference_id": "sl-006-m101_pdf",
+      "manifest": "stoa_like_dev.jsonl",
+      "manifest_sha256": "f6bb375c1379f957f2bdf842f1552108cc41341c350ee648756e5948fd4dd49f",
+      "reference_row_sha256": "555e2ca0fe2c7ca70b056e2f881b7c18420dce9868998f1b369e416f1b1071d0",
+      "verified": "printed",
+      "original_question": "How many non-surge check valves with rate-of-flow controllers are there?",
+      "original_how": "callout 'NON-SURGE CHECK VALVE (CV) W/ RATE OF FLOW CONTROLLER (TYP. OF 5)', tags CV-1..CV-5",
+      "gold_author": "existing development reference; agent-authored provenance",
+      "evidence_author": "AfterQuery curation agent, not human expert",
+      "evidence_method": "New boxes from normalized vector geometry/text and visual drawing review; region boxes identify scope, not exhaustive geometric proof.",
+      "independent_check": "Selected callout text boxes were independently extracted from normalized public PDF; distinct tags enumerated and source label checked."
+    }
+  },
+  {
+    "id": "bp-11",
+    "title": "Fuel pumps",
+    "question": "How many fuel pumps (FP) are shown on the piping plan?",
+    "family": "piping",
+    "source_id": "usace-piping",
+    "value": 5,
+    "unit": "count",
+    "alt_values": [],
+    "difficulty": "easy",
+    "split": "holdout",
+    "trap": false,
+    "trap_description": null,
+    "conventions": "Count only the FP-tagged fuel pumps; jockey and drain pumps are separate equipment.",
+    "evidence": [
+      {
+        "page": 0,
+        "bbox": [
+          807.1,
+          425.681,
+          831.794,
+          440.334
+        ],
+        "space": "pdf_pt",
+        "note": "FP-1"
+      },
+      {
+        "page": 0,
+        "bbox": [
+          922.54,
+          425.681,
+          947.234,
+          440.334
+        ],
+        "space": "pdf_pt",
+        "note": "FP-2"
+      },
+      {
+        "page": 0,
+        "bbox": [
+          1039.48,
+          425.681,
+          1064.173,
+          440.334
+        ],
+        "space": "pdf_pt",
+        "note": "FP-3"
+      },
+      {
+        "page": 0,
+        "bbox": [
+          1156.42,
+          425.681,
+          1181.114,
+          440.334
+        ],
+        "space": "pdf_pt",
+        "note": "FP-4"
+      },
+      {
+        "page": 0,
+        "bbox": [
+          1271.92,
+          425.681,
+          1296.614,
+          440.334
+        ],
+        "space": "pdf_pt",
+        "note": "FP-5"
+      }
+    ],
+    "provenance": {
+      "reference_id": "sl-007-m101_pdf",
+      "manifest": "stoa_like_dev.jsonl",
+      "manifest_sha256": "f6bb375c1379f957f2bdf842f1552108cc41341c350ee648756e5948fd4dd49f",
+      "reference_row_sha256": "6628e613a7ac8adf25162ed6991a27cf6de279c3ed0f6ada9ba1a4f4afb05fa3",
+      "verified": "printed",
+      "original_question": "How many fuel pumps (FP) are shown on the piping plan?",
+      "original_how": "tags FP-1..FP-5 (the jockey pump and the pumphouse drain pump are separate)",
+      "gold_author": "existing development reference; agent-authored provenance",
+      "evidence_author": "AfterQuery curation agent, not human expert",
+      "evidence_method": "New boxes from normalized vector geometry/text and visual drawing review; region boxes identify scope, not exhaustive geometric proof.",
+      "independent_check": "Selected callout text boxes were independently extracted from normalized public PDF; distinct tags enumerated and source label checked."
+    }
+  },
+  {
+    "id": "bp-12",
+    "title": "Suction header diameter",
+    "question": "What size is the suction header?",
+    "family": "piping",
+    "source_id": "usace-piping",
+    "value": 16,
+    "unit": "in",
+    "alt_values": [],
+    "difficulty": "easy",
+    "split": "train",
+    "trap": false,
+    "trap_description": null,
+    "conventions": "Report nominal pipe size in inches, not the measured diameter of a line on the page.",
+    "evidence": [
+      {
+        "page": 0,
+        "bbox": [
+          1317.1,
+          141.461,
+          1423.035,
+          156.114
+        ],
+        "space": "pdf_pt",
+        "note": "16\" SUCTION HEADER"
+      }
+    ],
+    "provenance": {
+      "reference_id": "sl-011-m101_pdf",
+      "manifest": "stoa_like_dev.jsonl",
+      "manifest_sha256": "f6bb375c1379f957f2bdf842f1552108cc41341c350ee648756e5948fd4dd49f",
+      "reference_row_sha256": "ee24f4c8f26a812cdb088cf405597f0e30ae5a2a8e54dec543a4fc8e4ac01d1c",
+      "verified": "printed",
+      "original_question": "What size is the suction header?",
+      "original_how": "callout '16\" SUCTION HEADER'",
+      "gold_author": "existing development reference; agent-authored provenance",
+      "evidence_author": "AfterQuery curation agent, not human expert",
+      "evidence_method": "New boxes from normalized vector geometry/text and visual drawing review; region boxes identify scope, not exhaustive geometric proof.",
+      "independent_check": "Selected callout text boxes were independently extracted from normalized public PDF; distinct tags enumerated and source label checked."
+    }
+  }
+]
